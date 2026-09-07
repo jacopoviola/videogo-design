@@ -1,0 +1,65 @@
+/* VIDEOGO — design tokens
+   Generated from VIDEOGO_DESIGN_TOKENS.md. Do not hand-edit: change the registry,
+   regenerate this file. Every typeface is SIL OFL 1.1.
+   Load: Instrument Sans 400..700, IBM Plex Mono 400/500/600. */
+
+:root {
+  /* ---- surface: warm near-black, hue ~65 ---------------------------- */
+  --vg-canvas:      #0C0B09;
+  --vg-shell:       #12100E;
+  --vg-panel:       #171512;
+  --vg-hairline:    #211E1A;
+  --vg-hairline-hi: #292520;
+  --vg-border:      #37322B;
+
+  /* ---- text -------------------------------------------------------- */
+  --vg-text-1:      #F5F2EC;  /* display, statements */
+  --vg-text-2:      #A59E92;  /* body */
+  --vg-text-3:      #6F685C;  /* mono labels, secondary */
+  --vg-text-4:      #4B453C;  /* faint, disabled, absence */
+
+  /* ---- the only two hues in the product ----------------------------- */
+  --vg-signal:      #FF0048;  /* VIDEOGO is blocked. Nothing else. Ever. */
+  --vg-action:      #E9A93C;  /* waiting on your authorization; primary controls */
+  --vg-on-hue:      #0C0B09;  /* text on either hue */
+
+  /* ---- type -------------------------------------------------------- */
+  --vg-sans: 'Instrument Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --vg-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --vg-display-1: 700 44px/1.02 var(--vg-sans);   /* letter-spacing -0.04em  */
+  --vg-display-2: 700 34px/1.06 var(--vg-sans);   /* letter-spacing -0.035em */
+  --vg-title:     500 20px/1.30 var(--vg-sans);   /* letter-spacing -0.015em */
+  --vg-voice:     450 16px/1.60 var(--vg-sans);   /* VIDEOGO speaking        */
+  --vg-body:      450 13.5px/1.55 var(--vg-sans);
+  --vg-small:     450 12px/1.5 var(--vg-sans);
+  --vg-label:     600 10px/1 var(--vg-mono);      /* uppercase, +0.16em      */
+  --vg-micro:     500 9px/1 var(--vg-mono);       /* uppercase, +0.14em      */
+
+  --vg-track-display: -0.035em;
+  --vg-track-title:   -0.015em;
+  --vg-track-body:    -0.004em;
+  --vg-track-label:    0.16em;
+
+  /* ---- space: 4px base --------------------------------------------- */
+  --vg-1: 4px;  --vg-2: 8px;   --vg-3: 12px; --vg-4: 16px;
+  --vg-5: 20px; --vg-6: 24px;  --vg-7: 32px; --vg-8: 40px; --vg-9: 56px;
+  --vg-nav-w: 214px;
+
+  /* ---- form -------------------------------------------------------- */
+  --vg-radius: 0;              /* everywhere, without exception */
+  --vg-rule: 1px solid var(--vg-hairline);
+  --vg-rule-hi: 1px solid var(--vg-border);
+  --vg-rule-absent: 1px dashed var(--vg-hairline-hi);
+  --vg-shadow: none;           /* elevation is a ramp step plus a border */
+
+  /* ---- motion ------------------------------------------------------ */
+  --vg-ease: cubic-bezier(0.2, 0, 0, 1);
+  --vg-dur-state: 120ms;
+  --vg-dur-enter: 200ms;
+  --vg-dur-page:  320ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --vg-dur-state: 0ms; --vg-dur-enter: 0ms; --vg-dur-page: 0ms; }
+}
