@@ -1,0 +1,12 @@
+/* VIDEOGO motion. Motion reports, it never advertises.
+   Never animate: a NEED object, an evidence value, the silence state, progress on an unknown duration. */
+:root {
+  --vg-ease: cubic-bezier(0.2, 0, 0, 1);
+  --vg-dur-state: 120ms;   /* hover, focus, press, chip toggle — colour only */
+  --vg-dur-enter: 200ms;   /* object entering Today, drawer — 6px rise max */
+  --vg-dur-page:  320ms;   /* between the four sections */
+  --vg-travel: 6px;
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --vg-dur-state: 0ms; --vg-dur-enter: 0ms; --vg-dur-page: 0ms; --vg-travel: 0px; }
+}

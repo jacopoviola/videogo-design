@@ -1,0 +1,11 @@
+/* Base resets. Consumers get the canvas, the body register and themed focus. */
+html, body { margin: 0; background: var(--vg-canvas); color: var(--vg-text-2); font: var(--vg-body); letter-spacing: -0.004em; -webkit-font-smoothing: antialiased; }
+* { box-sizing: border-box; border-radius: 0; }
+a { color: var(--vg-text-1); text-decoration: underline; text-decoration-color: var(--vg-border); text-underline-offset: 2px; }
+a:hover { text-decoration-color: var(--vg-text-1); }
+button, input, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: var(--vg-focus); outline-offset: 2px; }
+::selection { background: var(--vg-border); color: var(--vg-text-1); }
+.vg-label { font: var(--vg-label); letter-spacing: var(--vg-track-label); text-transform: uppercase; color: var(--vg-text-3); }
+.vg-micro { font: var(--vg-micro); letter-spacing: var(--vg-track-micro); text-transform: uppercase; color: var(--vg-text-3); }
+.vg-hatch { background: var(--vg-hatch); }

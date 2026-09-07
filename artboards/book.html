@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>VIDEOGO — Design System Artboards</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="../_dev/loader.js" data-root=".."></script>
+<style>
+  doc-page:not(:defined){visibility:hidden}
+  html,body{margin:0;background:#0C0B09}
+  .page{background:#0C0B09;overflow:hidden}
+  .board{width:1280px;height:800px;transform-origin:0 0}
+</style></head>
+<body>
+<doc-page orientation="landscape" content-width="1280px" content-height="800px">
+  <section class="page" id="p0"><div class="board" data-board="Brand"></div></section>
+  <section class="page" id="p1"><div class="board" data-board="Tokens"></div></section>
+  <section class="page" id="p2"><div class="board" data-board="Type"></div></section>
+  <section class="page" id="p3"><div class="board" data-board="Controls"></div></section>
+  <section class="page" id="p4"><div class="board" data-board="Content"></div></section>
+  <section class="page" id="p5"><div class="board" data-board="Objects"></div></section>
+  <section class="page" id="p6"><div class="board" data-board="States"></div></section>
+  <section class="page" id="p7"><div class="board" data-board="TodayScreen"></div></section>
+  <section class="page" id="p8"><div class="board" data-board="LiveScreen"></div></section>
+</doc-page>
+<script src="./doc-page.js"></script>
+<script>
+VGReady.then(function(){ return VGLoadJSX('./boards.jsx'); }).then(function(){
+  document.querySelectorAll('.board').forEach(function(el){ VGMount(el, VGBoards[el.dataset.board]); });
+});
+</script>
+</body></html>

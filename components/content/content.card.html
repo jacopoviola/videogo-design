@@ -1,0 +1,24 @@
+<!-- @dsCard group="Components" viewport="700x400" name="Content" subtitle="Thumbnail, Attribution, EvidenceRow, MetricTile, AbsenceTile, PermissionLockup, ProcessStages, FeedPreview" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="../../styles.css">
+<script src="../../_dev/loader.js" data-root="../.."></script>
+<style>html,body{margin:0;background:var(--vg-canvas)}</style></head>
+<body><div id="root" style="padding:16px;display:flex;flex-direction:column;gap:14px"></div>
+<script>VGReady.then(function(){
+  var e = React.createElement, V = window.VG;
+  VGMount('#root', function(){ return e(React.Fragment,null,
+   e('div',{style:{display:'flex',gap:12,alignItems:'center',flexWrap:'wrap'}},e(V.Thumbnail,{duration:'1:08'}),e(V.Attribution,null,'I turned your existing photos into a voiceover explainer.')),
+   e(V.EvidenceRow,{rows:[{k:'Why this',v:'Most repeated question in your reviews this month'},{k:'Expected',v:'Stronger saves; direct booking impact is uncertain'}]}),
+   e('div',{style:{display:'grid',gridTemplateColumns:'repeat(3,minmax(0,1fr))',gap:12}},
+     e(V.MetricTile,{label:'Saves · last 28 days',value:'41',delta:'3.1× your average'}),
+     e(V.MetricTile,{label:'Revenue',value:'€2,400',provenance:'You told me'}),
+     e(V.AbsenceTile,{label:'Direct bookings',reason:'no booking link connected'})),
+   e(V.PermissionLockup,{state:'granted',scope:'Organic educational auto-publish'}),
+   e(V.PermissionLockup,{state:'requested',scope:'Publish educational videos without review'}),
+   e(V.PermissionLockup,{state:'refused',scope:'Paid spend'}),
+   e('div',{style:{display:'grid',gridTemplateColumns:'1fr auto',gap:24,alignItems:'start'}},
+     e(V.ProcessStages,{stages:['Understanding your business','Finding opportunities','Building the video','Checking consistency','Ready'],current:2,note:'usually a few minutes'}),
+     e(V.FeedPreview,{tileWidth:72,slots:[{state:'ready',title:'Boiler check'},{state:'scheduled',when:'Sat'},{state:'planned'}]}))); });
+});</script>
+</body></html>

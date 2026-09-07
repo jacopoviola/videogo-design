@@ -1,0 +1,15 @@
+<!-- @dsCard group="Components" viewport="700x200" name="Brand" subtitle="Wordmark: mark, lockup, inverse" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="../../styles.css">
+<script src="../../_dev/loader.js" data-root="../.."></script>
+<style>html,body{margin:0;background:var(--vg-canvas)}</style></head>
+<body><div id="root" style="padding:16px;display:flex;flex-direction:column;gap:14px"></div>
+<script>VGReady.then(function(){
+  var e = React.createElement, V = window.VG;
+  VGMount('#root', function(){ return e(React.Fragment,null,
+   e('div',{style:{display:'flex',gap:12,alignItems:'center',flexWrap:'wrap'}},e(V.Wordmark,{mark:12}),e(V.Wordmark,{mark:20}),e(V.Wordmark,{mark:32}),e(V.Mark,{size:48})),
+   e('div',{style:{background:'#F5F2EC',padding:'18px 20px',display:'inline-flex',alignSelf:'flex-start'}}, e(V.Wordmark,{mark:16,inverse:true})),
+   e('span',{className:'vg-micro'},'Instrument Sans 700 · +0.14em · mark at cap height · gap 0.6× mark · min lockup 92px')); });
+});</script>
+</body></html>

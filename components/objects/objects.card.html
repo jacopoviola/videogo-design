@@ -1,0 +1,17 @@
+<!-- @dsCard group="Components" viewport="700x400" name="Objects" subtitle="ObjectCard — NEED · READY · NEXT · LEARNED" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="../../styles.css">
+<script src="../../_dev/loader.js" data-root="../.."></script>
+<style>html,body{margin:0;background:var(--vg-canvas)}</style></head>
+<body><div id="root" style="padding:16px;display:flex;flex-direction:column;gap:14px"></div>
+<script>VGReady.then(function(){
+  var e = React.createElement, V = window.VG;
+  VGMount('#root', function(){ return e('div',{style:{display:'grid',gridTemplateColumns:'1fr 1fr',gap:12}},
+   e(V.ObjectCard,{type:'need',title:'Instagram connection expired — publishing is paused',body:'Thursday\'s video can\'t go live until the connection is restored.',actions:e(V.Button,{variant:'blocking'},'Fix connection')}),
+   e(V.ObjectCard,{type:'ready',title:'“3 signs your boiler needs a check” is ready',body:'Recommended for Instagram, Thursday 18:00.',actions:e(React.Fragment,null,e(V.Button,{variant:'primary'},'Publish'),e(V.Button,null,'Schedule'))}),
+   e(V.ObjectCard,{type:'next',title:'I recommend a camera-free video on service duration',evidence:e(V.EvidenceRow,{rows:[{k:'Why this',v:'Most repeated question this month'}]}),actions:e(React.Fragment,null,e(V.Button,{variant:'primary'},'Good — make it'),e(V.Button,null,'Later'))}),
+   e(V.ObjectCard,{type:'learned',title:'Question-led videos get saved about 3× more than promotional ones',evidence:e(V.EvidenceRow,{rows:[{k:'Evidence',v:'12 videos over 8 weeks, this account only'}]})}),
+   e(V.ObjectCard,{type:'ready',label:'READY · CAPTURE SESSION',title:'One recording session covers the next three weeks',body:'Real presence earns its cost here: two proof shots need your hands and your voice. Everything else stays synthetic.',evidence:e(V.EvidenceRow,{rows:[{k:'Lines',v:'3 short lines, on screen while you record'},{k:'B-roll',v:'2 shots of the pressure gauge'},{k:'Time',v:'About 12 minutes, self-recorded on your phone'}]}),actions:e(React.Fragment,null,e(V.Button,{variant:'primary'},'Record now'),e(V.Button,null,'Pick a time'),e(V.Button,null,'Use synthetic instead'))})); });
+});</script>
+</body></html>

@@ -1,0 +1,20 @@
+<!-- @dsCard group="Components" viewport="700x400" name="Controls" subtitle="Button ×3, LabelChip, Composer, AccountControl, Nav" -->
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="../../styles.css">
+<script src="../../_dev/loader.js" data-root="../.."></script>
+<style>html,body{margin:0;background:var(--vg-canvas)}</style></head>
+<body><div id="root" style="padding:16px;display:flex;flex-direction:column;gap:14px"></div>
+<script>VGReady.then(function(){
+  var e = React.createElement, V = window.VG;
+  VGMount('#root', function(){ return e(React.Fragment,null,
+   e('span',{className:'vg-label'},'Buttons — blocking · primary · ghost · disabled'),
+   e('div',{style:{display:'flex',gap:12,alignItems:'center',flexWrap:'wrap'}},e(V.Button,{variant:'blocking'},'Fix connection'),e(V.Button,{variant:'primary'},'Publish'),e(V.Button,null,'Schedule'),e(V.Button,{disabled:true},'Later'),e(V.Button,{variant:'primary',touch:true},'Publish')),
+   e('span',{className:'vg-label'},'Label chips'),
+   e('div',{style:{display:'flex',gap:12,alignItems:'center',flexWrap:'wrap'}},e(V.LabelChip,{kind:'need'}),e(V.LabelChip,{kind:'ready'}),e(V.LabelChip,{kind:'next'}),e(V.LabelChip,{kind:'learned'})),
+   e('span',{className:'vg-label'},'Composer'), e(V.Composer,null),
+   e('span',{className:'vg-label'},'Nav (bottom) · Account control'),
+   e(V.Nav,{orientation:'bottom',active:'Today'}),
+   e('div',{style:{width:214,background:'var(--vg-shell)',border:'var(--vg-rule-hi)',padding:'6px 8px'}}, e(V.AccountControl,null))); });
+});</script>
+</body></html>

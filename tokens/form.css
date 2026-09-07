@@ -1,0 +1,12 @@
+/* VIDEOGO form. Radius 0 everywhere. Zero shadows — elevation is one ramp step plus a border. */
+:root {
+  --vg-radius: 0;
+  --vg-shadow: none;
+  --vg-rule:        1px solid var(--vg-hairline);
+  --vg-rule-hi:     1px solid var(--vg-hairline-hi);
+  --vg-rule-border: 1px solid var(--vg-border);
+  --vg-rule-absent: 1px dashed var(--vg-hairline-hi);
+  --vg-rule-requested: 1px dashed var(--vg-action);
+  --vg-icon-stroke: 1.75px;  /* butt caps, miter joins */
+  --vg-focus: 1px solid var(--vg-text-1);
+}

@@ -1,0 +1,22 @@
+/* VIDEOGO type. Instrument Sans = everything the interface or VIDEOGO says. IBM Plex Mono = every label and every measured value.
+   Weights: 450, 500, 700 only. Numbers are never set in the sans. */
+:root {
+  --vg-sans: 'Instrument Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --vg-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --vg-display-1: 700 44px/1.02 var(--vg-sans);   --vg-track-display-1: -0.04em;
+  --vg-display-2: 700 34px/1.06 var(--vg-sans);   --vg-track-display-2: -0.035em;
+  --vg-title:     500 20px/1.30 var(--vg-sans);   --vg-track-title:     -0.015em;
+  --vg-voice:     450 16px/1.60 var(--vg-sans);   /* VIDEOGO speaking, first person */
+  --vg-body:      450 13.5px/1.55 var(--vg-sans);
+  --vg-small:     450 12px/1.5 var(--vg-sans);
+  --vg-claim:     500 18px/1.35 var(--vg-sans);   /* LEARNED statement */
+  --vg-label:     600 10px/1.4 var(--vg-mono);      --vg-track-label: 0.16em;   /* uppercase */
+  --vg-micro:     500 9px/1 var(--vg-mono);       --vg-track-micro: 0.14em;   /* uppercase */
+  --vg-key:       600 9.5px/1.4 var(--vg-mono);   --vg-track-key:   0.12em;   /* evidence key, uppercase */
+  --vg-value:     450 12.5px/1.45 var(--vg-sans); /* evidence value */
+  --vg-metric:    500 28px/1 var(--vg-mono);      /* metric tile value */
+  --vg-duration:  600 9.5px/1 var(--vg-mono);     /* thumbnail duration chip */
+  --vg-wordmark-track: 0.14em;
+  --vg-measure: 66ch;
+}
