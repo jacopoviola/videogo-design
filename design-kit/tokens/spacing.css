@@ -1,0 +1,19 @@
+/* VIDEOGO space. 4px base. Compact everywhere except the silence state (48px vertical). */
+:root {
+  --vg-1: 4px;  --vg-2: 8px;  --vg-3: 12px; --vg-4: 16px; --vg-5: 20px;
+  --vg-6: 24px; --vg-7: 32px; --vg-8: 40px; --vg-9: 56px;
+
+  --vg-nav-w: 214px;
+  --vg-page-y: 30px;      --vg-page-x: 34px;
+  --vg-card-y: 16px;      --vg-card-x: 18px;
+  --vg-part-gap: 10px;    /* between parts inside one object */
+  --vg-object-gap: 12px;  /* between objects */
+  --vg-row-gap: 6px;      /* evidence rows, schedule rows */
+  --vg-silence-y: 48px;   /* the one exception */
+  --vg-evidence-key-w: 88px;
+  --vg-evidence-pad: 14px;
+  --vg-control-h: 34px;   --vg-control-h-touch: 44px;
+  --vg-thumb-w: 168px;    --vg-thumb-h: 96px;
+  --vg-attribution: 22px;
+  --vg-mark-gap: 0.6;     /* mark-to-wordmark gap, × mark width */
+}

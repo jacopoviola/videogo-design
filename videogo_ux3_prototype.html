@@ -1,0 +1,1112 @@
+<title>VIDEOGO UX.3 Freeze</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  /* ============ VIDEOGO design tokens (videogo-design v1) ============ */
+  :root{
+    --canvas:#0C0B09; --shell:#12100E; --panel:#171512; --navact:#1C1A16;
+    --hair:#211E1A; --hair2:#292520; --border:#37322B;
+    --hatch-a:#100E0C; --hatch-b:#151310;
+    --hatch:repeating-linear-gradient(135deg,var(--hatch-a) 0 5px,var(--hatch-b) 5px 10px);
+    --t1:#F5F2EC; --t2:#A59E92; --t3:#6F685C; --t4:#4B453C;
+    --signal:#FF0048; --action:#E9A93C; --action-dn:#D69A34; --onhue:#0C0B09; --bone:#F5F2EC;
+    --sans:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+    --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+    --ease:cubic-bezier(.2,0,0,1); --dur:120ms;
+  }
+  *{box-sizing:border-box;border-radius:0}
+  html,body{margin:0;padding:0}
+  body{background:var(--canvas);color:var(--t2);font:450 13.5px/1.55 var(--sans);letter-spacing:-.004em;-webkit-font-smoothing:antialiased}
+  ::selection{background:var(--border);color:var(--t1)}
+  button{font:inherit;cursor:pointer}
+  button:focus-visible,.scn:focus-visible,.chip:focus-visible,a:focus-visible{outline:1px solid var(--t1);outline-offset:2px}
+  .lb{font:600 10px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--t3)}
+  .mc{font:500 9px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--t3)}
+
+  /* ============ review shell (spec chrome, same system) ============ */
+  .wrap{display:flex;min-height:100vh}
+  .index{width:284px;flex:0 0 284px;background:var(--shell);border-right:1px solid var(--hair2);padding:20px 14px 40px;position:sticky;top:0;align-self:flex-start;max-height:100vh;overflow-y:auto}
+  .brand{padding:2px 8px 14px;border-bottom:1px solid var(--hair2);margin-bottom:14px}
+  .brand h1{font-size:14px;margin:8px 0 0;color:var(--t1);font-weight:500;letter-spacing:-.01em}
+  .brand p{margin:6px 0 0;font-size:11.5px;color:var(--t3)}
+  .brand .tag{display:inline-block;margin-top:10px;font:600 9px var(--mono);letter-spacing:.14em;color:var(--t2);border:1px solid var(--border);padding:3px 7px 2px}
+  .grp{margin:16px 0 4px;padding:0 8px;font:600 9px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--t4)}
+  .scn{display:flex;gap:9px;align-items:baseline;width:100%;text-align:left;background:none;border:0;color:var(--t2);padding:7px 8px;font-size:12.5px;line-height:1.35;transition:background-color var(--dur) var(--ease),color var(--dur) var(--ease)}
+  .scn:hover{background:var(--panel);color:var(--t1)}
+  .scn.on{background:var(--navact);color:var(--t1)}
+  .scn .n{font:500 9.5px var(--mono);color:var(--t4);min-width:18px}
+  .scn.on .n{color:var(--t3)}
+  .stage{flex:1;min-width:0;padding:26px 30px 70px}
+  .shead{max-width:1200px;margin:0 auto 16px}
+  .shead .kicker{font:600 9.5px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--t3)}
+  .shead h2{margin:6px 0 6px;font-size:20px;color:var(--t1);font-weight:500;letter-spacing:-.015em;text-wrap:balance}
+  .shead p{margin:0;color:var(--t3);max-width:72ch;font-size:12.5px}
+  .refs{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .ref{font:500 9.5px var(--mono);letter-spacing:.06em;color:var(--t3);border:1px solid var(--hair2);padding:3px 8px 2px;background:var(--shell)}
+  .frame{max-width:1200px;margin:16px auto 0;background:var(--canvas);border:1px solid var(--border);overflow:hidden}
+  .chrome{display:flex;align-items:center;gap:5px;background:var(--shell);border-bottom:1px solid var(--hair2);padding:9px 14px}
+  .dot{width:8px;height:8px;background:var(--hair2)}
+  .chrome .url{margin-left:10px;font:500 10px var(--mono);letter-spacing:.04em;color:var(--t3);border:1px solid var(--hair2);padding:3px 12px}
+  .note{max-width:1200px;margin:14px auto 0;border:1px dashed var(--hair2);padding:11px 15px;color:var(--t3);font-size:12px;background:var(--shell)}
+  .note b{color:var(--t2);font-weight:500}
+  .phones{display:flex;gap:22px;justify-content:flex-start;flex-wrap:wrap;max-width:1200px;margin:18px auto 0}
+  .phone{width:300px;background:var(--canvas);border:1px solid var(--border);overflow:hidden}
+  .pstatus{display:flex;justify-content:space-between;font:500 9px var(--mono);letter-spacing:.14em;color:var(--t4);padding:10px 16px 0;text-transform:uppercase}
+  .pbody{padding:12px 16px 18px}
+
+  /* ============ app ============ */
+  .app{display:flex;min-height:640px;background:var(--canvas)}
+  .aside{width:214px;flex:0 0 214px;background:var(--shell);border-right:1px solid var(--hair2);display:flex;flex-direction:column;padding:0 8px}
+  .logo{display:flex;align-items:center;gap:10px;padding:26px 14px 22px;color:var(--bone)}
+  .logo svg{display:block;flex:none}
+  .logo .wm{font:700 17px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;transform:translateY(.04em)}
+  .nav{display:flex;flex-direction:column;gap:2px}
+  .nav a{display:flex;align-items:center;height:38px;padding:0 14px;color:var(--t2);text-decoration:none;font-size:14px;font-weight:450;transition:background-color var(--dur) var(--ease),color var(--dur) var(--ease)}
+  .nav a:hover{background:var(--panel);color:var(--t1)}
+  .nav a.on{background:var(--navact);color:var(--t1);font-weight:500}
+  .acct{margin-top:auto;border-top:1px solid var(--hair2);margin-left:-8px;margin-right:-8px;padding:12px 16px;display:flex;gap:12px;align-items:center;background:none;border-left:0;border-right:0;border-bottom:0;width:calc(100% + 16px);text-align:left;transition:background-color var(--dur) var(--ease)}
+  .acct:hover{background:var(--panel)}
+  .acct .av{width:34px;height:34px;flex:none;display:grid;place-items:center;border:1px solid var(--border);font:600 10px var(--mono);letter-spacing:.16em;color:var(--t1)}
+  .acct div p{margin:0;font-size:13.5px;font-weight:500;color:var(--t1);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .acct div span{font-size:12px;color:var(--t2)}
+  .main{flex:1;min-width:0;padding:30px 34px 24px;position:relative;display:flex;flex-direction:column}
+  .main .body{flex:1}
+  .phead{display:flex;align-items:flex-end;justify-content:space-between;padding-bottom:18px}
+  h3.pg{margin:0;font:700 34px/1.06 var(--sans);letter-spacing:-.035em;color:var(--t1)}
+  .sub{color:var(--t3);font-size:12px;margin:6px 0 0}
+  .pdate{font:500 9px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--t3);padding-bottom:6px}
+  .composer{margin-top:16px;background:var(--shell);border:1px solid var(--hair2);display:flex;gap:8px;align-items:center;padding:8px 10px}
+  .composer input{flex:1;min-width:0;height:34px;padding:0 12px;border:0;outline:none;font:450 13.5px var(--sans);color:var(--t1);background:transparent}
+  .composer input::placeholder{color:var(--t3)}
+
+  /* objects & cards */
+  .card{background:var(--shell);border:1px solid var(--hair2);padding:16px 18px}
+  .obj{display:flex;flex-direction:column;gap:10px;background:var(--shell);border:1px solid var(--hair2);padding:16px 18px}
+  .obj.need,.obj.ready{background:var(--panel);border-color:var(--border)}
+  .obj h4{margin:0;font:500 20px/1.3 var(--sans);letter-spacing:-.015em;color:var(--t1);max-width:66ch}
+  .obj p{margin:0;color:var(--t2);font-size:13.5px;max-width:66ch}
+  .pill{display:inline-block;align-self:flex-start;font:600 10px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;color:var(--t3)}
+  .pill.need{background:var(--signal);color:var(--onhue);padding:3px 6px 2px}
+  .pill.ready{background:var(--action);color:var(--onhue);padding:3px 6px 2px}
+  .btn{height:34px;padding:0 14px;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;font:450 13.5px/1 var(--sans);letter-spacing:-.004em;background:transparent;color:var(--t2);border:1px solid var(--border);transition:background-color var(--dur) var(--ease),color var(--dur) var(--ease)}
+  .btn:hover{background:var(--shell);color:var(--t1)}
+  .btn.p{background:var(--action);color:var(--onhue);border-color:transparent;font-weight:500}
+  .btn.p:hover{background:var(--action-dn);color:var(--onhue)}
+  .btn.b{background:var(--bone);color:var(--onhue);border-color:transparent;font-weight:500}
+  .btn.b:hover{background:#FFFFFF;color:var(--onhue)}
+  .btn.q{border-color:transparent;color:var(--t3)}
+  .btn.q:hover{background:var(--shell);color:var(--t1)}
+  .btn.sm{height:28px;padding:0 10px;font-size:12px}
+  .btn:disabled{opacity:.45;cursor:default}
+  .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .stack{display:flex;flex-direction:column;gap:12px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+  /* evidence rows */
+  .evid{border-left:1px solid var(--border);padding-left:14px;display:flex;flex-direction:column;gap:6px}
+  .kv{display:grid;grid-template-columns:88px minmax(0,1fr) auto;gap:12px;align-items:baseline}
+  .kv .k{font:600 9.5px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--t3);padding-top:2px}
+  .kv .v{font:450 12.5px/1.45 var(--sans);color:var(--t2)}
+  .kv .v b{color:var(--t1);font-weight:500}
+  .kv.w .k{grid-column:1;} .kv.w{grid-template-columns:120px minmax(0,1fr) auto}
+
+  /* metric + absence tiles */
+  .metric{display:flex;flex-direction:column;gap:10px;padding:16px 18px;background:var(--shell);border:1px solid var(--hair2);min-width:118px;flex:1}
+  .metric .lab{font:600 10px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--t3)}
+  .metric .val{font:500 28px/1 var(--mono);letter-spacing:-.01em;color:var(--t1);white-space:nowrap}
+  .metric .st{font-size:12px;color:var(--t2)}
+  .metric .prov{font:500 9px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--t3)}
+  .metric.na{background:var(--hatch);border:1px dashed var(--hair2)}
+  .metric.na .val{font-weight:400;color:var(--t4)}
+  .metric.na .st{color:var(--t2)}
+
+  /* confidence claims */
+  .conf{display:flex;flex-direction:column;gap:10px;padding:16px 18px}
+  .conf.collecting{border:1px dashed var(--hair2);background:transparent}
+  .conf.collecting .cl{font:450 13.5px/1.55 var(--sans);color:var(--t3)}
+  .conf.early{border:1px solid var(--hair2);background:transparent}
+  .conf.early .cl{font:450 14px/1.55 var(--sans);color:var(--t2)}
+  .conf.learned{border:1px solid var(--border);background:var(--panel)}
+  .conf.learned .cl{font:500 18px/1.35 var(--sans);color:var(--t1)}
+  .conf .cl{margin:0;max-width:66ch}
+  .conf .nx{margin:0;font-size:12px;color:var(--t2);max-width:66ch}
+
+  /* silence */
+  .silence{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;padding:48px 18px;border:1px dashed var(--hair2)}
+  .silence .st1{margin:0;font:450 17px/1.45 var(--sans);color:var(--t1);max-width:66ch}
+  .silence .st2{margin:0;font-size:12px;color:var(--t2);max-width:66ch}
+
+  /* process stages */
+  .stages{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;text-align:left}
+  .stages li{display:grid;grid-template-columns:14px 1fr;gap:12px;align-items:baseline;font-size:13.5px;color:var(--t4)}
+  .stages li .sq{display:inline-flex;width:14px;height:14px;align-items:center;justify-content:center;align-self:center}
+  .stages li.done{color:var(--t2)} .stages li.now{color:var(--t1);font-weight:500}
+  .stages li .sq i{width:8px;height:8px;display:block;border:1px solid var(--t4)}
+  .stages li.now .sq i{background:var(--bone);border:0}
+  .stages .dsc{display:block;font-size:11.5px;font-weight:450;color:var(--t3)}
+  .stages li .eta{font:500 9px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--t3);margin-left:10px}
+
+  /* thumbnails — no src in a prototype, so the frame is drawn absence */
+  .thumb{position:relative;flex:none;background:var(--hatch);border:1px dashed var(--hair2);overflow:hidden}
+  .thumb .dur{position:absolute;right:5px;bottom:5px;padding:4px 5px 3px;background:rgba(12,11,9,.86);color:var(--t1);font:600 9.5px/1 var(--mono);letter-spacing:.04em}
+  .thumb .cap{position:absolute;left:10px;bottom:8px;right:10px;font-size:11px;color:var(--t2)}
+
+  /* toast */
+  .toast{position:absolute;left:50%;transform:translateX(-50%);bottom:18px;background:var(--panel);border:1px solid var(--border);color:var(--t1);font-size:12.5px;padding:9px 16px;opacity:0;pointer-events:none;transition:opacity var(--dur) var(--ease);max-width:80%}
+  .toast.show{opacity:1}
+
+  /* onboarding steps */
+  .steps{display:flex;align-items:center;gap:8px;justify-content:center;margin:6px 0 26px}
+  .steps .st{width:22px;height:22px;border:1px solid var(--hair2);display:flex;align-items:center;justify-content:center;font:500 10px var(--mono);color:var(--t4);background:transparent}
+  .steps .st.done{background:var(--bone);border-color:var(--bone);color:var(--onhue)}
+  .steps .st.now{border-color:var(--bone);color:var(--t1);font-weight:600}
+  .steps .ln{width:34px;height:1px;background:var(--hair2)}
+  .center{max-width:640px;margin:0 auto;text-align:center}
+  .center h2{font:700 34px/1.06 var(--sans);letter-spacing:-.035em;margin:6px 0;color:var(--t1);text-wrap:balance}
+  .center>p{color:var(--t2);margin:0 0 20px;font-size:13.5px}
+  .field{background:var(--shell);border:1px solid var(--border);padding:11px 14px;display:flex;gap:10px;align-items:center;text-align:left}
+  .field input{flex:1;border:0;outline:0;font:450 14px var(--sans);background:transparent;color:var(--t1)}
+
+  /* studio board */
+  .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .col h5{font:600 10px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase;margin:0 0 10px;color:var(--t3);font-weight:600}
+  .vcard{background:var(--shell);border:1px solid var(--hair2);padding:9px;cursor:default;margin-bottom:10px;transition:border-color var(--dur) var(--ease)}
+  .vcard[role="button"]{cursor:pointer}
+  .vcard .t{font-size:12.5px;font-weight:500;line-height:1.3;color:var(--t1)}
+  .vcard .m{font-size:11px;color:var(--t3);margin-top:3px}
+  .drawer{border-left:1px solid var(--hair2);background:var(--shell);width:340px;flex:0 0 340px;padding:18px 20px}
+  .split{display:flex;gap:0}
+  .split .mainpane{flex:1;min-width:0;padding:30px 34px;display:flex;flex-direction:column}
+  .chip{border:1px solid var(--border);background:transparent;padding:6px 13px;font-size:12px;color:var(--t2);transition:background-color var(--dur) var(--ease),color var(--dur) var(--ease)}
+  .chip:hover{background:var(--shell);color:var(--t1)}
+  .chip.on{background:var(--bone);color:var(--onhue);border-color:var(--bone)}
+
+  /* sheet, modal, inputs */
+  .sheet{position:absolute;inset:0;background:rgba(12,11,9,.65);display:flex;justify-content:flex-end;z-index:5}
+  .sheet .panel{width:440px;background:var(--shell);border-left:1px solid var(--border);height:100%;padding:22px 24px;overflow-y:auto}
+  .opt{border:1px solid var(--border);padding:10px 13px;display:flex;gap:9px;align-items:center;cursor:pointer;font-size:13px;color:var(--t2)}
+  .opt.on{border-color:var(--bone);color:var(--t1)}
+  .lbl{font:600 10px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--t3);margin:16px 0 8px}
+  .inp{width:100%;border:1px solid var(--border);padding:9px 12px;font:450 13px var(--sans);color:var(--t1);background:transparent;outline:none}
+  .inp::placeholder{color:var(--t3)}
+  textarea.inp{resize:vertical;min-height:74px}
+  .trust{font-size:11.5px;color:var(--t2);display:flex;gap:7px;align-items:center;justify-content:center;margin-top:12px}
+  .modal{position:absolute;inset:0;background:rgba(12,11,9,.7);display:flex;align-items:center;justify-content:center;z-index:6}
+  .modal .box{background:var(--panel);border:1px solid var(--border);max-width:430px;padding:22px 24px}
+
+  /* chat: owner line vs VIDEOGO attribution — no transcript, no second avatar */
+  .msg{display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;max-width:85%}
+  .msg .sq{width:16px;height:16px;flex:none;background:var(--bone);margin-top:3px}
+  .msg .tx{font:450 13.5px/1.55 var(--sans);color:var(--t1);max-width:66ch}
+  .msg.me{margin-left:auto;justify-content:flex-end}
+  .msg.me .tx{color:var(--t2);border:1px solid var(--hair2);background:var(--shell);padding:8px 12px}
+  .teach{border:1px solid var(--hair2);background:var(--shell);padding:11px 14px;font-size:12.5px;color:var(--t2)}
+  .teach b{color:var(--t1);font-weight:500}
+
+  .digest .kv{grid-template-columns:82px minmax(0,1fr)}
+  .checklist{margin:0;padding:0;list-style:none}
+  .checklist li{display:flex;gap:9px;padding:6px 0;font-size:12.5px;align-items:baseline;color:var(--t2)}
+  .hr{height:1px;background:var(--hair);margin:14px 0}
+  .upc{display:flex;flex-direction:column;gap:10px;padding:16px 18px;background:var(--shell);border:1px solid var(--hair2)}
+  .upc .hdr{display:flex;justify-content:space-between;align-items:baseline}
+  .uprow{display:grid;grid-template-columns:88px minmax(0,1fr) auto;gap:12px;align-items:baseline}
+  .uprow .w{font:600 9.5px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--t3)}
+  .uprow .ti{font:450 12.5px/1.45 var(--sans);color:var(--t2)}
+  .uprow .stt{font:500 9px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--t3)}
+  .feedgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+  .ftile{position:relative;aspect-ratio:9/16;background:var(--panel);border:1px solid var(--hair2);overflow:hidden}
+  .ftile.dim{background:var(--hatch);border:1px dashed var(--hair2)}
+  .ftile .fst{position:absolute;left:6px;bottom:6px;font:500 8px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--t3)}
+  .ftile.dim .fst{color:var(--t4)}
+  @media (max-width:1080px){ .cols{grid-template-columns:repeat(2,1fr)} .index{display:none} .stage{padding:18px 12px 60px} }
+  @media (prefers-reduced-motion:reduce){ :root{--dur:0ms} }
+</style>
+
+<div class="wrap">
+  <nav class="index" id="index">
+    <div class="brand">
+      <svg aria-hidden="true" width="18" height="18" viewBox="21.36 21.35 337.28 337.28" style="color:var(--bone)"><g fill="currentColor" transform="translate(10.82 8.13) translate(176 190) rotate(-45) translate(-259 -259)"><rect x="148" y="136" width="49" height="239"/><rect x="148" y="136" width="238" height="54"/><rect x="148" y="322" width="237.5" height="53"/><rect x="240" y="228" width="136" height="46"/></g></svg>
+      <h1>VIDEOGO — UX.3 Freeze</h1>
+      <p>Clickable prototype — Freeze Spec v1.1 + Final Gate Corrections, reskinned to the VIDEOGO design system v1. Structural experience locked; no new product behavior.</p>
+      <span class="tag">HOME SERVICES · PRIMARY</span>
+      <p style="margin-top:8px">Primary account: <b style="color:var(--t2)">Moretti Impianti</b> — heating, plumbing &amp; boiler service, Varese. Pharmacy appears only in scenario 23, gated.</p>
+    </div>
+    <div id="scnlist"></div>
+  </nav>
+  <main class="stage" id="stage"></main>
+</div>
+
+<script>
+"use strict";
+/* ============ shared app chrome ============ */
+const NAVS = ["Today","Studio","Knowledge","Connections"];
+const MARK = '<svg aria-hidden="true" width="15" height="15" viewBox="21.36 21.35 337.28 337.28" style="color:currentColor"><g fill="currentColor" transform="translate(10.82 8.13) translate(176 190) rotate(-45) translate(-259 -259)"><rect x="148" y="136" width="49" height="239"/><rect x="148" y="136" width="238" height="54"/><rect x="148" y="322" width="237.5" height="53"/><rect x="240" y="228" width="136" height="46"/></g></svg>';
+const CK = '<svg aria-hidden="true" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#F5F2EC" stroke-width="2.5" stroke-linecap="butt" stroke-linejoin="miter" style="flex:none"><path d="M4 12.5l5 5L20 6.5"/></svg>';
+const CKBIG = '<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5F2EC" stroke-width="1.75" stroke-linecap="butt" stroke-linejoin="miter"><path d="M4 12.5l5 5L20 6.5"/></svg>';
+const LOCK = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="butt" stroke-linejoin="miter" style="flex:none"><rect x="4" y="11" width="16" height="10"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>';
+function navHTML(active){
+  return NAVS.map(n=>`<a class="${n===active?'on':''}" href="#" title="Open ${n}" onclick="navTo('${n}');return false">${n}</a>`).join("");
+}
+function navTo(name){ const i = S.findIndex(s=>s.browse===name); if(i>=0) go(i); }
+function logoHTML(){ return `<div class="logo">${MARK}<span class="wm">Videogo</span></div>`; }
+function acctHTML(){ return `<button class="acct" title="Account / Settings" onclick="navTo('Account')"><span class="av">MI</span><div><p>Moretti Impianti</p><span>Home services</span></div></button>`; }
+function trustHTML(extra){ return `<div class="trust">${LOCK}<span>VIDEOGO only publishes within permissions you grant.${extra||""}</span></div>`; }
+function appFrame(active, inner, opts={}){
+  const nav = navHTML(active);
+  const composer = opts.noComposer ? "" : `
+    <div class="composer" title="Composer is persistent and secondary — never the page">
+      <button class="btn sm" style="border-color:var(--border)">Attach</button>
+      <input placeholder="Tell VIDEOGO something — e.g. “talk about our new boiler service”">
+      <button class="btn p sm">Send</button>
+    </div>`;
+  return `
+  <div class="frame"><div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    <span class="url">app.videogo.ai${opts.url||""}</span></div>
+  <div class="app">
+    <div class="aside">${logoHTML()}
+      <div class="nav">${nav}</div>
+      ${acctHTML()}
+    </div>
+    <div class="main" id="appmain"><div class="body">${inner}</div>${composer}
+      <div class="toast" id="toast"></div>
+    </div>
+  </div></div>`;
+}
+function pageHead(title, date, sub){
+  return `<div class="phead"><div><h3 class="pg">${title}</h3>${sub?`<p class="sub">${sub}</p>`:""}</div>${date?`<span class="pdate">${date}</span>`:""}</div>`;
+}
+function toast(t){const el=document.getElementById("toast");if(!el)return;el.textContent=t;el.classList.add("show");setTimeout(()=>el.classList.remove("show"),2400);}
+function steps(cur){let h='<div class="steps">';for(let i=1;i<=4;i++){h+=`<span class="st ${i<cur?'done':i===cur?'now':''}">${i<cur?'<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#0C0B09" stroke-width="3" stroke-linecap="butt" stroke-linejoin="miter"><path d="M4 12.5l5 5L20 6.5"/></svg>':i}</span>`;if(i<4)h+='<span class="ln"></span>';}return h+'</div>';}
+function stage(cls, ttl, dsc, eta){
+  return `<li class="${cls}"><span class="sq">${cls==='done'?CK:'<i></i>'}</span><span>${ttl}${eta?`<span class="eta">${eta}</span>`:""}${dsc?`<span class="dsc">${dsc}</span>`:""}</span></li>`;
+}
+function head(id,title,why,refs){
+  return `<div class="shead"><span class="kicker">Scenario ${id} / 23</span><h2>${title}</h2><p>${why}</p>
+  <div class="refs">${refs.map(r=>`<span class="ref">${r}</span>`).join("")}</div></div>`;
+}
+
+/* ============ scenario registry ============ */
+const S = [];
+</script>
+<script>
+/* ---- 1. Onboarding success → real video → hard paywall ---- */
+S.push({g:"Onboarding", t:"Onboarding → real video → hard paywall", render(){
+  window.ob = window.ob||{step:1};
+  const st = window.ob.step;
+  let inner="";
+  if(st===1) inner = steps(1)+`
+    <div class="center">
+      <h2>Give VIDEOGO your business</h2>
+      <p>Paste your website. That's all we need to get started.</p>
+      <div class="field"><span class="mc">URL</span><input value="www.morettimpianti.it"></div>
+      <div class="row" style="justify-content:center;margin-top:12px">
+        <button class="btn q sm">Add files (optional)</button>
+        <button class="btn q sm">Connect Google Drive (optional)</button>
+      </div>
+      <div style="margin-top:22px"><button class="btn p" onclick="ob.step=2;draw()">Continue</button></div>
+    </div>`;
+  if(st===2) inner = steps(2)+`
+    <div class="center" style="max-width:680px;text-align:left">
+      <h2 style="text-align:center">Here's what I understood</h2>
+      <p style="text-align:center">Check and correct anything that's wrong. You can change this later.</p>
+      <div class="stack">
+        <div class="card"><div class="kv w"><div class="k">Your business</div><div class="v"><b>Moretti Impianti</b> — heating &amp; plumbing, Varese. Family-run since 1998; Luca Moretti is the certified technician.</div><button class="btn q sm">Edit</button></div></div>
+        <div class="card"><div class="kv w"><div class="k">Who you help</div><div class="v">Homeowners and small condos in the Varese area; older housing stock with aging boilers.</div><button class="btn q sm">Edit</button></div></div>
+        <div class="card" style="border-color:var(--border)"><div class="kv w"><div class="k">What you offer</div><div class="v">Boiler service &amp; repair (Vaillant and Viessmann partner), heat-pump installation, and the <b>€89 pre-winter boiler check</b> currently promoted on your homepage.</div><button class="btn q sm">Edit</button></div></div>
+        <div class="card"><div class="kv w"><div class="k">How you sound</div><div class="v">Practical, direct, no scare tactics. “We fix it right the first time.”</div><button class="btn q sm">Edit</button></div></div>
+        <div class="card"><div class="kv w"><div class="k">People &amp; assets</div><div class="v">Luca (owner, can appear on camera later); ~40 job photos found on the site.</div><button class="btn q sm">Edit</button></div></div>
+      </div>
+      <div class="row" style="justify-content:space-between;margin-top:18px"><button class="btn q" onclick="ob.step=1;draw()">Back</button><button class="btn p" onclick="ob.step=3;draw()">Looks good, continue</button></div>
+    </div>`;
+  if(st===3) inner = steps(2)+`
+    <div class="center" style="max-width:640px">
+      <h2>VIDEOGO is working…</h2>
+      <p>Understanding your business takes about a minute. Your first video takes longer — we'll tell you the moment it's ready.</p>
+      <div class="card" style="text-align:left"><ul class="stages">
+        ${stage('done','Understanding your business','Reading your website and key pages')}
+        ${stage('done','Finding an opportunity','What’s worth communicating right now')}
+        ${stage('now','Building your first video','No recording needed from you')}
+        ${stage('','Checking it','Quality review before you see it')}
+      </ul></div>
+      <p style="margin-top:14px;font-size:12px">You can close this page — we'll email you when it's ready.</p>
+      <div style="margin-top:8px"><button class="btn p" onclick="ob.step=4;draw()">(Prototype) skip ahead</button></div>
+    </div>`;
+  if(st===4) inner = steps(3)+`
+    <div class="center" style="max-width:760px">
+      <h2>Your first video is ready</h2>
+      <p>Made from what we understood about Moretti Impianti. Watch it — then decide.</p>
+      <div class="card" style="text-align:left;display:flex;gap:18px">
+        <div class="thumb" style="width:220px;height:330px;flex:0 0 220px"><span class="cap">Voiceover + on-screen text + your job photos</span><span class="dur">0:32</span></div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:10px">
+          <span class="pill">First video · no recording needed</span>
+          <h4 style="margin:0;font:500 20px/1.3 var(--sans);letter-spacing:-.015em;color:var(--t1)">Is your boiler ready for winter? 3 signs to check this week</h4>
+          <div class="evid">
+            <div class="kv"><div class="k">Why this</div><div class="v">Boiler-service searches in Varese spike in October, and your reviews repeatedly mention last-minute winter breakdowns.</div></div>
+            <div class="kv"><div class="k">Style</div><div class="v">Practical checklist · your real job photos · calm voiceover · no face needed</div></div>
+            <div class="kv"><div class="k">Quality</div><div class="v">Passed VIDEOGO's internal review</div></div>
+          </div>
+          <p style="font-size:12px;color:var(--t3);margin:0">Future videos like this could be stronger with Luca on camera — we'll suggest it later when it's worth the effort. You can always skip a capture request.</p>
+        </div>
+      </div>
+      <div class="row" style="justify-content:space-between;margin-top:16px">
+        <button class="btn" onclick="toast('One more version is included before the paywall. (Bounded.)')">Try a different angle (1 left)</button>
+        <button class="btn p" onclick="ob.step=5;draw()">I've watched it</button>
+      </div>
+    </div>`;
+  if(st===5) inner = steps(4)+`
+    <div class="center" style="max-width:520px">
+      <h2>Keep VIDEOGO running</h2>
+      <p>It already understands your business and made its first video. From here it plans, produces, publishes with your permission, and learns from every result.</p>
+      <div class="card" style="text-align:left">
+        <div style="text-align:center;padding:6px 0 2px"><div class="lb">Monthly plan</div>
+        <div style="font:500 28px/1.2 var(--mono);color:var(--t1);margin:6px 0 2px">Pricing TBD <span style="font:450 11px var(--sans);color:var(--t3)">(placeholder)</span></div></div>
+        <div class="hr"></div>
+        <ul class="checklist">
+          <li>${CK}<span>Finds what's worth communicating — proactively</span></li>
+          <li>${CK}<span>Creates differentiated videos, asks for your time only when it matters</span></li>
+          <li>${CK}<span>You authorize what goes live, until you grant more</span></li>
+          <li>${CK}<span>Learns from real results — only what the evidence supports</span></li>
+        </ul>
+        <button class="btn p" style="width:100%;margin-top:12px;justify-content:center" onclick="ob.step=1;go(2)">Continue</button>
+        ${trustHTML()}
+      </div>
+      <p style="margin-top:12px;font-size:11.5px">No free trial. The paywall only appears after you've watched a real video.</p>
+    </div>`;
+  return head(1,"Successful onboarding → real video → hard paywall",
+    "Website in, specific understanding back (the €89 pre-winter check proves it actually read the site), honest split ETAs, a real QA-passed no-human video watchable before payment, then a hard paywall that sells continuation. No trial, no fake likes, no approve-to-unlock, price is a marked placeholder.",
+    ["Spec §1.1–1.6","No-human onboarding route","Bounded “try another”","Step B D2/D3"]) +
+    appFrame("Today", inner, {noComposer:true, url:"/welcome"});
+}});
+
+/* ---- 2. QA delayed ---- */
+S.push({g:"Onboarding", t:"Onboarding QA delayed / failure state", render(){
+  return head(2,"Onboarding QA delayed — honest deferred state",
+    "The render did not pass quality review within bounded retries. No weak output is shown, no paywall is shown; the prospect gets an honest deferral and leaves with the promise intact.",
+    ["Spec §1.5","Step B D25/D33","Never show failed output","Paywall only after watch"]) +
+  appFrame("Today", steps(3)+`
+    <div class="center" style="max-width:560px">
+      <h2>Your first video needs a little more time</h2>
+      <p>We hold every video to a quality bar before you see it, and this one isn't there yet. We'll email you the moment it's ready.</p>
+      <div class="card" style="text-align:left"><ul class="stages">
+        ${stage('now','Building your first video','Trying a different production approach','Reworking')}
+        ${stage('','Checking it','Only a video that passes review will reach you','Pending')}
+      </ul></div>
+      <p style="font-size:12px;margin-top:14px">Nothing is needed from you. Your understanding of the business is saved.</p>
+      <button class="btn" onclick="toast('We\\u2019ll email you at luca@morettimpianti.it')">Notify me by email</button>
+    </div>`, {noComposer:true, url:"/welcome"});
+}});
+
+/* ---- 3. Activation ---- */
+S.push({g:"Onboarding", t:"Post-pay activation", render(){
+  return head(3,"Post-pay activation — minimal, then straight to Today",
+    "Connect distribution, choose one outbound channel (email always; WhatsApp only where supported), see that work is already continuing. No wizard, no marketplace, no calendar setup.",
+    ["Spec §2","Step B D4/D5","One outbound channel"]) +
+  appFrame("Today", `
+    <div class="center" style="max-width:600px">
+      <h2>You're in</h2>
+      <p>Two quick things, then VIDEOGO takes it from here.</p>
+      <div class="card" style="text-align:left">
+        <div class="lbl" style="margin-top:0">1 · Connect your publishing accounts</div>
+        <div class="stack" style="gap:8px">
+          <div class="kv w"><div class="k">Instagram</div><div class="v" style="color:var(--t3)">Not connected</div><button class="btn p sm" onclick="toast('Instagram connected')">Connect</button></div>
+          <div class="kv w"><div class="k">TikTok</div><div class="v" style="color:var(--t3)">Not connected</div><button class="btn sm" onclick="toast('TikTok connected')">Connect</button></div>
+        </div>
+        <div class="lbl">2 · Where should we reach you when something needs you?</div>
+        <div class="row">
+          <div class="opt on">Email <span style="color:var(--t3);font-size:11.5px">luca@morettimpianti.it</span></div>
+          <div class="opt" style="opacity:.45" title="Shown only when supported">WhatsApp — coming soon</div>
+        </div>
+        <div class="lbl">Already happening</div>
+        <p style="margin:0;font-size:13px">I'm preparing your next videos for boiler-service season. <b style="color:var(--t1);font-weight:500">Nothing needed from you right now.</b></p>
+      </div>
+      <div class="row" style="justify-content:space-between;margin-top:16px">
+        <button class="btn q">Maybe later</button>
+        <button class="btn p" onclick="go(3)">Go to Today</button>
+      </div>
+    </div>`, {noComposer:true, url:"/activate"});
+}});
+
+/* ---- 4. Today with NEED ---- */
+S.push({g:"Today", t:"Today with NEED (blocking)", render(){
+  return head(4,"Today — a blocking NEED carries its own action",
+    "One blocking object, action embedded. Proactive objects are the page; the composer stays secondary at the bottom. No bell anywhere. The NEED chip is the only crimson on the surface; the blocking action is the bone button.",
+    ["Spec §3","Step B D6","One ask per visit"]) +
+  appFrame("Today", pageHead("Today",null,"Tuesday 8 October")+`
+    <div class="stack" style="max-width:780px">
+      <div class="obj need"><span class="pill need">Need</span>
+        <h4>Instagram connection expired — publishing is paused</h4>
+        <p>Thursday's boiler-check video is scheduled but can't go live until the connection is restored. Takes about a minute.</p>
+        <div class="row"><button class="btn b" onclick="toast('Instagram reconnected — Thursday\\u2019s video is back on schedule')">Fix connection</button></div>
+      </div>
+      <div class="upc"><div class="hdr"><span class="lb">Upcoming · schedule, never a recommendation</span><span class="mc" style="color:var(--t4)">Next 7 days</span></div>
+        <div class="uprow"><span class="w">Thu 18:00</span><span class="ti">“3 signs your boiler needs a check” — Instagram</span><span class="stt">Scheduled</span></div>
+        <div class="uprow"><span class="w">Sat 11:00</span><span class="ti">“Radiator bleeding in 90 seconds” — Instagram + TikTok</span><span class="stt">Scheduled</span></div>
+      </div>
+    </div>`, {url:"/today"});
+}});
+
+/* ---- 5. Today with NEXT ---- */
+S.push({g:"Today", t:"Today with NEXT (recommendation)", render(){
+  return head(5,"Today — a NEXT recommendation, not a task",
+    "VIDEOGO surfaces one strategic recommendation with its reasoning. The owner can accept, defer (Later), or dismiss (strategic evidence). Nothing is required. NEXT sits at rest — no fill, no elevation.",
+    ["Spec §3","NEXT ≠ Upcoming","Step B D6/D9"]) +
+  appFrame("Today", pageHead("Today",null,"Wednesday 16 October")+`
+    <div class="stack" style="max-width:780px">
+      <div class="obj next"><span class="pill">Next</span>
+        <h4>I recommend answering “how long does a boiler service take?” on camera-free video</h4>
+        <div class="evid">
+          <div class="kv"><div class="k">Why this</div><div class="v">It's the most repeated question in your Google reviews and DMs this month, and your trust content is currently your strongest performer.</div></div>
+          <div class="kv"><div class="k">Expected</div><div class="v">Stronger saves and profile visits; direct booking impact is uncertain.</div></div>
+        </div>
+        <div class="row">
+          <button class="btn p sm" onclick="toast('Added to Ideas — you can veto it in Studio')">Good — make it</button>
+          <button class="btn sm" onclick="toast('Moved to later this month')">Later</button>
+          <button class="btn q sm" onclick="toast('Dismissed — I won\\u2019t suggest this angle again')">Dismiss</button>
+        </div>
+      </div>
+      <div class="upc"><div class="hdr"><span class="lb">Upcoming · schedule, never a recommendation</span></div>
+        <div class="uprow"><span class="w">Fri 17:30</span><span class="ti">“Heat pump vs new boiler: the honest math” — Instagram</span><span class="stt">Scheduled</span></div>
+      </div>
+    </div>`, {url:"/today"});
+}});
+
+/* ---- 6. Silence ---- */
+S.push({g:"Today", t:"Today — silence state", render(){
+  return head(6,"Today — earned silence is a valid state",
+    "Nothing is asked. The page says so plainly, shows what's moving, and lets the owner leave. Drawn absence — dashed hairline, 48px of air, zero hue. Value visibility is carried by the weekly digest (scenario 22).",
+    ["Spec §3","Provide exit points","No notification volume"]) +
+  appFrame("Today", pageHead("Today",null,"Monday 21 October")+`
+    <div class="silence" style="max-width:780px">
+      ${CKBIG}
+      <p class="st1">Everything is moving. Nothing needed from you.</p>
+      <p class="st2">2 videos in production · 1 scheduled for Thursday · results collecting on 3 live videos</p>
+    </div>`, {url:"/today"});
+}});
+
+/* ---- 7. First dismiss teaching ---- */
+S.push({g:"Today", t:"First Dismiss — teaching moment", render(){
+  return head(7,"First Dismiss — taught once, in one sentence",
+    "The first strategic dismissal triggers a single lightweight explanation of Dismiss (“don't do this”) vs Later (“not now”). It never repeats. Mislabeled dismissals would silently poison strategic evidence — this is the guard.",
+    ["Spec §3 teaching moment","Step B D6 dismiss semantics"]) +
+  appFrame("Today", pageHead("Today",null,"Wednesday 16 October")+`
+    <div class="stack" style="max-width:780px">
+      <div class="obj next"><span class="pill">Next</span>
+        <h4>I recommend a short video on emergency call-out pricing transparency</h4>
+        <div class="evid"><div class="kv"><div class="k">Why this</div><div class="v">Competitors in Varese are getting criticized for opaque call-out fees; your flat-fee policy is a differentiator you've never communicated.</div></div></div>
+        <div class="row">
+          <button class="btn p sm">Good — make it</button>
+          <button class="btn sm">Later</button>
+          <button class="btn q sm" onclick="document.getElementById('teach').style.display='block';this.disabled=true;this.textContent='Dismissed'">Dismiss</button>
+        </div>
+        <div id="teach" class="teach" style="display:none">
+          Just so you know: <b>Dismiss</b> means “don't do this” — I'll stop suggesting this direction. <b>Later</b> means “not now” — I'll bring it back at a better time. <span style="color:var(--t3)">(Shown only this once.)</span>
+        </div>
+      </div>
+    </div>`, {url:"/today"});
+}});
+
+/* ---- 8. Studio Ideas veto ---- */
+S.push({g:"Studio", t:"Studio — Idea veto window", render(){
+  return head(8,"Studio Ideas — a veto window, not an approval queue",
+    "VIDEOGO decides what's worth making; the owner can veto, defer or redirect — but production does not wait for approval. The drawer exposes only what's useful: no Hypothesis, no References, no Learning goal, no “+ New concept”, no Approve.",
+    ["Spec §4 Ideas + drawer","Step B D1","Simple surface, sophisticated substrate"]) +
+  `<div class="frame"><div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.videogo.ai/studio</span></div>
+  <div class="app"><div class="aside">${logoHTML()}<div class="nav">${navHTML('Studio')}</div>${acctHTML()}</div>
+  <div class="split" style="flex:1;min-width:0">
+    <div class="mainpane">${pageHead("Studio",null,"What VIDEOGO is making, and where it is")}
+      <div class="cols">
+        <div class="col"><h5>Ideas · veto window</h5>
+          <div class="vcard" style="border-color:var(--bone)"><div class="thumb" style="height:86px;margin-bottom:8px;width:auto"></div><div class="t">Why we show the price before we start the job</div><div class="m">Trust video · Luca voiceover</div></div>
+          <div class="vcard"><div class="thumb" style="height:86px;margin-bottom:8px;width:auto"></div><div class="t">Radiator bleeding in 90 seconds</div><div class="m">How-to · faceless</div></div>
+        </div>
+        <div class="col"><h5>Making</h5>
+          <div class="vcard"><div class="thumb" style="height:86px;margin-bottom:8px;width:auto"></div><div class="t">3 signs your boiler needs a check</div><div class="m">Rendering · ready by ~15:00</div></div>
+        </div>
+        <div class="col"><h5>Ready</h5>
+          <div class="vcard"><div class="thumb" style="height:86px;margin-bottom:8px;width:auto"></div><div class="t">Heat pump vs new boiler: the honest math</div><div class="m">Passed quality review</div></div>
+        </div>
+        <div class="col"><h5>Live</h5>
+          <div class="vcard"><div class="thumb" style="height:86px;margin-bottom:8px;width:auto"></div><div class="t">The €89 pre-winter check, explained</div><div class="m">Live 5 days · collecting</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="drawer">
+      <span class="pill">Idea</span>
+      <h4 style="margin:10px 0 12px;font:500 15px/1.35 var(--sans);letter-spacing:-.01em;color:var(--t1)">Why we show the price before we start the job</h4>
+      <div class="evid">
+        <div class="kv"><div class="k">Saying</div><div class="v">Transparent pricing isn't a marketing line — it's how Moretti has worked since 1998. Written quote before any work starts.</div></div>
+        <div class="kv"><div class="k">Format</div><div class="v">Luca voiceover over real job photos · ~35 sec</div></div>
+        <div class="kv"><div class="k">Why this</div><div class="v">Call-out pricing is the #1 objection in your category locally; your flat-fee policy is unused proof.</div></div>
+        <div class="kv"><div class="k">Status</div><div class="v">Starts production tomorrow unless you say otherwise</div></div>
+      </div>
+      <div class="row" style="margin-top:14px">
+        <button class="btn sm" onclick="toast('Moved to later — I\\u2019ll re-propose when timing is better')">Not now</button>
+        <button class="btn sm" onclick="toast('Rejected — tell me why with one tap (see scenario 12)')">Reject</button>
+      </div>
+      <div style="margin-top:10px"><input class="inp" placeholder="Change something — tell VIDEOGO…"></div>
+    </div>
+  </div></div></div>`;
+}});
+
+/* ---- 9. Making ---- */
+S.push({g:"Studio", t:"Studio — Making state", render(){
+  return head(9,"Making — credible progress, no machinery",
+    "Progress the system can actually stand behind: discrete production stages plus an honest ETA — never a percentage bar on an unknown duration. No provider names, no render settings.",
+    ["Spec §4 Making","Observable process, opaque method"]) +
+  appFrame("Studio", pageHead("Studio",null,"Making")+`
+    <div class="card" style="max-width:620px">
+      <div class="row" style="align-items:flex-start"><div class="thumb" style="width:120px;height:74px"></div>
+        <div style="flex:1"><b style="font-size:14px;font-weight:500;color:var(--t1)">3 signs your boiler needs a check</b>
+          <p style="margin:4px 0 0;color:var(--t3);font-size:12.5px">How-to · faceless · Instagram + TikTok</p></div>
+        <span class="pill">Making</span></div>
+      <div class="hr"></div>
+      <ul class="stages">
+        ${stage('done','Writing &amp; assembling','Script, your job photos, captions')}
+        ${stage('now','Producing the video','')}
+        ${stage('','Quality review','Checked before it reaches you')}
+      </ul>
+      <p style="font-size:12px;color:var(--t3);margin:14px 0 0">Usually ready by <b style="color:var(--t2);font-weight:500">15:00 today</b>. It will appear in Ready — nothing needed from you until then.</p>
+    </div>`, {url:"/studio"});
+}});
+
+/* ---- 10. Ready → Publish ---- */
+S.push({g:"Studio", t:"Ready → Publish (pre-filled sheet)", render(){
+  return head(10,"Ready → Publish — approval lives inside the action",
+    "No standalone Approve. Publishing or scheduling IS the authorization. The sheet arrives pre-filled — platform, caption, recommended time — every field overridable inline. No auto-publish ask on first publish. READY is the amber chip: it waits on the owner's time.",
+    ["Spec §4 Ready + Publish sheet","Step B D7","No first-publish auto-ask"]) +
+  appFrame("Studio", pageHead("Studio",null,"Ready")+`
+    <div class="obj ready" style="max-width:660px"><span class="pill ready">Ready</span>
+      <h4>Heat pump vs new boiler: the honest math</h4>
+      <div style="display:flex;gap:16px;align-items:flex-start">
+        <div class="thumb" style="width:168px;height:96px"><span class="dur">0:41</span></div>
+        <div class="evid" style="flex:1;min-width:0">
+          <div class="kv"><div class="k">Format</div><div class="v">Consideration · voiceover + comparison graphics · passed quality review</div></div>
+          <div class="kv"><div class="k">Recommended</div><div class="v">Instagram Reel, Thursday 18:00 — caption and time editable before it goes out</div></div>
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn p" onclick="document.getElementById('sheet').style.display='flex'">Publish</button>
+        <button class="btn" onclick="document.getElementById('sheet').style.display='flex'">Schedule</button>
+        <button class="btn">Change something</button>
+        <button class="btn q">Reject</button>
+      </div>
+    </div>
+    <div class="sheet" id="sheet" style="display:none">
+      <div class="panel">
+        <div class="row" style="justify-content:space-between"><b style="font:500 16px var(--sans);color:var(--t1)">Publish / Schedule</b><button class="btn q sm" onclick="document.getElementById('sheet').style.display='none'">Close</button></div>
+        <p style="color:var(--t3);font-size:12.5px;margin:4px 0 0">Everything below is VIDEOGO's recommendation — change anything inline.</p>
+        <div class="lbl">Platforms · recommended</div>
+        <div class="row"><div class="opt on">Instagram Reel</div><div class="opt">TikTok</div></div>
+        <div class="lbl">Caption</div>
+        <textarea class="inp">Heat pump or new boiler? Here's the honest math for a Varese home — no sales pitch, just the numbers we quote our own customers. Written quote before any work starts.</textarea>
+        <div class="lbl">When · recommended</div>
+        <div class="grid2"><input class="inp" value="Thu 17 Oct"><input class="inp" value="18:00 (your audience's peak)"></div>
+        <button class="btn p" style="width:100%;margin-top:18px;justify-content:center" onclick="document.getElementById('sheet').style.display='none';toast('Scheduled for Thu 18:00')">Confirm &amp; schedule</button>
+        ${trustHTML()}
+      </div>
+    </div>`, {url:"/studio"});
+}});
+
+/* ---- 11. Change something ---- */
+S.push({g:"Studio", t:"Ready → Change something (edit as intent)", render(){
+  return head(11,"“Change something” — editing is intent, not an editor",
+    "The owner says what's wrong in plain words. VIDEOGO classifies it underneath (here: a quality fix — accepted and remembered). No timeline, no trims, no model selectors. VIDEOGO's replies carry the bone attribution square; the owner's words sit right, in a bordered block — never a transcript.",
+    ["Spec §4","Step B D8/D11","Edits become Human Evidence"]) +
+  appFrame("Studio", pageHead("Studio",null,"Ready → Change something")+`
+    <div class="card" style="max-width:620px">
+      <b style="font-size:14px;font-weight:500;color:var(--t1)">Heat pump vs new boiler: the honest math</b>
+      <div style="margin-top:14px">
+        <div class="msg me"><span class="tx">The intro is too slow — get to the numbers faster.</span></div>
+        <div class="msg"><span class="sq"></span><span class="tx">Done — trimmed the opening to 2.5 seconds, numbers now appear at 0:04. I'll keep intros tighter on comparison videos going forward.</span></div>
+        <div class="msg me"><span class="tx">And don't say “investment”, we say “spesa” with customers.</span></div>
+        <div class="msg"><span class="sq"></span><span class="tx">Changed. I've noted “spesa, not investment” as part of how Moretti talks — it will apply to every future video.</span></div>
+      </div>
+      <div class="row" style="margin-top:10px"><input class="inp" placeholder="Anything else to change…" style="flex:1;width:auto"><button class="btn p sm">Send</button></div>
+    </div>`, {url:"/studio"});
+}});
+
+/* ---- 12. Reject + chips ---- */
+S.push({g:"Studio", t:"Reject + reason chip", render(){
+  return head(12,"Reject — one tap of reason, not a questionnaire",
+    "Five chips classify the rejection into evidence (truth / identity / quality / timing / other). One tap, done. “Not us” feeds identity evidence; “Not true” triggers a correction. The selected chip steps to bone — colour is never used to score the choice.",
+    ["Spec §4 reject chips","Human Evidence classes"]) +
+  appFrame("Studio", pageHead("Studio",null,"Ideas → Reject")+`
+    <div class="card" style="max-width:600px">
+      <b style="font-size:14px;font-weight:500;color:var(--t1)">“Beat the December rush — book your boiler check NOW before slots run out”</b>
+      <p style="color:var(--t3);font-size:12.5px;margin:6px 0 12px">You're rejecting this idea. Why? (one tap helps VIDEOGO learn)</p>
+      <div class="row" id="chips">
+        <button class="chip" onclick="pick(this)">Not true</button>
+        <button class="chip" onclick="pick(this)">Not us</button>
+        <button class="chip" onclick="pick(this)">Not good enough</button>
+        <button class="chip" onclick="pick(this)">Not now</button>
+        <button class="chip" onclick="pick(this)">Other</button>
+      </div>
+      <div id="chipreply" style="display:none;margin-top:12px" class="teach">Got it — pressure tactics aren't Moretti. I won't propose urgency-driven angles again. If you want this to become a permanent brand boundary, you can confirm it in Knowledge (see scenario 18).</div>
+    </div>`, {url:"/studio"});
+}});
+function pick(el){document.querySelectorAll('#chips .chip').forEach(c=>c.classList.remove('on'));el.classList.add('on');document.getElementById('chipreply').style.display='block';}
+
+/* ---- 13. Auto-publish proposal ---- */
+S.push({g:"Studio", t:"Earned auto-publish proposal (later state)", render(){
+  return head(13,"Auto-publish — proposed only after demonstrated behavior, one domain at a time",
+    "A later-state example: weeks of educational videos approved without strategic changes and performing as predicted. VIDEOGO proposes bounded auto-publish for that content type only. No global autonomous mode; the customer grants, the system never self-grants.",
+    ["Spec §4 auto-publish proposal","Step B D10/D12","Action Rights ladder"]) +
+  appFrame("Today", pageHead("Today",null,"Six weeks in")+`
+    <div class="obj next" style="max-width:680px"><span class="pill">Next</span>
+      <h4>Want me to publish educational videos automatically?</h4>
+      <p>Your last 6 educational videos performed broadly as I predicted, and you published all of them without strategic changes. I can start publishing <b style="color:var(--t1);font-weight:500">this type only</b> automatically — promotions, pricing content and anything unusual will always come to you first.</p>
+      <div class="row">
+        <button class="btn p sm" onclick="toast('Auto-publish granted for educational videos only. You can withdraw this anytime in Account / Settings.')">Allow for this type</button>
+        <button class="btn sm" onclick="toast('No problem — everything keeps coming to you first')">Not now</button>
+      </div>
+      ${trustHTML(" You can withdraw this permission at any time in Account / Settings.")}
+    </div>`, {url:"/today"});
+}});
+</script>
+<script>
+/* ---- 14/15/16 Live states ---- */
+function liveDrawer(state){
+  const metrics = {
+    collecting:`
+      <div class="row" style="align-items:stretch">
+        <div class="metric na"><div class="lab">Saves + shares</div><div class="val">—</div><div class="st">Collecting</div></div>
+        <div class="metric na"><div class="lab">Watched to end</div><div class="val">—</div><div class="st">Collecting</div></div>
+        <div class="metric na"><div class="lab">Profile visits</div><div class="val">—</div><div class="st">Collecting</div></div>
+        <div class="metric na"><div class="lab">Reach</div><div class="val">—</div><div class="st">Collecting</div></div>
+      </div>
+      <div class="conf collecting" style="margin-top:14px"><span class="lb" style="color:var(--t4)">Collecting</span><p class="cl"><b style="color:var(--t2);font-weight:500">Still collecting results.</b> Live since yesterday. First results usually stabilize after a few days — I'll only draw conclusions the evidence supports.</p></div>`,
+    early:`
+      <div class="row" style="align-items:stretch">
+        <div class="metric"><div class="lab">Saves + shares</div><div class="val">41</div><div class="st">above your recent trust videos</div></div>
+        <div class="metric"><div class="lab">Watched to end</div><div class="val">38%</div><div class="st">vs 29% typical</div></div>
+        <div class="metric"><div class="lab">Profile visits</div><div class="val">57</div><div class="st">as of today 09:00</div></div>
+        <div class="metric"><div class="lab">Reach</div><div class="val">4.9K</div><div class="st">context, not the goal</div></div>
+      </div>
+      <div class="conf early" style="margin-top:14px"><span class="lb">Early signal</span><p class="cl"><b style="color:var(--t1);font-weight:500">Early signs suggest</b> checklist-style boiler videos hold attention longer than your average. I'll test one more before changing the plan.</p><p class="nx">Next: a second checklist video on radiator care, same structure, different topic.</p></div>`,
+    learned:`
+      <div class="row" style="align-items:stretch">
+        <div class="metric"><div class="lab">Saves + shares</div><div class="val">63</div><div class="st">best of the last 12</div></div>
+        <div class="metric"><div class="lab">Watched to end</div><div class="val">42%</div><div class="st">vs 29% typical</div></div>
+        <div class="metric"><div class="lab">Calls mentioning video</div><div class="val">2</div><div class="prov">You told me</div></div>
+        <div class="metric"><div class="lab">Reach</div><div class="val">6.2K</div><div class="st">context, not the goal</div></div>
+      </div>
+      <div class="conf learned" style="margin-top:14px"><div style="display:flex;align-items:baseline;gap:12px"><span class="lb">Learned</span><span class="mc" style="color:var(--t4)">Strong enough to change what happens next</span></div>
+      <p class="cl">VIDEOGO learned: videos answering real customer questions get saved about 3× more than promotional ones — based on 12 videos over 8 weeks.</p>
+      <p class="nx"><b style="color:var(--t2);font-weight:500">Next:</b> more question-led videos in November; promotional content only around the €89 check. This angle is starting to repeat, so I'm also trying one fresh structure.</p>
+      <div class="row" style="margin-top:2px"><button class="btn sm" onclick="toast('I can do that — though this angle is starting to repeat. I\\u2019d try a customer-story video next.')">Make another like this</button></div></div>`
+  };
+  return metrics[state];
+}
+S.push({g:"Results honesty", t:"Live — collecting state", render(){
+  return head(14,"Live result — collecting: no claims, no fake precision",
+    "One day live. Unmeasured values are drawn as absence — hatch tiles, em dash, never 0 — and no learning language appears. Metric order is objective-relative — this is a Trust video, so saves and completion lead; reach is last and labeled as context.",
+    ["Spec §4 Live","Learning language: collecting","Reach never leads"]) +
+  appFrame("Studio", pageHead("Studio",null,"Live → “Why we show the price before we start the job”")+`
+  <div class="card" style="max-width:720px"><div class="row" style="margin-bottom:12px"><span class="pill">Live</span><span class="mc" style="color:var(--t4)">Instagram · since yesterday 18:00</span></div>${liveDrawer('collecting')}</div>`,{url:"/studio"});
+}});
+S.push({g:"Results honesty", t:"Live — early signal", render(){
+  return head(15,"Live result — early signal: “suggests”, never “learned”",
+    "Enough evidence to justify another test, not enough to change policy. The copy is generated from the claim stage: “Early signs suggest…” with the next test named. Container: solid hairline, no elevation — confidence is how resolved the container is, never a score.",
+    ["Spec §4","Learning language: early signal","Step B D28/§14"]) +
+  appFrame("Studio", pageHead("Studio",null,"Live → “3 signs your boiler needs a check”")+`
+  <div class="card" style="max-width:720px"><div class="row" style="margin-bottom:12px"><span class="pill">Live</span><span class="mc" style="color:var(--t4)">Instagram · 6 days · data as of today 09:00</span></div>${liveDrawer('early')}</div>`,{url:"/studio"});
+}});
+S.push({g:"Results honesty", t:"Live — operational learning", render(){
+  return head(16,"Live result — operational learning, with its evidence and its next move",
+    "“VIDEOGO learned” appears only here — backed by 12 videos over 8 weeks, it states the policy change and already flags saturation. The LEARNED container is the only one that elevates (panel + border). “Make another like this” is intent, not a strategy button: the one bounded pushback is wired in.",
+    ["Spec §4","Learning language: learned","Saturation-aware pushback"]) +
+  appFrame("Studio", pageHead("Studio",null,"Live → “What a boiler service actually includes”")+`
+  <div class="card" style="max-width:720px"><div class="row" style="margin-bottom:12px"><span class="pill">Live</span><span class="mc" style="color:var(--t4)">8 weeks of evidence</span></div>${liveDrawer('learned')}</div>`,{url:"/studio"});
+}});
+
+/* ---- 17. Knowledge routine ---- */
+S.push({g:"Knowledge", t:"Knowledge — routine correction", render(){
+  return head(17,"Knowledge — a routine factual correction, visibly confirmed",
+    "Ordinary corrections mutate state with visible confirmation and no ceremony. No explicit-confirm dialog — that's reserved for consequential identity changes (next scenario).",
+    ["Spec §5","Corrections visibly confirmed"]) +
+  appFrame("Knowledge", pageHead("Knowledge",null,"What VIDEOGO knows about Moretti Impianti")+`
+    <div class="split" style="gap:18px">
+      <div style="flex:1;min-width:0">
+        <div class="card">
+          <div class="msg me"><span class="tx">We stopped installing gas boilers — only servicing them now. New installs are heat pumps only.</span></div>
+          <div class="msg"><span class="sq"></span><span class="tx">Got it. Updated “What we sell”: gas boilers → <b style="font-weight:500">service &amp; repair only</b>; new installations → <b style="font-weight:500">heat pumps</b>. Two upcoming ideas mentioned new boiler installs — I've reworked both.</span></div>
+        </div>
+      </div>
+      <div style="width:300px;flex:0 0 300px" class="stack">
+        <div class="card"><span class="lb">What we sell</span><p style="margin:8px 0 0;font-size:12px;color:var(--t2)">Boiler service &amp; repair · heat-pump installation · €89 pre-winter check</p><p style="margin:6px 0 0;display:flex;gap:6px;align-items:center">${CK}<span class="mc" style="color:var(--t2)">Updated just now</span></p></div>
+        <div class="card"><span class="lb">How we sound</span><p style="margin:8px 0 0;font-size:12px;color:var(--t2)">Practical, direct, no scare tactics</p></div>
+        <div class="card"><span class="lb">People &amp; assets</span><p style="margin:8px 0 0;font-size:12px;color:var(--t2)">Luca (on camera: allowed) · 46 job photos</p></div>
+      </div>
+    </div>`, {url:"/knowledge"});
+}});
+
+/* ---- 18. Identity confirmation ---- */
+S.push({g:"Knowledge", t:"Consequential identity confirmation", render(){
+  return head(18,"Protected Identity — one explicit confirmation for a permanent boundary",
+    "Distinct from routine corrections: a permanent brand boundary gets exactly one explicit Confirm/Cancel. After confirmation it can never be overridden by performance — only by the owner.",
+    ["Spec §5 identity confirmation","Performance never mutates identity"]) +
+  appFrame("Knowledge", pageHead("Knowledge",null,"Identity boundary")+`
+    <div class="card" style="max-width:620px">
+      <div class="msg me"><span class="tx">Never use fear-based selling. No “your boiler could be dangerous” stuff, ever.</span></div>
+      <div class="msg"><span class="sq"></span><span class="tx">Understood — that sounds like a permanent brand boundary, not just a preference.</span></div>
+    </div>
+    <div class="modal" style="position:relative;background:none;justify-content:flex-start;margin-top:16px">
+      <div class="box">
+        <b style="font:500 14.5px var(--sans);color:var(--t1)">Make this a permanent boundary?</b>
+        <p style="color:var(--t2);font-size:12.5px;margin:8px 0 14px">“Moretti Impianti never uses fear-based selling.” VIDEOGO will refuse this angle in every future video — even if fear-based content performs well elsewhere. Only you can change this later.</p>
+        <div class="row"><button class="btn p sm" onclick="toast('Confirmed — permanent boundary saved')">Confirm</button><button class="btn sm">Cancel</button></div>
+      </div>
+    </div>`, {url:"/knowledge"});
+}});
+
+/* ---- 19. Connections ---- */
+S.push({g:"Connections", t:"Connections — minimal state", render(){
+  return head(19,"Connections — a short supported list, not a marketplace",
+    "Four visible connections drawn in the permission grammar: granted = solid border + closed padlock, absent = plain. No search, no catalog, no ten-source grid, no Results nav. Ads exists only as a gated design-partner state and is invisible here.",
+    ["Spec §6","Step B D15","Connectors-first, never connector-dependent"]) +
+  appFrame("Connections", pageHead("Connections",null,"What VIDEOGO can access")+`
+    <div class="stack" style="max-width:640px">
+      <div class="card"><div class="kv w"><div class="k">Instagram</div><div class="v">@morettimpianti · publishing + results</div><span class="mc" style="color:var(--t2)">Connected</span></div></div>
+      <div class="card"><div class="kv w"><div class="k">TikTok</div><div class="v" style="color:var(--t3)">Not connected — recommended for how-to videos</div><button class="btn sm">Connect</button></div></div>
+      <div class="card"><div class="kv w"><div class="k">Google Drive</div><div class="v">Job photos folder · read-only</div><span class="mc" style="color:var(--t2)">Connected</span></div></div>
+      <div class="card"><div class="kv w"><div class="k">Direct upload</div><div class="v" style="color:var(--t3)">Drop files anytime — photos, clips, price lists</div><button class="btn sm">Upload</button></div></div>
+      <div class="trust" style="justify-content:flex-start">${LOCK}<span>VIDEOGO only accesses what you connect. Disconnect anything, anytime.</span></div>
+    </div>`, {url:"/connections"});
+}});
+
+/* ---- 20. Human capture ---- */
+S.push({g:"Human Capture", t:"Capture Need → mobile coach → complete", render(){
+  return head(20,"Human Capture — a contextual Need, then three phone screens",
+    "Requested only because Luca on camera materially strengthens trust content — and only after live value exists. One link = one setup-compatible session; consent is contextual and capability-specific; “Not this month” is a first-class answer. No desktop production-management module.",
+    ["Spec §7","Step B D2/D13","Batch monthly · consent per capability"]) +
+  appFrame("Today", `
+    <div class="obj need" style="max-width:680px"><span class="pill need">Need</span>
+      <h4>15 minutes of Luca on camera would make November's trust videos stronger</h4>
+      <p>Your question-answering videos are your best performers, and a real technician on camera adds the authority a voiceover can't. Everything is batched into one session: 2 short talking clips + 3 workshop shots. Phone, natural light, no script memorizing — the app guides every take.</p>
+      <div class="row">
+        <button class="btn b">Send the recording link to my phone</button>
+        <button class="btn sm" onclick="toast('No problem — November continues without recording. I\\u2019ll ask again next month.')">Not this month</button>
+      </div>
+    </div>`, {url:"/today"}) + `
+  <div class="phones">
+    <div class="phone"><div class="pstatus"><span>9:41</span><span>Mobile · 1 of 3</span></div><div class="pbody">
+      <b style="font:500 16px var(--sans);color:var(--t1)">Capture session</b>
+      <p style="color:var(--t3);font-size:12px;margin:4px 0 12px">Everything in this link uses the same setup.</p>
+      <div class="card" style="padding:12px"><span class="lb">What you'll need</span><p style="font-size:11.5px;color:var(--t2);margin:6px 0 0">15 min · quiet workshop · natural light · phone leaning on a shelf works</p></div>
+      <div class="card" style="padding:12px;margin-top:8px"><span class="lb">This session creates</span><p style="font-size:11.5px;color:var(--t2);margin:6px 0 0">2 talking clips · 3 workshop shots</p></div>
+      <div class="card" style="padding:12px;margin-top:8px;border-color:var(--border)"><span class="lb">Consent</span><p style="font-size:11.5px;color:var(--t2);margin:6px 0 0">VIDEOGO may use footage from this session to create videos for Moretti Impianti. <u>Synthetic voice or avatar would always need your separate permission — not part of this.</u></p>
+      <button class="btn p sm" style="width:100%;margin-top:10px;justify-content:center">Agree &amp; start session</button></div>
+    </div></div>
+    <div class="phone"><div class="pstatus"><span>9:44</span><span>Mobile · 2 of 3</span></div><div class="pbody">
+      <b style="font:500 16px var(--sans);color:var(--t1)">Clip 1 of 2</b>
+      <div class="thumb" style="height:210px;margin:10px 0;width:auto"><span class="cap">“Say it in your own words: what does the €89 check actually include?”</span></div>
+      <div class="teach" style="font-size:11.5px;padding:9px 11px">Move the phone a little higher · you're well lit · look at the camera, keep it short, speak like you would to a customer</div>
+      <div class="row" style="margin-top:10px;justify-content:space-between"><button class="btn sm">Retake</button><button class="btn p sm">Next clip</button></div>
+    </div></div>
+    <div class="phone"><div class="pstatus"><span>9:56</span><span>Mobile · 3 of 3</span></div><div class="pbody">
+      <b style="font:500 16px var(--sans);color:var(--t1)">Session complete</b>
+      <p style="color:var(--t3);font-size:12px;margin:4px 0 10px">5 clips captured</p>
+      <ul class="checklist" style="font-size:12px">
+        <li>${CK}<span>Clip 1 — the €89 check, explained</span></li><li>${CK}<span>Clip 2 — “no surprises” pricing</span></li>
+        <li>${CK}<span>Workshop shots 1–3</span></li>
+      </ul>
+      <div class="card" style="padding:12px;margin-top:8px"><span class="lb">What happens next</span><p style="font-size:11.5px;color:var(--t2);margin:6px 0 0">Footage goes to your asset library. VIDEOGO builds November's videos from it — you'll see them in Studio as usual.</p></div>
+      <button class="btn p sm" style="width:100%;margin-top:10px;justify-content:center">Done</button>
+    </div></div>
+  </div>`;
+}});
+
+/* ---- 21. Unknown / not observable ---- */
+S.push({g:"Results honesty", t:"Unknown / not-observable result", render(){
+  return head(21,"Unknown is unknown — never zero, never hidden dishonestly",
+    "Bookings aren't observable because no booking link is connected: the tile is drawn as absence — hatch, dashed hairline, em dash — and says why. A signal the owner reported carries its provenance (“you told me”). Missing observability lowers confidence; it never becomes failure.",
+    ["Spec §4 unknown states","Missing observability ≠ zero","Provenance on business signals"]) +
+  appFrame("Studio", pageHead("Studio",null,"Live → “The €89 pre-winter check, explained”")+`
+    <div class="card" style="max-width:720px">
+      <div class="row" style="margin-bottom:12px"><span class="pill">Live</span><span class="mc" style="color:var(--t4)">Instagram · 9 days · data as of today 09:00</span></div>
+      <div class="row" style="align-items:stretch">
+        <div class="metric"><div class="lab">Saves + shares</div><div class="val">28</div><div class="st">typical for you</div></div>
+        <div class="metric"><div class="lab">Calls mentioning it</div><div class="val">1</div><div class="prov">You told me</div></div>
+        <div class="metric na"><div class="lab">Bookings</div><div class="val">—</div><div class="st">Not observable — no booking link connected</div></div>
+        <div class="metric"><div class="lab">Reach</div><div class="val">3.1K</div><div class="st">context, not the goal</div></div>
+      </div>
+      <div class="conf early" style="margin-top:14px"><p class="cl">Want booking impact to be visible? Connect a booking link and I'll track it — otherwise I'll simply say “not observable” rather than guess.</p>
+        <div class="row"><button class="btn sm">Add a booking link</button><button class="btn q sm">Skip</button></div></div>
+    </div>`, {url:"/studio"});
+}});
+
+/* ---- 22. Digest ---- */
+S.push({g:"Today", t:"Quiet-week digest", render(){
+  return head(22,"Quiet-week digest — Done / Actual / Next",
+    "The value story for a week when nothing needed the owner. Compact, honest about what wasn't observable, and it ends with intention — the peak-end of a silent week.",
+    ["Spec §3 digest","Value visibility under silence"]) +
+  appFrame("Today", pageHead("Today",null,"Weekly summary · 14–20 October")+`
+    <div class="card digest" style="max-width:680px">
+      <div class="evid" style="gap:12px">
+        <div class="kv"><div class="k">Done</div><div class="v">3 videos published (2 Instagram, 1 TikTok) · 1 recommendation you approved · 0 things needed from you</div></div>
+        <div class="kv"><div class="k">Actual</div><div class="v">Boiler-check video is your most-saved this month (41 saves). One call mentioned a video — you told me. <span style="color:var(--t3)">Business impact beyond that isn't observable this week (no tracked links on these posts).</span></div></div>
+        <div class="kv"><div class="k">Next</div><div class="v">Two question-led videos in production; testing a second checklist structure. Nothing needed from you.</div></div>
+      </div>
+    </div>`, {url:"/today"});
+}});
+
+/* ---- 23. Pharmacy DR gated ---- */
+S.push({g:"Design partner", t:"Direct Response — pharmacy (gated)", render(){
+  return head(23,"Design-partner example — Farmacia Vitalis, one narrow Response Path (gated)",
+    "Explicitly labeled second vertical, visible only in design-partner mode. One opinionated pattern — keyword comment → approved DM → link — with Allow / Not now / Edit message. No automation builder, no branching UI. Response outcomes stay distinct from video outcomes.",
+    ["Spec §9","Step B D16","GATED — not part of the Home Services MLP"]) +
+  `<div class="note" style="margin-bottom:2px"><b>Design-partner mode · Farmacia Vitalis (pharmacy)</b> — this surface never appears for a standard account like Moretti Impianti.</div>` +
+  `<div class="frame"><div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.videogo.ai/studio · design partner</span></div>
+  <div class="app"><div class="aside">${logoHTML()}<div class="nav">${navHTML('Studio')}</div>
+  <button class="acct"><span class="av">FV</span><div><p>Farmacia Vitalis</p><span>Lumino · Design partner</span></div></button></div>
+  <div class="main">
+    <div class="phead"><div><h3 class="pg">Studio</h3><p class="sub">Ready → “Allergy season: the 3-item checklist”</p></div><span class="pdate">Design partner</span></div>
+    <div class="card" style="max-width:680px">
+      <div class="row" style="align-items:flex-start"><div class="thumb" style="width:120px;height:76px"></div>
+      <div style="flex:1"><b style="font-size:14px;font-weight:500;color:var(--t1)">Allergy season: the 3-item checklist</b><p style="margin:4px 0 0;color:var(--t3);font-size:12.5px">Trust video · real pharmacist · passed quality review</p></div></div>
+      <div class="conf early" style="margin-top:14px">
+        <span class="lb">Suggested response path for this video</span>
+        <p class="cl" style="font-size:12.5px;color:var(--t2)">When someone comments <b style="color:var(--t1);font-weight:500">“ALLERGIE”</b>, send this approved reply automatically:</p>
+        <textarea class="inp">Ciao! Here's the allergy checklist → vitalis.link/allergie — and if you'd like personal advice, book a free 10-minute consultation at the pharmacy.</textarea>
+        <p class="nx">Comments, DM deliveries and bookings are tracked as separate steps — a comment is never counted as a sale. If DM delivery can't be observed, it's recorded as unknown, not zero.</p>
+        <div class="row"><button class="btn p sm" onclick="toast('Response path active for this video')">Allow</button><button class="btn sm">Not now</button><button class="btn q sm">Edit message</button></div>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+  </div></div></div>`;
+}});
+
+/* ============ browsable app pages (nav is live) ============ */
+function headB(title, why, refs){
+  return `<div class="shead"><span class="kicker">App page · live navigation</span><h2>${title}</h2><p>${why}</p>
+  <div class="refs">${refs.map(r=>`<span class="ref">${r}</span>`).join("")}</div></div>`;
+}
+
+/* ---- Studio browse: pipeline + Feed/Calendar context + card drawers ---- */
+const STUD = {
+  idea1:{state:"Ideas",pl:"Idea",t:"Why we show the price before we start the job",m:"Trust video · Luca voiceover",
+    kv:[["Saying","Transparent pricing isn't a marketing line — written quote before any work starts, since 1998."],["Format","Luca voiceover over real job photos · ~35 sec"],["Why this","Call-out pricing is the #1 objection in your category locally; your flat-fee policy is unused proof."],["Status","Starts production tomorrow unless you say otherwise"]],
+    act:`<div class="row" style="margin-top:14px"><button class="btn sm" onclick="toast('Moved to later')">Not now</button><button class="btn sm" onclick="toast('Rejected — one-tap reason in scenario 12')">Reject</button></div><div style="margin-top:10px"><input class="inp" placeholder="Change something — tell VIDEOGO…"></div>`},
+  idea2:{state:"Ideas",pl:"Idea",t:"Radiator bleeding in 90 seconds",m:"How-to · faceless",
+    kv:[["Saying","Most 'cold radiator' calls are a 90-second DIY fix — and Moretti tells you so for free."],["Format","Hands + tool close-ups, captions, no face · ~50 sec"],["Why this","Generosity content builds the trust that brings the paid calls; your reviews praise honesty."],["Status","Queued after the pricing video"]],
+    act:`<div class="row" style="margin-top:14px"><button class="btn sm" onclick="toast('Moved to later')">Not now</button><button class="btn sm" onclick="toast('Rejected')">Reject</button></div><div style="margin-top:10px"><input class="inp" placeholder="Change something — tell VIDEOGO…"></div>`},
+  mk1:{state:"Making",pl:"Making",t:"3 signs your boiler needs a check",m:"Rendering · ready by ~15:00",
+    kv:[["Saying","Three signs any homeowner can check this week — before the December rush."],["Format","How-to checklist · faceless · Instagram + TikTok"],["Status","Producing the video · quality review next · usually ready by 15:00 today"]],
+    act:`<p style="font-size:12px;color:var(--t3);margin-top:12px">Nothing needed from you — it will appear in Ready.</p>`},
+  rd1:{state:"Ready",pl:"Ready",t:"Heat pump vs new boiler: the honest math",m:"Passed quality review",
+    kv:[["Saying","The honest numbers we quote our own customers — no sales pitch."],["Format","Voiceover + comparison graphics · 0:41"],["Why this","'Which one is worth it?' is your most-asked consultation question."],["Status","Waiting for your go — recommended: Thu 18:00, Instagram Reel"]],
+    act:`<div class="row" style="margin-top:14px"><button class="btn p sm" onclick="go(9)">Publish</button><button class="btn sm" onclick="go(9)">Schedule</button><button class="btn sm" onclick="go(10)">Change something</button><button class="btn q sm" onclick="go(11)">Reject</button></div>`},
+  lv1:{state:"Live",pl:"Live",t:"The €89 pre-winter check, explained",m:"Live 5 days · collecting",
+    kv:[["Objective","Trust — so saves and completion lead; reach is context"],["Saves","22 · typical for you"],["Watched","33% · data as of today 09:00"],["Bookings","Not observable — no booking link connected"],["Reach","2.8K · context, not the goal"]],
+    act:`<div class="conf collecting" style="margin-top:12px;padding:12px 14px"><p class="cl"><b style="color:var(--t2);font-weight:500">Still collecting results.</b> First results usually stabilize after a few days.</p></div>`}
+};
+window.stud = {sel:null, ctx:"feed"};
+function studSel(k){ window.stud.sel = (window.stud.sel===k? null : k); const y=window.scrollY; window.KEEP=true; draw(); window.scrollTo({top:y}); }
+function studCtx(c){ window.stud.ctx=c; window.stud.sel=null; const y=window.scrollY; window.KEEP=true; draw(); window.scrollTo({top:y}); }
+function studCard(k){ const c=STUD[k]; return `<div class="vcard" ${window.stud.sel===k?'style="border-color:var(--bone)"':''} onclick="studSel('${k}')" role="button" tabindex="0"><div class="thumb" style="height:86px;margin-bottom:8px;width:auto"></div><div class="t">${c.t}</div><div class="m">${c.m}</div></div>`; }
+function studPanel(){
+  const sel = window.stud.sel;
+  if(sel){ const c=STUD[sel];
+    return `<button class="btn q sm" onclick="window.stud.sel=null;draw()" style="margin:-4px 0 8px -10px">Back to context</button>
+      <div><span class="pill ${c.pl==='Ready'?'ready':''}">${c.pl}</span></div><h4 style="margin:10px 0 12px;font:500 15px/1.35 var(--sans);letter-spacing:-.01em;color:var(--t1)">${c.t}</h4>
+      <div class="evid">${c.kv.map(x=>`<div class="kv"><div class="k">${x[0]}</div><div class="v">${x[1]}</div></div>`).join("")}</div>${c.act}
+      <p style="font-size:11px;color:var(--t4);margin-top:14px">Drawer shows only what's useful: no hypothesis, references or learning goals — that machinery stays internal.</p>`;
+  }
+  const feedOn = window.stud.ctx==="feed";
+  let body;
+  if(feedOn){
+    body = `<p style="font-size:11.5px;color:var(--t3);margin:2px 0 10px">@morettimpianti — how the grid looks with what's live and scheduled. Dimmed slots are the hatch — never fake counts.</p>
+      <div class="feedgrid">
+        ${[0,1,2,3,4,5].map(i=>`<div class="ftile ${i>3?'dim':''}"><span class="fst">${i>3?'Scheduled':'Live'}</span></div>`).join("")}
+      </div>
+      <p style="font-size:11px;color:var(--t4);margin-top:10px">Tabs like “your existing posts vs proposed by VIDEOGO” live here — honest contrast, no fake likes.</p>`;
+  } else {
+    const dots={17:'f',19:'f',22:'o'};
+    let cal='<div style="display:grid;grid-template-columns:repeat(7,1fr);gap:3px;font:500 10px var(--mono);text-align:center;color:var(--t3)">';
+    ["M","T","W","T","F","S","S"].forEach(d=>cal+=`<div style="font-weight:600;color:var(--t4)">${d}</div>`);
+    for(let d=1; d<=31; d++){ cal+=`<div style="padding:5px 0;${d===16?'background:var(--navact);color:var(--t1);font-weight:600':''}">${d}${dots[d]?`<div style="display:flex;justify-content:center;margin-top:2px"><span style="width:5px;height:5px;display:block;${dots[d]==='f'?'background:var(--bone)':'border:1px solid var(--t3)'}"></span></div>`:''}</div>`; }
+    cal+='</div>';
+    body = `<p style="font-size:11.5px;color:var(--t3);margin:2px 0 10px">October — scheduled posts only. Filled square = published/locked · outlined = planned.</p>${cal}
+      <div class="card" style="padding:10px;margin-top:12px"><span class="lb" style="font-size:9px">Thu 17 · 18:00</span><p style="font-size:11.5px;color:var(--t2);margin:4px 0 0">Heat pump vs new boiler — Instagram Reel</p></div>`;
+  }
+  return `<div class="row" style="gap:6px;margin-bottom:12px">
+      <button class="chip ${feedOn?'on':''}" onclick="studCtx('feed')">Feed</button>
+      <button class="chip ${!feedOn?'on':''}" onclick="studCtx('cal')">Calendar</button></div>${body}`;
+}
+S.push({g:"App pages", t:"Studio", browse:"Studio", render(){
+  return headB("Studio — the whole pipeline, browsable",
+    "Ideas / Making / Ready / Live with the Feed | Calendar context panel from the wireframes. Click any card to open its drawer (only what's useful is exposed); click Feed or Calendar to switch context. No Ads toggle (not enabled for this account), no “+ New concept”, no Approve anywhere.",
+    ["Spec §4","Nav is live — click Today / Knowledge / Connections too"]) +
+  `<div class="frame"><div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.videogo.ai/studio</span></div>
+  <div class="app"><div class="aside">${logoHTML()}<div class="nav">${navHTML('Studio')}</div>${acctHTML()}</div>
+  <div class="split" style="flex:1;min-width:0">
+    <div class="mainpane">${pageHead("Studio",null,"What VIDEOGO is making, and where it is")}
+      <div class="cols">
+        <div class="col"><h5>Ideas · veto window</h5>${studCard('idea1')}${studCard('idea2')}</div>
+        <div class="col"><h5>Making</h5>${studCard('mk1')}</div>
+        <div class="col"><h5>Ready</h5>${studCard('rd1')}</div>
+        <div class="col"><h5>Live</h5>${studCard('lv1')}</div>
+      </div>
+      <div class="composer" style="margin-top:26px"><button class="btn sm">Attach</button><input placeholder="Tell VIDEOGO something — e.g. “talk about our new boiler service”"><button class="btn p sm">Send</button></div>
+      <div class="toast" id="toast"></div>
+    </div>
+    <div class="drawer">${studPanel()}</div>
+  </div></div></div>`;
+}});
+
+/* ---- Today browse ---- */
+S.push({g:"App pages", t:"Today", browse:"Today", render(){
+  return headB("Today — the default day",
+    "The page is proactive objects, most days just one or two. READY carries its review action; Upcoming is schedule, never a recommendation; the composer stays at the bottom. Object buttons deep-link into the frozen scenarios.",
+    ["Spec §3","Nav is live"]) +
+  appFrame("Today", `<div class="phead"><div><span class="lb">Your video advantage, every day</span><h3 class="pg" style="margin-top:9px">Today</h3></div><span class="pdate">Thu · 17 Oct</span></div>
+    <div class="stack" style="max-width:780px">
+      <div class="obj ready"><span class="pill ready">Ready</span>
+        <h4>“Heat pump vs new boiler” is ready for your go</h4>
+        <p>Passed quality review. Recommended: Instagram Reel, today 18:00 — caption and timing are pre-filled, change anything.</p>
+        <div class="row"><button class="btn p sm" onclick="go(9)">Review &amp; publish</button></div>
+      </div>
+      <div class="upc"><div class="hdr"><span class="lb">Upcoming · schedule, never a recommendation</span><span class="mc" style="color:var(--t4)">Next 7 days</span></div>
+        <div class="uprow"><span class="w">Sat 11:00</span><span class="ti">“Radiator bleeding in 90 seconds”</span><span class="stt">Planned</span></div>
+        <div class="uprow"><span class="w">—</span><span class="ti">2 videos in production · results collecting on 3 live videos</span><span class="stt">Moving</span></div>
+      </div>
+    </div>`, {url:"/today"});
+}});
+
+/* ---- Knowledge browse ---- */
+function knCard(t,d,extra){ return `<div class="card"><div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px"><div style="min-width:0"><span class="lb">${t}</span><p style="margin:8px 0 0;font-size:12px;color:var(--t2);max-width:34ch">${d}</p>${extra||""}</div><button class="btn q sm" onclick="toast('Tell VIDEOGO the change in the chat — it updates this card')">Update</button></div></div>`; }
+S.push({g:"App pages", t:"Knowledge", browse:"Knowledge", render(){
+  return headB("Knowledge — what VIDEOGO knows, and how it gets corrected",
+    "The correction surface: chat on the left mutates the cards on the right, visibly. People & assets stays minimal (not a DAM) with per-person “Manage use”. Consequential identity boundaries get one explicit confirmation (scenario 18).",
+    ["Spec §5","Nav is live"]) +
+  appFrame("Knowledge", pageHead("Knowledge",null,"Update what VIDEOGO knows about you")+`
+    <div class="split" style="gap:18px">
+      <div style="flex:1;min-width:0">
+        <div class="card" style="min-height:300px;display:flex;flex-direction:column">
+          <div style="flex:1">
+            <div class="msg me"><span class="tx">The €89 check ends on November 30.</span></div>
+            <div class="msg"><span class="sq"></span><span class="tx">Got it — added the end date to the offer. Two upcoming videos mention the check; both now say “until November 30”.</span></div>
+            <div class="msg me"><span class="tx">And Marco joined — he can be on camera too.</span></div>
+            <div class="msg"><span class="sq"></span><span class="tx">Welcome Marco. Added him under People &amp; assets — I'll ask for his own consent the first time a recording involves him.</span></div>
+          </div>
+          <div class="row" style="margin-top:12px"><input class="inp" placeholder="Tell VIDEOGO something…" style="flex:1;width:auto"><button class="btn p sm">Send</button></div>
+        </div>
+      </div>
+      <div style="width:310px;flex:0 0 310px" class="stack">
+        ${knCard("About","Moretti Impianti — family-run heating &amp; plumbing, Varese, since 1998.")}
+        ${knCard("Customers","Homeowners &amp; small condos, Varese area; older housing stock.")}
+        ${knCard("What we sell","Boiler service &amp; repair · heat-pump installs · €89 pre-winter check <span class='mc' style='color:var(--t2)'>· until Nov 30</span>")}
+        ${knCard("How we sound","Practical, direct, no scare tactics. Boundary: never fear-based selling <span class='mc' style='color:var(--t2)'>· confirmed</span>")}
+        ${knCard("People & assets","Luca (on camera: allowed) · Marco (consent pending) · 46 job photos","<p style='margin:8px 0 0'><a href='#' onclick=\"toast('Per-person: what footage exists, what it may be used for, withdraw anytime');return false\" style='font-size:11.5px;color:var(--t1);text-decoration:underline;text-decoration-color:var(--border);text-underline-offset:2px'>Manage use</a></p>")}
+        ${knCard("What we talk about","Boiler care · honest pricing · heat pumps · seasonal checklists")}
+      </div>
+    </div>`, {url:"/knowledge", noComposer:true});
+}});
+
+/* ---- Connections browse ---- */
+S.push({g:"App pages", t:"Connections", browse:"Connections", render(){
+  return headB("Connections — everything VIDEOGO can access",
+    "The full page in the permission grammar: granted = solid border, closed padlock, Revoke/Disconnect on the same line; absent = plain with a ghost Connect. No marketplace, no search, no available-integrations rail. Ads exists only in gated design-partner mode and is invisible here.",
+    ["Spec §6","Nav is live"]) +
+  appFrame("Connections", pageHead("Connections",null,"What VIDEOGO can access — and why")+`
+    <div class="stack" style="max-width:640px;gap:8px">
+      <div style="display:flex;align-items:center;gap:12px;padding:10px 12px;border:1px solid var(--border);color:var(--t1)">${LOCK}
+        <span style="display:flex;flex-direction:column;gap:3px;min-width:0;flex:1"><span class="lb" style="color:var(--t1)">Instagram — Allowed</span><span style="font-size:12px;color:var(--t2)">@morettimpianti · publishing + results · connected 12 Sep</span></span>
+        <button class="btn sm" onclick="toast('Disconnected — publishing to Instagram is paused')">Disconnect</button></div>
+      <div style="display:flex;align-items:center;gap:12px;padding:10px 0;color:var(--t4)">
+        <span style="display:flex;flex-direction:column;gap:3px;min-width:0;flex:1"><span class="lb" style="color:var(--t4)">TikTok — Not connected</span><span style="font-size:12px;color:var(--t3)">Recommended for your how-to videos</span></span>
+        <button class="btn sm" onclick="toast('TikTok connected')">Connect</button></div>
+      <div style="display:flex;align-items:center;gap:12px;padding:10px 12px;border:1px solid var(--border);color:var(--t1)">${LOCK}
+        <span style="display:flex;flex-direction:column;gap:3px;min-width:0;flex:1"><span class="lb" style="color:var(--t1)">Google Drive — Allowed</span><span style="font-size:12px;color:var(--t2)">“Cantieri 2025” folder · job photos, read-only · synced 2h ago</span></span>
+        <button class="btn sm" onclick="toast('Drive disconnected')">Disconnect</button></div>
+      <div style="display:flex;align-items:center;gap:12px;padding:10px 0;color:var(--t4)">
+        <span style="display:flex;flex-direction:column;gap:3px;min-width:0;flex:1"><span class="lb" style="color:var(--t4)">Direct upload</span><span style="font-size:12px;color:var(--t3)">Drop files anytime — photos, clips, price lists</span></span>
+        <button class="btn sm" onclick="toast('Upload added to your assets')">Upload</button></div>
+      <div class="trust" style="justify-content:flex-start;margin-top:8px">${LOCK}<span>VIDEOGO only accesses what you connect, and only to create and measure your content. Disconnect anything, anytime.</span></div>
+    </div>`, {url:"/connections"});
+}});
+
+/* ============ final gate corrections (bounded pass) ============ */
+function headC(title, why, refs){
+  return `<div class="shead"><span class="kicker">Final gate correction · bounded pass</span><h2>${title}</h2><p>${why}</p>
+  <div class="refs">${refs.map(r=>`<span class="ref">${r}</span>`).join("")}</div></div>`;
+}
+
+/* ---- Account / Settings utility (secondary surface, opened from the account control) ---- */
+function permRow(name, state, canRevoke){
+  return `<div style="display:flex;align-items:center;gap:12px;padding:${state==='Allowed'?'8px 12px':'8px 0'};${state==='Allowed'?'border:1px solid var(--border);color:var(--t1)':'color:var(--t4)'};margin-bottom:6px">
+    ${state==='Allowed'?LOCK:''}
+    <span style="display:flex;flex-direction:column;gap:3px;min-width:0;flex:1"><span class="lb" style="color:${state==='Allowed'?'var(--t1)':'var(--t4)'}">${name} — ${state==='Allowed'?'Allowed':'Not allowed'}</span></span>
+    ${canRevoke?`<button class="btn sm" onclick="toast('Revoked — everything comes back to you for authorization')">Revoke</button>`:``}</div>`;
+}
+S.push({g:"Gate corrections", t:"Account / Settings (utility)", browse:"Account", render(){
+  return headC("Account / Settings — the stable place to reverse account-level decisions",
+    "Opened from the account control at the bottom-left of every screen (click it anywhere in this prototype). Secondary utility, not primary navigation: account basics, billing, granted Action Rights in the permission grammar with explicit revoke, and data controls. Connections stay in Connections; person/likeness consent stays contextual in People & assets. No notification-preference matrix, no global autonomous mode.",
+    ["Gate corrections §A","Gate 3/5 fix","Four-item primary nav unchanged"]) +
+  appFrame("Today", pageHead("Account / Settings",null,"Opened from the account control — not part of the main navigation")+`
+    <div class="stack" style="max-width:640px">
+      <div class="card"><div class="lbl" style="margin-top:0">Account</div>
+        <div class="evid">
+          <div class="kv"><div class="k">Business</div><div class="v">Moretti Impianti — Varese</div></div>
+          <div class="kv"><div class="k">Owner</div><div class="v">Luca Moretti · luca@morettimpianti.it</div></div>
+          <div class="kv"><div class="k">Reach me on</div><div class="v">Email <span style="color:var(--t3);font-size:11.5px">(WhatsApp shown here when supported)</span></div><button class="btn q sm">Change</button></div>
+        </div>
+      </div>
+      <div class="card"><div class="lbl" style="margin-top:0">Billing</div>
+        <div class="evid"><div class="kv"><div class="k">Plan</div><div class="v">Monthly · active <span style="color:var(--t3)">· Pricing TBD (placeholder)</span></div></div></div>
+        <div class="row" style="margin-top:10px"><button class="btn sm">Manage subscription</button><button class="btn q sm" onclick="toast('Cancellation is as easy as joining — no retention maze')">Cancel subscription</button></div>
+      </div>
+      <div class="card"><div class="lbl" style="margin-top:0">Permissions — what VIDEOGO may do on its own</div>
+        ${permRow("Organic educational auto-publish","Allowed",true)}
+        ${permRow("Promotional auto-publish","Not allowed",false)}
+        ${permRow("DM response path","Not allowed",false)}
+        ${permRow("Paid spend","Not allowed",false)}
+        <p style="font-size:11.5px;color:var(--t3);margin:10px 0 0">VIDEOGO can propose expanding a permission when it has earned it — only you can grant one. There is no global autonomous mode.</p>
+      </div>
+      <div class="card"><div class="lbl" style="margin-top:0">Your data</div>
+        <div class="row"><button class="btn sm" onclick="toast('Preparing your export — we\\u2019ll email the download link')">Export my data</button>
+        <button class="btn q sm" onclick="toast('Account deletion removes your media, identity and account state. De-identified aggregate learnings may be retained where the contract allows.')">Delete account</button></div>
+      </div>
+      <p style="font-size:11.5px;color:var(--t3)">Social and data connections are managed in <b style="color:var(--t2);font-weight:500">Connections</b>. Consent for people's footage and likeness is managed per person in <b style="color:var(--t2);font-weight:500">Knowledge → People &amp; assets → Manage use</b>.</p>
+    </div>`, {url:"/account", noComposer:true});
+}});
+
+/* ---- Week-one empty states ---- */
+S.push({g:"Gate corrections", t:"Week-one empty states", mark:"+", render(){
+  return headC("Week one — Studio and Live before anything exists",
+    "Frozen in EXPERIENCE (SYSTEM only determines the technical state that drives it): a paid account whose pipeline isn't populated yet never sees a dead blank screen — and never sees setup tasks, templates or a “create content” button. Live shows “nothing yet” drawn as absence, not zeros.",
+    ["Gate corrections §B","Unknown ≠ zero","No setup chores"]) +
+  appFrame("Studio", pageHead("Studio",null,"Day one, after payment")+`
+    <div class="silence" style="max-width:680px">
+      <span aria-hidden="true" style="width:22px;height:22px;background:var(--bone)"></span>
+      <p class="st1">VIDEOGO is preparing your first batch.</p>
+      <p class="st2">I'm finding the strongest opportunities and building the first executions. Nothing is needed from you right now.</p>
+    </div>
+    <div class="card" style="max-width:680px;margin-top:12px;background:var(--hatch);border:1px dashed var(--hair2)">
+      <span class="pill" style="color:var(--t4)">Live</span>
+      <h4 style="margin:8px 0 4px;font:500 14px/1.35 var(--sans);color:var(--t1)">Nothing live yet.</h4>
+      <p style="margin:0;color:var(--t2);font-size:12.5px">I'll start showing results and learnings here after your first video is published.</p>
+    </div>`, {url:"/studio"});
+}});
+
+/* ============ shell render ============ */
+const GROUPS = ["App pages","Gate corrections","Onboarding","Today","Studio","Knowledge","Connections","Human Capture","Results honesty","Design partner"];
+function drawIndex(cur){
+  let h="";
+  GROUPS.forEach(g=>{
+    const items = S.map((s,i)=>({s,i})).filter(x=>x.s.g===g);
+    if(!items.length) return;
+    h+=`<div class="grp">${g}</div>`;
+    items.forEach(x=>{const n = x.s.mark ? x.s.mark : (x.s.browse ? "·" : String(x.i+1).padStart(2,"0")); h+=`<button class="scn ${x.i===cur?'on':''}" onclick="go(${x.i})"><span class="n">${n}</span><span>${x.s.t}</span></button>`;});
+  });
+  document.getElementById("scnlist").innerHTML=h;
+}
+let CUR=0;
+function draw(){
+  document.getElementById("stage").innerHTML = S[CUR].render() +
+   `<div class="note">EXPERIENCE-gate check for this scenario: every displayed claim could be true in the real system state · no marketing decision is pushed onto the owner · four-item nav intact · no bell · composer secondary. Design-system check: crimson only on NEED · amber only on READY + primary controls · numbers in mono · unknown drawn as absence · radius 0 · no shadows. <b>Prototype navigation:</b> pick any scenario on the left.</div>`;
+  drawIndex(CUR);
+  if(window.KEEP){window.KEEP=false;}else{document.querySelector(".stage").scrollTop=0; window.scrollTo({top:0});}
+}
+function go(i){if(CUR!==i){window.ob={step:1};window.stud={sel:null,ctx:"feed"};}CUR=i;draw();}
+draw();
+</script>

@@ -1,0 +1,38 @@
+/* VIDEOGO colour. Source: jacopoviola/videogo-design/videogo-tokens_1.css (generated from VIDEOGO_DESIGN_TOKENS.md).
+   Colour means "you are needed" and nothing else. */
+:root {
+  /* surface — warm near-black, hue ~65 */
+  --vg-canvas:      #0C0B09;  /* the page */
+  --vg-shell:       #12100E;  /* nav, resting objects */
+  --vg-panel:       #171512;  /* objects that need you */
+  --vg-nav-active:  #1C1A16;  /* active nav item only */
+  --vg-hairline:    #211E1A;  /* default rule */
+  --vg-hairline-hi: #292520;  /* card edge at rest */
+  --vg-border:      #37322B;  /* emphasis, controls, elevated edge */
+
+  /* absence hatch pair */
+  --vg-hatch-a:     #100E0C;
+  --vg-hatch-b:     #151310;
+  --vg-hatch: repeating-linear-gradient(135deg, var(--vg-hatch-a) 0 5px, var(--vg-hatch-b) 5px 10px);
+
+  /* text */
+  --vg-text-1:      #F5F2EC;  /* display, statements — 17.4:1 */
+  --vg-text-2:      #A59E92;  /* body — 8.5:1 */
+  --vg-text-3:      #6F685C;  /* mono labels only — 3.9:1 */
+  --vg-text-4:      #4B453C;  /* faint, absence, disabled — 2.0:1 */
+
+  /* the only two hues */
+  --vg-signal:      #FF0048;  /* VIDEOGO is blocked. NEED labels only. */
+  --vg-action:      #E9A93C;  /* waiting on your authorization. READY labels + primary controls. */
+  --vg-on-hue:      #0C0B09;  /* text on either hue */
+  --vg-action-pressed: #D69A34;
+  --vg-bone:        #F5F2EC;  /* the mark, the blocking button, the attribution square */
+
+  /* semantic aliases */
+  --vg-surface-page:     var(--vg-canvas);
+  --vg-surface-rest:     var(--vg-shell);
+  --vg-surface-needs:    var(--vg-panel);
+  --vg-edge-rest:        var(--vg-hairline-hi);
+  --vg-edge-needs:       var(--vg-border);
+  --vg-duration-chip-bg: rgba(12, 11, 9, 0.86);
+}
