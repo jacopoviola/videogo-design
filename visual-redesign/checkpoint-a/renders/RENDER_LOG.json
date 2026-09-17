@@ -1,0 +1,84 @@
+{
+  "chrome": "152.0.7977.84",
+  "platform": "darwin",
+  "deviceScaleFactor": 2,
+  "shots": [
+    {
+      "name": "A1_today-need_1440_title-token",
+      "url": "/today.html",
+      "viewport": "1440×900",
+      "touch": false,
+      "file": "renders/A1_today-need_1440_title-token.png"
+    },
+    {
+      "name": "A2_today-need_1440_title-optical",
+      "url": "/today.html?title=optical",
+      "viewport": "1440×900",
+      "touch": false,
+      "file": "renders/A2_today-need_1440_title-optical.png"
+    },
+    {
+      "name": "A3_today-need_1216_title-token",
+      "url": "/today.html",
+      "viewport": "1216×1050",
+      "touch": false,
+      "file": "renders/A3_today-need_1216_title-token.png"
+    },
+    {
+      "name": "A4_today-need_1216_title-optical",
+      "url": "/today.html?title=optical",
+      "viewport": "1216×1050",
+      "touch": false,
+      "file": "renders/A4_today-need_1216_title-optical.png"
+    },
+    {
+      "name": "B1_studio-default_1440",
+      "url": "/studio.html",
+      "viewport": "1440×900",
+      "touch": false,
+      "file": "renders/B1_studio-default_1440.png"
+    },
+    {
+      "name": "B2_studio-ready-selected_1440",
+      "url": "/studio.html?select=rd1",
+      "viewport": "1440×900",
+      "touch": false,
+      "file": "renders/B2_studio-ready-selected_1440.png"
+    },
+    {
+      "name": "B3_studio-default_1216",
+      "url": "/studio.html",
+      "viewport": "1216×1050",
+      "touch": false,
+      "file": "renders/B3_studio-default_1216.png"
+    },
+    {
+      "name": "B4_studio-ready-selected_1216",
+      "url": "/studio.html?select=rd1",
+      "viewport": "1216×1050",
+      "touch": false,
+      "file": "renders/B4_studio-ready-selected_1216.png"
+    },
+    {
+      "name": "B5_studio-ready-selected_1440_title-optical",
+      "url": "/studio.html?select=rd1&title=optical",
+      "viewport": "1440×900",
+      "touch": false,
+      "file": "renders/B5_studio-ready-selected_1440_title-optical.png"
+    },
+    {
+      "name": "C1_narrow-study_today_390",
+      "url": "/today.html?study=narrow",
+      "viewport": "390×844",
+      "touch": true,
+      "file": "renders/C1_narrow-study_today_390.png"
+    },
+    {
+      "name": "C2_narrow-study_studio-ready-selected_390",
+      "url": "/studio.html?select=rd1&study=narrow",
+      "viewport": "390×844",
+      "touch": true,
+      "file": "renders/C2_narrow-study_studio-ready-selected_390.png"
+    }
+  ]
+}

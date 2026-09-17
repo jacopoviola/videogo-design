@@ -1,0 +1,79 @@
+[
+  {
+    "name": "B1_knowledge_1440",
+    "url": "/knowledge.html",
+    "viewport": "1440×900",
+    "fontFaces": [
+      "Instrument Sans loaded"
+    ],
+    "brokenImages": 0,
+    "horizontalScroll": false,
+    "commentary": false
+  },
+  {
+    "name": "B2_knowledge_1216",
+    "url": "/knowledge.html",
+    "viewport": "1216×1050",
+    "fontFaces": [
+      "Instrument Sans loaded"
+    ],
+    "brokenImages": 0,
+    "horizontalScroll": false,
+    "commentary": false
+  },
+  {
+    "name": "B3_account-settings_1440",
+    "url": "/account.html",
+    "viewport": "1440×900",
+    "fontFaces": [
+      "Instrument Sans loaded"
+    ],
+    "brokenImages": 0,
+    "horizontalScroll": false,
+    "commentary": false
+  },
+  {
+    "name": "B4_account-settings_1216",
+    "url": "/account.html",
+    "viewport": "1216×1050",
+    "fontFaces": [
+      "Instrument Sans loaded"
+    ],
+    "brokenImages": 0,
+    "horizontalScroll": false,
+    "commentary": false
+  },
+  {
+    "name": "B5_loading_making_1440",
+    "url": "/making.html",
+    "viewport": "1440×900",
+    "fontFaces": [
+      "Instrument Sans loaded"
+    ],
+    "brokenImages": 0,
+    "horizontalScroll": false,
+    "commentary": false
+  },
+  {
+    "name": "B6_empty_week-one_1440",
+    "url": "/week-one.html",
+    "viewport": "1440×900",
+    "fontFaces": [
+      "Instrument Sans loaded"
+    ],
+    "brokenImages": 0,
+    "horizontalScroll": false,
+    "commentary": false
+  },
+  {
+    "name": "B7_qa-deferred_first-video-deferred_1440",
+    "url": "/first-video-deferred.html",
+    "viewport": "1440×900",
+    "fontFaces": [
+      "Instrument Sans loaded"
+    ],
+    "brokenImages": 0,
+    "horizontalScroll": false,
+    "commentary": false
+  }
+]

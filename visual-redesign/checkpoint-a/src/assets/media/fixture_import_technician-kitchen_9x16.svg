@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" role="img" aria-label="DEMO FIXTURE — imported Reel poster stand-in: technician speaking to camera in a kitchen">
+<title>DEMO FIXTURE — imported Reel poster stand-in: technician speaking to camera in a kitchen</title><desc>Representative design fixture for the Videogo visual redesign review. Illustration, not a photograph. Not customer media, not a real Videogo output, not evidence, not Videogo's brand style.</desc>
+<defs>
+<filter id="soft" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="14"/></filter>
+<filter id="softer" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="36"/></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0.10"/></feComponentTransfer></filter>
+<radialGradient id="vignette" cx="50%" cy="45%" r="75%"><stop offset="60%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity=".35"/></radialGradient>
+<linearGradient id="wall1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E4D3B8"/><stop offset="1" stop-color="#A88B69"/></linearGradient>
+<linearGradient id="skin1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9C6848"/><stop offset="1" stop-color="#6E432B"/></linearGradient>
+<linearGradient id="shirt1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2F4A6B"/><stop offset="1" stop-color="#1B2C42"/></linearGradient>
+</defs>
+<rect width="1080" height="1920" fill="url(#wall1)"/>
+<g filter="url(#softer)">
+  <rect x="-60" y="260" width="380" height="720" rx="10" fill="#FBF4E6"/>
+  <rect x="640" y="140" width="520" height="420" rx="8" fill="#7A5E45"/>
+  <rect x="660" y="600" width="480" height="40" fill="#5A4636"/>
+  <rect x="-40" y="1320" width="1160" height="120" fill="#4B3D33"/>
+  <circle cx="860" cy="1190" r="70" fill="#C9A15B"/>
+  <rect x="120" y="1180" width="120" height="150" rx="16" fill="#6F8F7A"/>
+</g>
+<path d="M140 1920 C150 1390 250 1140 540 1120 C830 1140 930 1390 940 1920 Z" fill="url(#shirt1)"/>
+<path d="M440 1130 L540 1270 L640 1130" fill="none" stroke="#14202F" stroke-width="18" stroke-linejoin="round"/>
+<rect x="690" y="1300" width="120" height="70" rx="10" fill="#E9A93C" opacity=".9"/>
+<rect x="468" y="960" width="144" height="200" rx="60" fill="#6A402A"/>
+<ellipse cx="540" cy="770" rx="178" ry="222" fill="url(#skin1)"/>
+<ellipse cx="366" cy="790" rx="30" ry="54" fill="#7F4E33"/><ellipse cx="714" cy="790" rx="30" ry="54" fill="#6E432B"/>
+<path d="M368 720 C360 560 450 520 540 520 C650 520 724 570 712 720 C690 640 620 610 540 612 C460 612 392 640 368 720 Z" fill="#17120F"/>
+<path d="M430 740 q40 -22 80 0 M570 740 q40 -22 80 0" stroke="#21150F" stroke-width="14" fill="none" stroke-linecap="round"/>
+<ellipse cx="470" cy="786" rx="18" ry="12" fill="#1A120D"/><ellipse cx="610" cy="786" rx="18" ry="12" fill="#1A120D"/>
+<path d="M540 800 q-18 60 0 74" stroke="#5A3522" stroke-width="10" fill="none" stroke-linecap="round"/>
+<path d="M470 900 q70 44 140 0" stroke="#3C2216" stroke-width="14" fill="none" stroke-linecap="round"/>
+<path d="M392 860 C410 980 470 1010 540 1012 C610 1010 670 980 688 860 C660 930 610 960 540 962 C470 960 420 930 392 860 Z" fill="#2A1A12" opacity=".55"/>
+<g transform="translate(0 -120) rotate(-18 250 1470)"><rect x="170" y="1380" width="170" height="210" rx="70" fill="#7A4A2F"/><rect x="178" y="1270" width="36" height="140" rx="18" fill="#7A4A2F"/><rect x="220" y="1250" width="36" height="150" rx="18" fill="#7A4A2F"/><rect x="262" y="1262" width="36" height="140" rx="18" fill="#7A4A2F"/><rect x="302" y="1296" width="34" height="120" rx="17" fill="#7A4A2F"/></g>
+<rect width="1080" height="1920" fill="url(#vignette)"/>
+<rect width="1080" height="1920" filter="url(#grain)"/>
+</svg>

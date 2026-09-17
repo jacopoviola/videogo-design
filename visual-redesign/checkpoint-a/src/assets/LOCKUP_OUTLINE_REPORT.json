@@ -1,0 +1,46 @@
+{
+  "font": "Instrument Sans Bold",
+  "version": "Version 1.000;gftools[0.9.28]",
+  "sha256": "444f85bf1c4b0e1ce1ca624f6be54bcd832207714ccaf4ea99ee531341683bdf",
+  "weight": 700,
+  "layoutEngine": "Chrome 152.0.7977.84",
+  "glyphOrigins": [
+    [
+      200,
+      120
+    ],
+    [
+      306.34,
+      120
+    ],
+    [
+      343.77,
+      120
+    ],
+    [
+      452.97,
+      120
+    ],
+    [
+      539.73,
+      120
+    ],
+    [
+      655.67,
+      120
+    ],
+    [
+      765.88,
+      120
+    ]
+  ],
+  "computedTextLength": 813.44,
+  "videogo-lockup-inverse-outlined.svg": {
+    "fill": "#0C0B09",
+    "bytes": 3768
+  },
+  "videogo-lockup-outlined.svg": {
+    "fill": "#F5F2EC",
+    "bytes": 3760
+  }
+}

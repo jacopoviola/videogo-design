@@ -1,0 +1,5592 @@
+{
+  "chrome": "152.0.7977.84",
+  "date": "2026-09-17T15:15:26.933Z",
+  "method": {
+    "text200": "CDP Page.setFontSizes standard 32px / fixed 26px (browser default text size ×2)",
+    "zoom200": "720×450 CSS px viewport at device scale factor 2 (layout-equivalent to a 1440×900 window at 200% browser zoom)"
+  },
+  "pages": {
+    "/today.html": {
+      "320": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "upcoming": [
+            {
+              "layout": "stacked",
+              "parts": true
+            },
+            {
+              "layout": "stacked",
+              "parts": true
+            }
+          ],
+          "composer": {
+            "position": "static",
+            "height": 138,
+            "textareaHeight": 48,
+            "bottom": 987,
+            "pageHeight": 1003
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 320,
+              "clientWidth": 320,
+              "railCollapsed": true,
+              "railBesideContent": false,
+              "upcoming": [
+                {
+                  "layout": "stacked",
+                  "parts": true
+                },
+                {
+                  "layout": "stacked",
+                  "parts": true
+                }
+              ],
+              "composer": {
+                "position": "static",
+                "height": 138,
+                "textareaHeight": 48,
+                "bottom": 1263,
+                "pageHeight": 1279
+              }
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Today"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 11,
+          "order": [
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Fix connection\"",
+            "button \"Attach\"",
+            "textarea \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\"",
+            "a \"Skip to main content\"",
+            "button \"Close\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "touchUnder44": [],
+        "axe": [],
+        "pass": true
+      },
+      "1216": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1216,
+          "clientWidth": 1216,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "upcoming": [
+            {
+              "layout": "tabular",
+              "parts": true
+            },
+            {
+              "layout": "tabular",
+              "parts": true
+            }
+          ],
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 1026,
+            "pageHeight": 1050
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": false,
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Today"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "pass": true
+      },
+      "1440": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "upcoming": [
+            {
+              "layout": "tabular",
+              "parts": true
+            },
+            {
+              "layout": "tabular",
+              "parts": true
+            }
+          ],
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 876,
+            "pageHeight": 900
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": false,
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Today"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 10,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Fix connection\"",
+            "button \"Attach\"",
+            "textarea \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "axe": [],
+        "pass": true
+      },
+      "text200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "upcoming": [
+            {
+              "layout": "stacked",
+              "parts": true
+            },
+            {
+              "layout": "stacked",
+              "parts": true
+            }
+          ],
+          "composer": {
+            "position": "static",
+            "height": 114,
+            "textareaHeight": 80,
+            "bottom": 1258,
+            "pageHeight": 1274
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 89,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 1440,
+              "clientWidth": 1440,
+              "railCollapsed": true,
+              "railBesideContent": false,
+              "upcoming": [
+                {
+                  "layout": "stacked",
+                  "parts": true
+                },
+                {
+                  "layout": "stacked",
+                  "parts": true
+                }
+              ],
+              "composer": {
+                "position": "static",
+                "height": 114,
+                "textareaHeight": 80,
+                "bottom": 1615,
+                "pageHeight": 1631
+              }
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Today"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 11,
+          "order": [
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Fix connection\"",
+            "button \"Attach\"",
+            "textarea \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\"",
+            "a \"Skip to main content\"",
+            "button \"Close\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "axe": [],
+        "pass": true
+      },
+      "zoom200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 720,
+          "clientWidth": 720,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "upcoming": [
+            {
+              "layout": "tabular",
+              "parts": true
+            },
+            {
+              "layout": "tabular",
+              "parts": true
+            }
+          ],
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 661,
+            "pageHeight": 677
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 720,
+              "clientWidth": 720,
+              "railCollapsed": true,
+              "railBesideContent": false,
+              "upcoming": [
+                {
+                  "layout": "tabular",
+                  "parts": true
+                },
+                {
+                  "layout": "tabular",
+                  "parts": true
+                }
+              ],
+              "composer": {
+                "position": "static",
+                "height": 54,
+                "textareaHeight": 20,
+                "bottom": 937,
+                "pageHeight": 953
+              }
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Today"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "pass": true
+      }
+    },
+    "/today-ready.html": {
+      "320": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "upcoming": [
+            {
+              "layout": "stacked",
+              "parts": true
+            }
+          ],
+          "composer": {
+            "position": "static",
+            "height": 138,
+            "textareaHeight": 48,
+            "bottom": 1464,
+            "pageHeight": 1480
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 320,
+              "clientWidth": 320,
+              "railCollapsed": true,
+              "railBesideContent": false,
+              "upcoming": [
+                {
+                  "layout": "stacked",
+                  "parts": true
+                }
+              ],
+              "composer": {
+                "position": "static",
+                "height": 138,
+                "textareaHeight": 48,
+                "bottom": 1740,
+                "pageHeight": 1756
+              }
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Today"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 11,
+          "order": [
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Review & publish\"",
+            "button \"Attach\"",
+            "textarea \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\"",
+            "a \"Skip to main content\"",
+            "button \"Close\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "touchUnder44": [],
+        "axe": [],
+        "pass": true
+      },
+      "1216": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1216,
+          "clientWidth": 1216,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "upcoming": [
+            {
+              "layout": "tabular",
+              "parts": true
+            }
+          ],
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 1026,
+            "pageHeight": 1050
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": false,
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Today"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "pass": true
+      },
+      "1440": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "upcoming": [
+            {
+              "layout": "tabular",
+              "parts": true
+            }
+          ],
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 876,
+            "pageHeight": 900
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": false,
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Today"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 10,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Review & publish\"",
+            "button \"Attach\"",
+            "textarea \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "axe": [],
+        "pass": true
+      },
+      "text200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "upcoming": [
+            {
+              "layout": "stacked",
+              "parts": true
+            }
+          ],
+          "composer": {
+            "position": "static",
+            "height": 114,
+            "textareaHeight": 80,
+            "bottom": 1445,
+            "pageHeight": 1461
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 89,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 1440,
+              "clientWidth": 1440,
+              "railCollapsed": true,
+              "railBesideContent": false,
+              "upcoming": [
+                {
+                  "layout": "stacked",
+                  "parts": true
+                }
+              ],
+              "composer": {
+                "position": "static",
+                "height": 114,
+                "textareaHeight": 80,
+                "bottom": 1802,
+                "pageHeight": 1818
+              }
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Today"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 11,
+          "order": [
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Review & publish\"",
+            "button \"Attach\"",
+            "textarea \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\"",
+            "a \"Skip to main content\"",
+            "button \"Close\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "axe": [],
+        "pass": true
+      },
+      "zoom200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 720,
+          "clientWidth": 720,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "upcoming": [
+            {
+              "layout": "tabular",
+              "parts": true
+            }
+          ],
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 853,
+            "pageHeight": 869
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 720,
+              "clientWidth": 720,
+              "railCollapsed": true,
+              "railBesideContent": false,
+              "upcoming": [
+                {
+                  "layout": "tabular",
+                  "parts": true
+                }
+              ],
+              "composer": {
+                "position": "static",
+                "height": 54,
+                "textareaHeight": 20,
+                "bottom": 1129,
+                "pageHeight": 1145
+              }
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Today"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "pass": true
+      }
+    },
+    "/studio.html": {
+      "320": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "boardColumnsPerRow": 1,
+          "minCardWidth": 288,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 138,
+            "textareaHeight": 48,
+            "bottom": 2819,
+            "pageHeight": 2835
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 320,
+              "clientWidth": 320,
+              "railCollapsed": true,
+              "railBesideContent": false,
+              "boardColumnsPerRow": 1,
+              "minCardWidth": 288,
+              "panelPosition": "below board",
+              "composer": {
+                "position": "static",
+                "height": 138,
+                "textareaHeight": 48,
+                "bottom": 3095,
+                "pageHeight": 3111
+              }
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Studio"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 17,
+          "order": [
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Demo fixturePhoto · 4:3Why w\"",
+            "button \"No previewRadiator bleeding \"",
+            "button \"Rendering3 signs your boiler\"",
+            "button \"Demo fixtureReel · 9:160:41H\"",
+            "button \"Demo fixtureInstagramThe €89\"",
+            "button \"Feed\"",
+            "button \"Calendar\"",
+            "button \"Attach\"",
+            "textarea \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\"",
+            "a \"Skip to main content\"",
+            "button \"Close\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "touchUnder44": [],
+        "axe": [],
+        "pass": true
+      },
+      "1216": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1216,
+          "clientWidth": 1216,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "boardColumnsPerRow": 4,
+          "minCardWidth": 231,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 1370,
+            "pageHeight": 1394
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": false,
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Studio"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "pass": true
+      },
+      "1440": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "boardColumnsPerRow": 4,
+          "minCardWidth": 189,
+          "panelPosition": "beside board",
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 876,
+            "pageHeight": 900
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": false,
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Studio"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 16,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Demo fixturePhoto · 4:3Why w\"",
+            "button \"No previewRadiator bleeding \"",
+            "button \"Rendering3 signs your boiler\"",
+            "button \"Demo fixtureReel · 9:160:41H\"",
+            "button \"Demo fixtureInstagramThe €89\"",
+            "button \"Attach\"",
+            "textarea \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\"",
+            "button \"Feed\"",
+            "button \"Calendar\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "axe": [],
+        "pass": true
+      },
+      "text200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "boardColumnsPerRow": 2,
+          "minCardWidth": 698,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 114,
+            "textareaHeight": 80,
+            "bottom": 3731,
+            "pageHeight": 3747
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 89,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 1440,
+              "clientWidth": 1440,
+              "railCollapsed": true,
+              "railBesideContent": false,
+              "boardColumnsPerRow": 2,
+              "minCardWidth": 698,
+              "panelPosition": "below board",
+              "composer": {
+                "position": "static",
+                "height": 114,
+                "textareaHeight": 80,
+                "bottom": 4088,
+                "pageHeight": 4104
+              }
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Studio"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 17,
+          "order": [
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Demo fixturePhoto · 4:3Why w\"",
+            "button \"No previewRadiator bleeding \"",
+            "button \"Rendering3 signs your boiler\"",
+            "button \"Demo fixtureReel · 9:160:41H\"",
+            "button \"Demo fixtureInstagramThe €89\"",
+            "button \"Feed\"",
+            "button \"Calendar\"",
+            "button \"Attach\"",
+            "textarea \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\"",
+            "a \"Skip to main content\"",
+            "button \"Close\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "axe": [],
+        "pass": true
+      },
+      "zoom200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 720,
+          "clientWidth": 720,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "boardColumnsPerRow": 2,
+          "minCardWidth": 338,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 2039,
+            "pageHeight": 2055
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 720,
+              "clientWidth": 720,
+              "railCollapsed": true,
+              "railBesideContent": false,
+              "boardColumnsPerRow": 2,
+              "minCardWidth": 338,
+              "panelPosition": "below board",
+              "composer": {
+                "position": "static",
+                "height": 54,
+                "textareaHeight": 20,
+                "bottom": 2315,
+                "pageHeight": 2331
+              }
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Studio"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "pass": true
+      }
+    },
+    "/studio.html?select=rd1": {
+      "320": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "boardColumnsPerRow": 4,
+          "minCardWidth": 0,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 138,
+            "textareaHeight": 48,
+            "bottom": 1436,
+            "pageHeight": 1452
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 320,
+              "clientWidth": 320,
+              "railCollapsed": true,
+              "railBesideContent": false,
+              "boardColumnsPerRow": 4,
+              "minCardWidth": 0,
+              "panelPosition": "below board",
+              "composer": {
+                "position": "static",
+                "height": 138,
+                "textareaHeight": 48,
+                "bottom": 1712,
+                "pageHeight": 1728
+              }
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Studio"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 15,
+          "order": [
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Back to Studio\"",
+            "button \"Publish\"",
+            "button \"Schedule\"",
+            "button \"Change something\"",
+            "button \"Reject\"",
+            "button \"Attach\"",
+            "textarea \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\"",
+            "a \"Skip to main content\"",
+            "button \"Close\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "touchUnder44": [],
+        "axe": [],
+        "pass": true
+      },
+      "1216": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1216,
+          "clientWidth": 1216,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "boardColumnsPerRow": 4,
+          "minCardWidth": 231,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 1288,
+            "pageHeight": 1312
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": false,
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Studio"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "pass": true
+      },
+      "1440": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "boardColumnsPerRow": 4,
+          "minCardWidth": 189,
+          "panelPosition": "beside board",
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 876,
+            "pageHeight": 900
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": false,
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Studio"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 19,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Demo fixturePhoto · 4:3Why w\"",
+            "button \"No previewRadiator bleeding \"",
+            "button \"Rendering3 signs your boiler\"",
+            "button \"Demo fixtureReel · 9:160:41H\"",
+            "button \"Demo fixtureInstagramThe €89\"",
+            "button \"Attach\"",
+            "textarea \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\"",
+            "button \"Back to context\"",
+            "button \"Publish\"",
+            "button \"Schedule\"",
+            "button \"Change something\"",
+            "button \"Reject\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "axe": [],
+        "pass": true
+      },
+      "text200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "boardColumnsPerRow": 2,
+          "minCardWidth": 698,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 114,
+            "textareaHeight": 80,
+            "bottom": 3543,
+            "pageHeight": 3559
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 89,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 1440,
+              "clientWidth": 1440,
+              "railCollapsed": true,
+              "railBesideContent": false,
+              "boardColumnsPerRow": 2,
+              "minCardWidth": 698,
+              "panelPosition": "below board",
+              "composer": {
+                "position": "static",
+                "height": 114,
+                "textareaHeight": 80,
+                "bottom": 3900,
+                "pageHeight": 3916
+              }
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Studio"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 20,
+          "order": [
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Demo fixturePhoto · 4:3Why w\"",
+            "button \"No previewRadiator bleeding \"",
+            "button \"Rendering3 signs your boiler\"",
+            "button \"Demo fixtureReel · 9:160:41H\"",
+            "button \"Demo fixtureInstagramThe €89\"",
+            "button \"Back to context\"",
+            "button \"Publish\"",
+            "button \"Schedule\"",
+            "button \"Change something\"",
+            "button \"Reject\"",
+            "button \"Attach\"",
+            "textarea \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\"",
+            "a \"Skip to main content\"",
+            "button \"Close\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "axe": [],
+        "pass": true
+      },
+      "zoom200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 720,
+          "clientWidth": 720,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "boardColumnsPerRow": 2,
+          "minCardWidth": 338,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 2159,
+            "pageHeight": 2175
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 720,
+              "clientWidth": 720,
+              "railCollapsed": true,
+              "railBesideContent": false,
+              "boardColumnsPerRow": 2,
+              "minCardWidth": 338,
+              "panelPosition": "below board",
+              "composer": {
+                "position": "static",
+                "height": 54,
+                "textareaHeight": 20,
+                "bottom": 2435,
+                "pageHeight": 2451
+              }
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Studio"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "pass": true
+      }
+    },
+    "/knowledge.html": {
+      "320": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "railCollapsed": true,
+          "railBesideContent": false
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 320,
+              "clientWidth": 320,
+              "railCollapsed": true,
+              "railBesideContent": false
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Knowledge"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 16,
+          "order": [
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "input \"Tell VIDEOGO something…\"",
+            "button \"Send\"",
+            "button \"Update About\"",
+            "button \"Update Customers\"",
+            "button \"Update What we sell\"",
+            "button \"Update How we sound\"",
+            "button \"Update People and assets\"",
+            "a \"Manage use\"",
+            "button \"Update What we talk about\"",
+            "a \"Skip to main content\"",
+            "button \"Close\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "touchUnder44": [],
+        "axe": [],
+        "pass": true
+      },
+      "1216": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1216,
+          "clientWidth": 1216,
+          "railCollapsed": false,
+          "railBesideContent": true
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": false,
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Knowledge"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "pass": true
+      },
+      "1440": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": false,
+          "railBesideContent": true
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": false,
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Knowledge"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 15,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "input \"Tell VIDEOGO something…\"",
+            "button \"Send\"",
+            "button \"Update About\"",
+            "button \"Update Customers\"",
+            "button \"Update What we sell\"",
+            "button \"Update How we sound\"",
+            "button \"Update People and assets\"",
+            "a \"Manage use\"",
+            "button \"Update What we talk about\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "axe": [],
+        "pass": true
+      },
+      "text200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": true,
+          "railBesideContent": false
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 89,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 1440,
+              "clientWidth": 1440,
+              "railCollapsed": true,
+              "railBesideContent": false
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Knowledge"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 16,
+          "order": [
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "input \"Tell VIDEOGO something…\"",
+            "button \"Send\"",
+            "button \"Update About\"",
+            "button \"Update Customers\"",
+            "button \"Update What we sell\"",
+            "button \"Update How we sound\"",
+            "button \"Update People and assets\"",
+            "a \"Manage use\"",
+            "button \"Update What we talk about\"",
+            "a \"Skip to main content\"",
+            "button \"Close\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "axe": [],
+        "pass": true
+      },
+      "zoom200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 720,
+          "clientWidth": 720,
+          "railCollapsed": true,
+          "railBesideContent": false
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 720,
+              "clientWidth": 720,
+              "railCollapsed": true,
+              "railBesideContent": false
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Knowledge"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "pass": true
+      }
+    },
+    "/account.html": {
+      "320": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "railCollapsed": true,
+          "railBesideContent": false
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 320,
+              "clientWidth": 320,
+              "railCollapsed": true,
+              "railBesideContent": false
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [],
+            "accountCurrent": true
+          }
+        },
+        "keyboard": {
+          "stops": 13,
+          "order": [
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Change how VIDEOGO reaches y\"",
+            "button \"Manage subscription\"",
+            "button \"Cancel subscription\"",
+            "button \"Revoke organic educational a\"",
+            "button \"Export my data\"",
+            "button \"Delete account\"",
+            "a \"Skip to main content\"",
+            "button \"Close\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "touchUnder44": [],
+        "axe": [
+          "color-contrast ×1"
+        ],
+        "pass": true
+      },
+      "1216": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1216,
+          "clientWidth": 1216,
+          "railCollapsed": false,
+          "railBesideContent": true
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": false,
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "orientation": {
+            "primaryCurrent": [],
+            "accountCurrent": true
+          }
+        },
+        "pass": true
+      },
+      "1440": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": false,
+          "railBesideContent": true
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": false,
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "orientation": {
+            "primaryCurrent": [],
+            "accountCurrent": true
+          }
+        },
+        "keyboard": {
+          "stops": 12,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Change how VIDEOGO reaches y\"",
+            "button \"Manage subscription\"",
+            "button \"Cancel subscription\"",
+            "button \"Revoke organic educational a\"",
+            "button \"Export my data\"",
+            "button \"Delete account\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "axe": [
+          "color-contrast ×1"
+        ],
+        "pass": true
+      },
+      "text200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": true,
+          "railBesideContent": false
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 93,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 1440,
+              "clientWidth": 1440,
+              "railCollapsed": true,
+              "railBesideContent": false
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [],
+            "accountCurrent": true
+          }
+        },
+        "keyboard": {
+          "stops": 13,
+          "order": [
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Change how VIDEOGO reaches y\"",
+            "button \"Manage subscription\"",
+            "button \"Cancel subscription\"",
+            "button \"Revoke organic educational a\"",
+            "button \"Export my data\"",
+            "button \"Delete account\"",
+            "a \"Skip to main content\"",
+            "button \"Close\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "axe": [],
+        "pass": true
+      },
+      "zoom200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 720,
+          "clientWidth": 720,
+          "railCollapsed": true,
+          "railBesideContent": false
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 720,
+              "clientWidth": 720,
+              "railCollapsed": true,
+              "railBesideContent": false
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [],
+            "accountCurrent": true
+          }
+        },
+        "pass": true
+      }
+    },
+    "/making.html": {
+      "320": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "composer": {
+            "position": "static",
+            "height": 138,
+            "textareaHeight": 48,
+            "bottom": 980,
+            "pageHeight": 996
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 320,
+              "clientWidth": 320,
+              "railCollapsed": true,
+              "railBesideContent": false,
+              "composer": {
+                "position": "static",
+                "height": 138,
+                "textareaHeight": 48,
+                "bottom": 1256,
+                "pageHeight": 1272
+              }
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Studio"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 10,
+          "order": [
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Attach\"",
+            "textarea \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\"",
+            "a \"Skip to main content\"",
+            "button \"Close\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "touchUnder44": [],
+        "axe": [],
+        "pass": true
+      },
+      "1216": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1216,
+          "clientWidth": 1216,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 1026,
+            "pageHeight": 1050
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": false,
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Studio"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "pass": true
+      },
+      "1440": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 876,
+            "pageHeight": 900
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": false,
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Studio"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 9,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Attach\"",
+            "textarea \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "axe": [],
+        "pass": true
+      },
+      "text200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "composer": {
+            "position": "static",
+            "height": 114,
+            "textareaHeight": 80,
+            "bottom": 1036,
+            "pageHeight": 1052
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 89,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 1440,
+              "clientWidth": 1440,
+              "railCollapsed": true,
+              "railBesideContent": false,
+              "composer": {
+                "position": "static",
+                "height": 114,
+                "textareaHeight": 80,
+                "bottom": 1393,
+                "pageHeight": 1409
+              }
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Studio"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 10,
+          "order": [
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Attach\"",
+            "textarea \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\"",
+            "a \"Skip to main content\"",
+            "button \"Close\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "axe": [],
+        "pass": true
+      },
+      "zoom200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 720,
+          "clientWidth": 720,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 619,
+            "pageHeight": 635
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 720,
+              "clientWidth": 720,
+              "railCollapsed": true,
+              "railBesideContent": false,
+              "composer": {
+                "position": "static",
+                "height": 54,
+                "textareaHeight": 20,
+                "bottom": 895,
+                "pageHeight": 911
+              }
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Studio"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "pass": true
+      }
+    },
+    "/week-one.html": {
+      "320": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "composer": {
+            "position": "static",
+            "height": 138,
+            "textareaHeight": 48,
+            "bottom": 829,
+            "pageHeight": 845
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 320,
+              "clientWidth": 320,
+              "railCollapsed": true,
+              "railBesideContent": false,
+              "composer": {
+                "position": "static",
+                "height": 138,
+                "textareaHeight": 48,
+                "bottom": 1105,
+                "pageHeight": 1121
+              }
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Studio"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 10,
+          "order": [
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Attach\"",
+            "textarea \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\"",
+            "a \"Skip to main content\"",
+            "button \"Close\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "touchUnder44": [],
+        "axe": [],
+        "pass": true
+      },
+      "1216": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1216,
+          "clientWidth": 1216,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 1026,
+            "pageHeight": 1050
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": false,
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Studio"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "pass": true
+      },
+      "1440": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 876,
+            "pageHeight": 900
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": false,
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Studio"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 9,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Attach\"",
+            "textarea \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "axe": [],
+        "pass": true
+      },
+      "text200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "composer": {
+            "position": "static",
+            "height": 114,
+            "textareaHeight": 80,
+            "bottom": 926,
+            "pageHeight": 942
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 89,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 1440,
+              "clientWidth": 1440,
+              "railCollapsed": true,
+              "railBesideContent": false,
+              "composer": {
+                "position": "static",
+                "height": 114,
+                "textareaHeight": 80,
+                "bottom": 1283,
+                "pageHeight": 1299
+              }
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Studio"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 10,
+          "order": [
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Attach\"",
+            "textarea \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\"",
+            "a \"Skip to main content\"",
+            "button \"Close\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "axe": [],
+        "pass": true
+      },
+      "zoom200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 720,
+          "clientWidth": 720,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 591,
+            "pageHeight": 607
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 720,
+              "clientWidth": 720,
+              "railCollapsed": true,
+              "railBesideContent": false,
+              "composer": {
+                "position": "static",
+                "height": 54,
+                "textareaHeight": 20,
+                "bottom": 867,
+                "pageHeight": 883
+              }
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Studio"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "pass": true
+      }
+    },
+    "/first-video-deferred.html": {
+      "320": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "railCollapsed": true,
+          "railBesideContent": false
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 320,
+              "clientWidth": 320,
+              "railCollapsed": true,
+              "railBesideContent": false
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Today"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 8,
+          "order": [
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Notify me by email\"",
+            "a \"Skip to main content\"",
+            "button \"Close\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "touchUnder44": [],
+        "axe": [],
+        "pass": true
+      },
+      "1216": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1216,
+          "clientWidth": 1216,
+          "railCollapsed": false,
+          "railBesideContent": true
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": false,
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Today"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "pass": true
+      },
+      "1440": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": false,
+          "railBesideContent": true
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": false,
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 36
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Today"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 7,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Notify me by email\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "axe": [],
+        "pass": true
+      },
+      "text200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": true,
+          "railBesideContent": false
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 56
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 89,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 1440,
+              "clientWidth": 1440,
+              "railCollapsed": true,
+              "railBesideContent": false
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Today"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "keyboard": {
+          "stops": 8,
+          "order": [
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Notify me by email\"",
+            "a \"Skip to main content\"",
+            "button \"Close\""
+          ],
+          "missingRing": [],
+          "obscured": []
+        },
+        "passKeyboard": true,
+        "axe": [],
+        "pass": true
+      },
+      "zoom200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 720,
+          "clientWidth": 720,
+          "railCollapsed": true,
+          "railBesideContent": false
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "nav": {
+          "collapsed": true,
+          "panelHiddenBeforeOpen": true,
+          "expanded": "true",
+          "openLabel": "Close",
+          "links": [
+            {
+              "n": "Today",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Studio",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Knowledge",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Connections",
+              "visible": true,
+              "h": 44
+            },
+            {
+              "n": "Account",
+              "visible": true,
+              "h": 56,
+              "href": "account.html"
+            }
+          ],
+          "allReachable": true,
+          "openChecks": {
+            "midword": [],
+            "clipping": [],
+            "overlap": [],
+            "layout": {
+              "horizontalScroll": false,
+              "scrollWidth": 720,
+              "clientWidth": 720,
+              "railCollapsed": true,
+              "railBesideContent": false
+            }
+          },
+          "closedLabel": "Menu",
+          "closedExpanded": "false",
+          "focusReturned": true,
+          "escapeFocusReturned": true,
+          "menuStatePass": true,
+          "orientation": {
+            "primaryCurrent": [
+              "Today"
+            ],
+            "accountCurrent": false
+          }
+        },
+        "pass": true
+      }
+    }
+  },
+  "scenarios": {
+    "knowledge-long": {
+      "320": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "railCollapsed": true,
+          "railBesideContent": false
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "1216": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1216,
+          "clientWidth": 1216,
+          "railCollapsed": false,
+          "railBesideContent": true
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "1440": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": false,
+          "railBesideContent": true
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "text200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": true,
+          "railBesideContent": false
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "zoom200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 720,
+          "clientWidth": 720,
+          "railCollapsed": true,
+          "railBesideContent": false
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      }
+    },
+    "account-long": {
+      "320": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "railCollapsed": true,
+          "railBesideContent": false
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "1216": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1216,
+          "clientWidth": 1216,
+          "railCollapsed": false,
+          "railBesideContent": true
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "1440": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": false,
+          "railBesideContent": true
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "text200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": true,
+          "railBesideContent": false
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "zoom200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 720,
+          "clientWidth": 720,
+          "railCollapsed": true,
+          "railBesideContent": false
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      }
+    },
+    "making-long": {
+      "320": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "composer": {
+            "position": "static",
+            "height": 138,
+            "textareaHeight": 48,
+            "bottom": 1096,
+            "pageHeight": 1112
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "1216": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1216,
+          "clientWidth": 1216,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 1026,
+            "pageHeight": 1050
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "1440": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 876,
+            "pageHeight": 900
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "text200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "composer": {
+            "position": "static",
+            "height": 114,
+            "textareaHeight": 80,
+            "bottom": 1152,
+            "pageHeight": 1168
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "zoom200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 720,
+          "clientWidth": 720,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 677,
+            "pageHeight": 693
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      }
+    },
+    "today-upcoming-long": {
+      "320": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "upcoming": [
+            {
+              "layout": "stacked",
+              "parts": true
+            },
+            {
+              "layout": "stacked",
+              "parts": true
+            }
+          ],
+          "composer": {
+            "position": "static",
+            "height": 138,
+            "textareaHeight": 48,
+            "bottom": 1114,
+            "pageHeight": 1130
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "1216": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1216,
+          "clientWidth": 1216,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "upcoming": [
+            {
+              "layout": "tabular",
+              "parts": true
+            },
+            {
+              "layout": "tabular",
+              "parts": true
+            }
+          ],
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 1026,
+            "pageHeight": 1050
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "1440": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "upcoming": [
+            {
+              "layout": "tabular",
+              "parts": true
+            },
+            {
+              "layout": "tabular",
+              "parts": true
+            }
+          ],
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 876,
+            "pageHeight": 900
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "text200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "upcoming": [
+            {
+              "layout": "stacked",
+              "parts": true
+            },
+            {
+              "layout": "stacked",
+              "parts": true
+            }
+          ],
+          "composer": {
+            "position": "static",
+            "height": 114,
+            "textareaHeight": 80,
+            "bottom": 1414,
+            "pageHeight": 1430
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "zoom200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 720,
+          "clientWidth": 720,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "upcoming": [
+            {
+              "layout": "tabular",
+              "parts": true
+            },
+            {
+              "layout": "tabular",
+              "parts": true
+            }
+          ],
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 759,
+            "pageHeight": 775
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      }
+    },
+    "studio-detail-long": {
+      "320": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "boardColumnsPerRow": 4,
+          "minCardWidth": 0,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 138,
+            "textareaHeight": 48,
+            "bottom": 1523,
+            "pageHeight": 1539
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "1216": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1216,
+          "clientWidth": 1216,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "boardColumnsPerRow": 4,
+          "minCardWidth": 231,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 1288,
+            "pageHeight": 1312
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "1440": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "boardColumnsPerRow": 4,
+          "minCardWidth": 189,
+          "panelPosition": "beside board",
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 876,
+            "pageHeight": 900
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "text200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "boardColumnsPerRow": 2,
+          "minCardWidth": 698,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 114,
+            "textareaHeight": 80,
+            "bottom": 3671,
+            "pageHeight": 3687
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "zoom200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 720,
+          "clientWidth": 720,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "boardColumnsPerRow": 2,
+          "minCardWidth": 338,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 2223,
+            "pageHeight": 2239
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      }
+    },
+    "studio-idea-detail-field": {
+      "320": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "boardColumnsPerRow": 4,
+          "minCardWidth": 0,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 138,
+            "textareaHeight": 48,
+            "bottom": 1137,
+            "pageHeight": 1153
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "1216": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1216,
+          "clientWidth": 1216,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "boardColumnsPerRow": 4,
+          "minCardWidth": 231,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 1178,
+            "pageHeight": 1202
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "1440": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "boardColumnsPerRow": 4,
+          "minCardWidth": 189,
+          "panelPosition": "beside board",
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 876,
+            "pageHeight": 900
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "text200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "boardColumnsPerRow": 2,
+          "minCardWidth": 698,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 114,
+            "textareaHeight": 80,
+            "bottom": 3451,
+            "pageHeight": 3467
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      },
+      "zoom200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 720,
+          "clientWidth": 720,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "boardColumnsPerRow": 2,
+          "minCardWidth": 338,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 1991,
+            "pageHeight": 2007
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "pass": true
+      }
+    },
+    "composer-five-lines": {
+      "320": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "upcoming": [
+            {
+              "layout": "stacked",
+              "parts": true
+            },
+            {
+              "layout": "stacked",
+              "parts": true
+            }
+          ],
+          "composer": {
+            "position": "static",
+            "height": 210,
+            "textareaHeight": 120,
+            "bottom": 1059,
+            "pageHeight": 1075
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "textarea": {
+          "visibleLines": 5,
+          "contentLines": 20,
+          "scrollsInside": true
+        },
+        "pass": true
+      },
+      "1216": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1216,
+          "clientWidth": 1216,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "upcoming": [
+            {
+              "layout": "tabular",
+              "parts": true
+            },
+            {
+              "layout": "tabular",
+              "parts": true
+            }
+          ],
+          "composer": {
+            "position": "static",
+            "height": 134,
+            "textareaHeight": 100,
+            "bottom": 1026,
+            "pageHeight": 1050
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "textarea": {
+          "visibleLines": 5,
+          "contentLines": 7,
+          "scrollsInside": true
+        },
+        "pass": true
+      },
+      "1440": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "upcoming": [
+            {
+              "layout": "tabular",
+              "parts": true
+            },
+            {
+              "layout": "tabular",
+              "parts": true
+            }
+          ],
+          "composer": {
+            "position": "static",
+            "height": 134,
+            "textareaHeight": 100,
+            "bottom": 876,
+            "pageHeight": 900
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "textarea": {
+          "visibleLines": 5,
+          "contentLines": 7,
+          "scrollsInside": true
+        },
+        "pass": true
+      },
+      "text200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "upcoming": [
+            {
+              "layout": "stacked",
+              "parts": true
+            },
+            {
+              "layout": "stacked",
+              "parts": true
+            }
+          ],
+          "composer": {
+            "position": "static",
+            "height": 234,
+            "textareaHeight": 200,
+            "bottom": 1378,
+            "pageHeight": 1394
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "textarea": {
+          "visibleLines": 5,
+          "contentLines": 15,
+          "scrollsInside": true
+        },
+        "pass": true
+      },
+      "zoom200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 720,
+          "clientWidth": 720,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "upcoming": [
+            {
+              "layout": "tabular",
+              "parts": true
+            },
+            {
+              "layout": "tabular",
+              "parts": true
+            }
+          ],
+          "composer": {
+            "position": "static",
+            "height": 134,
+            "textareaHeight": 100,
+            "bottom": 741,
+            "pageHeight": 757
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "textarea": {
+          "visibleLines": 5,
+          "contentLines": 9,
+          "scrollsInside": true
+        },
+        "pass": true
+      }
+    },
+    "studio-composer-five-lines": {
+      "320": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "boardColumnsPerRow": 4,
+          "minCardWidth": 0,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 210,
+            "textareaHeight": 120,
+            "bottom": 1508,
+            "pageHeight": 1524
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "textarea": {
+          "visibleLines": 5,
+          "contentLines": 20,
+          "scrollsInside": true
+        },
+        "pass": true
+      },
+      "1216": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1216,
+          "clientWidth": 1216,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "boardColumnsPerRow": 4,
+          "minCardWidth": 231,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 134,
+            "textareaHeight": 100,
+            "bottom": 1368,
+            "pageHeight": 1392
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "textarea": {
+          "visibleLines": 5,
+          "contentLines": 7,
+          "scrollsInside": true
+        },
+        "pass": true
+      },
+      "1440": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": false,
+          "railBesideContent": true,
+          "boardColumnsPerRow": 4,
+          "minCardWidth": 189,
+          "panelPosition": "beside board",
+          "composer": {
+            "position": "static",
+            "height": 134,
+            "textareaHeight": 100,
+            "bottom": 876,
+            "pageHeight": 900
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "textarea": {
+          "visibleLines": 5,
+          "contentLines": 8,
+          "scrollsInside": true
+        },
+        "pass": true
+      },
+      "text200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "boardColumnsPerRow": 2,
+          "minCardWidth": 698,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 234,
+            "textareaHeight": 200,
+            "bottom": 3663,
+            "pageHeight": 3679
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "textarea": {
+          "visibleLines": 5,
+          "contentLines": 15,
+          "scrollsInside": true
+        },
+        "pass": true
+      },
+      "zoom200": {
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 720,
+          "clientWidth": 720,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "boardColumnsPerRow": 2,
+          "minCardWidth": 338,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 134,
+            "textareaHeight": 100,
+            "bottom": 2239,
+            "pageHeight": 2255
+          }
+        },
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "textarea": {
+          "visibleLines": 5,
+          "contentLines": 9,
+          "scrollsInside": true
+        },
+        "pass": true
+      }
+    }
+  },
+  "composer": {
+    "320": {
+      "afterShiftEnter": {
+        "value": "Line one\n",
+        "submitted": 0
+      },
+      "afterEnter": {
+        "value": "Line one\nLine two\n",
+        "submitted": 0
+      },
+      "afterSendClick": {
+        "value": "Line one\nLine two\n",
+        "submitted": 1
+      },
+      "pass": true
+    },
+    "1440": {
+      "afterShiftEnter": {
+        "value": "Line one\n",
+        "submitted": 0
+      },
+      "afterEnter": {
+        "value": "Line one\nLine two",
+        "submitted": 1
+      },
+      "afterSendClick": {
+        "value": "Line one\nLine two",
+        "submitted": 2
+      },
+      "pass": true
+    }
+  },
+  "desktopDiff": {
+    "B1_knowledge_1440": {
+      "sizeBefore": "2880×1800",
+      "sizeNow": "2880×1800",
+      "changedPixelsPct": 0,
+      "changedRowsCssPx": null
+    },
+    "B2_knowledge_1216": {
+      "sizeBefore": "2432×2100",
+      "sizeNow": "2432×2100",
+      "changedPixelsPct": 0,
+      "changedRowsCssPx": null
+    },
+    "B3_account-settings_1440": {
+      "sizeBefore": "2880×2358",
+      "sizeNow": "2880×2358",
+      "changedPixelsPct": 0.929,
+      "changedRowsCssPx": [
+        71,
+        884
+      ]
+    },
+    "B4_account-settings_1216": {
+      "sizeBefore": "2432×2342",
+      "sizeNow": "2432×2342",
+      "changedPixelsPct": 1.108,
+      "changedRowsCssPx": [
+        71,
+        1034
+      ]
+    },
+    "B5_loading_making_1440": {
+      "sizeBefore": "2880×1800",
+      "sizeNow": "2880×1800",
+      "changedPixelsPct": 0,
+      "changedRowsCssPx": [
+        37,
+        37
+      ]
+    },
+    "B6_empty_week-one_1440": {
+      "sizeBefore": "2880×1800",
+      "sizeNow": "2880×1800",
+      "changedPixelsPct": 0,
+      "changedRowsCssPx": null
+    },
+    "B7_qa-deferred_first-video-deferred_1440": {
+      "sizeBefore": "2880×1800",
+      "sizeNow": "2880×1800",
+      "changedPixelsPct": 0,
+      "changedRowsCssPx": [
+        37,
+        37
+      ]
+    },
+    "A21-1_today-ready-media_1440": {
+      "sizeBefore": "2880×1800",
+      "sizeNow": "2880×1800",
+      "changedPixelsPct": 0,
+      "changedRowsCssPx": null
+    },
+    "A21-3_studio-populated-media_1440": {
+      "sizeBefore": "2880×1800",
+      "sizeNow": "2880×1800",
+      "changedPixelsPct": 0,
+      "changedRowsCssPx": null
+    },
+    "A21-4_studio-selected-detail_1440": {
+      "sizeBefore": "2880×1800",
+      "sizeNow": "2880×1800",
+      "changedPixelsPct": 0.001,
+      "changedRowsCssPx": [
+        37,
+        390
+      ]
+    },
+    "A21-5_studio-selected-detail-below_1216": {
+      "sizeBefore": "2432×2624",
+      "sizeNow": "2432×2624",
+      "changedPixelsPct": 0,
+      "changedRowsCssPx": null
+    }
+  },
+  "renders": [
+    {
+      "name": "R01_today_text200_1440",
+      "url": "/today.html",
+      "mode": "text200",
+      "method": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "dsf": 1,
+        "text": 2
+      },
+      "full": true,
+      "clip": null
+    },
+    {
+      "name": "R02_studio-ready_text200_1440",
+      "url": "/studio.html?select=rd1",
+      "mode": "text200",
+      "method": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "dsf": 1,
+        "text": 2
+      },
+      "full": true,
+      "clip": null
+    },
+    {
+      "name": "R03_today_zoom200",
+      "url": "/today.html",
+      "mode": "zoom200",
+      "method": {
+        "viewport": {
+          "width": 720,
+          "height": 450
+        },
+        "dsf": 2
+      },
+      "full": true,
+      "clip": null
+    },
+    {
+      "name": "R04_studio-ready_zoom200",
+      "url": "/studio.html?select=rd1",
+      "mode": "zoom200",
+      "method": {
+        "viewport": {
+          "width": 720,
+          "height": 450
+        },
+        "dsf": 2
+      },
+      "full": true,
+      "clip": null
+    },
+    {
+      "name": "R05_today_320_complete",
+      "url": "/today.html",
+      "mode": "320",
+      "method": {
+        "viewport": {
+          "width": 320,
+          "height": 640
+        },
+        "dsf": 2,
+        "touch": true
+      },
+      "full": true,
+      "clip": null
+    },
+    {
+      "name": "R05b_today_320_menu-open",
+      "url": "/today.html?menu=open",
+      "mode": "320",
+      "method": {
+        "viewport": {
+          "width": 320,
+          "height": 640
+        },
+        "dsf": 2,
+        "touch": true
+      },
+      "full": true,
+      "clip": null
+    },
+    {
+      "name": "R06_studio_320_media-and-ready-detail",
+      "url": "/studio.html?select=rd1",
+      "mode": "320",
+      "method": {
+        "viewport": {
+          "width": 320,
+          "height": 640
+        },
+        "dsf": 2,
+        "touch": true
+      },
+      "full": true,
+      "clip": null
+    },
+    {
+      "name": "R06b_studio_320_menu-open",
+      "url": "/studio.html?select=rd1&menu=open",
+      "mode": "320",
+      "method": {
+        "viewport": {
+          "width": 320,
+          "height": 640
+        },
+        "dsf": 2,
+        "touch": true
+      },
+      "full": false,
+      "clip": null
+    },
+    {
+      "name": "R07a_composer_one-line_1440",
+      "url": "/today.html",
+      "mode": "1440",
+      "method": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "dsf": 1
+      },
+      "full": true,
+      "clip": "form[data-composer]"
+    },
+    {
+      "name": "R07b_composer_five-lines_1440",
+      "url": "/today.html",
+      "mode": "1440",
+      "method": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "dsf": 1
+      },
+      "full": true,
+      "clip": "form[data-composer]"
+    },
+    {
+      "name": "R07c_composer_one-line_320",
+      "url": "/today.html",
+      "mode": "320",
+      "method": {
+        "viewport": {
+          "width": 320,
+          "height": 640
+        },
+        "dsf": 2,
+        "touch": true
+      },
+      "full": true,
+      "clip": "form[data-composer]"
+    },
+    {
+      "name": "R07d_composer_five-lines_320",
+      "url": "/today.html",
+      "mode": "320",
+      "method": {
+        "viewport": {
+          "width": 320,
+          "height": 640
+        },
+        "dsf": 2,
+        "touch": true
+      },
+      "full": true,
+      "clip": "form[data-composer]"
+    },
+    {
+      "name": "R07e_composer_placeholder_text200",
+      "url": "/today.html",
+      "mode": "text200",
+      "method": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "dsf": 1,
+        "text": 2
+      },
+      "full": true,
+      "clip": "form[data-composer]"
+    },
+    {
+      "name": "R13_studio_320_object-view_ready",
+      "url": "/studio.html",
+      "mode": "320",
+      "method": {
+        "viewport": {
+          "width": 320,
+          "height": 640
+        },
+        "dsf": 2,
+        "touch": true
+      },
+      "full": true,
+      "clip": null
+    },
+    {
+      "name": "R13b_studio_320_after-back-to-studio",
+      "url": "/studio.html",
+      "mode": "320",
+      "method": {
+        "viewport": {
+          "width": 320,
+          "height": 640
+        },
+        "dsf": 2,
+        "touch": true
+      },
+      "full": false,
+      "clip": null
+    },
+    {
+      "name": "R14_account_1440",
+      "url": "/account.html",
+      "mode": "1440",
+      "method": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "dsf": 1
+      },
+      "full": true,
+      "clip": null
+    },
+    {
+      "name": "R14b_account_320_menu-open",
+      "url": "/account.html?menu=open",
+      "mode": "320",
+      "method": {
+        "viewport": {
+          "width": 320,
+          "height": 640
+        },
+        "dsf": 2,
+        "touch": true
+      },
+      "full": false,
+      "clip": null
+    },
+    {
+      "name": "R08_knowledge_1440",
+      "url": "/knowledge.html",
+      "mode": "1440",
+      "method": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "dsf": 1
+      },
+      "full": false,
+      "clip": null
+    },
+    {
+      "name": "R09_account_1440",
+      "url": "/account.html",
+      "mode": "1440",
+      "method": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "dsf": 1
+      },
+      "full": true,
+      "clip": null
+    },
+    {
+      "name": "R10_making_1440",
+      "url": "/making.html",
+      "mode": "1440",
+      "method": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "dsf": 1
+      },
+      "full": false,
+      "clip": null
+    },
+    {
+      "name": "R11_week-one_1440",
+      "url": "/week-one.html",
+      "mode": "1440",
+      "method": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "dsf": 1
+      },
+      "full": false,
+      "clip": null
+    },
+    {
+      "name": "R12_qa-deferred_1440",
+      "url": "/first-video-deferred.html",
+      "mode": "1440",
+      "method": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "dsf": 1
+      },
+      "full": false,
+      "clip": null
+    }
+  ],
+  "objectView": {
+    "320": {
+      "dedicatedView": true,
+      "boardHidden": true,
+      "backLabel": "Back to Studio",
+      "titleTop": 169,
+      "viewportH": 640,
+      "focusOnTitle": true,
+      "panelBeforeBoard": true,
+      "liveCardVisibleBeforeDetail": false,
+      "checks": {
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "boardColumnsPerRow": 4,
+          "minCardWidth": 0,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 138,
+            "textareaHeight": 48,
+            "bottom": 1436,
+            "pageHeight": 1452
+          }
+        }
+      },
+      "afterBack": {
+        "boardVisible": true,
+        "focusOnCard": true,
+        "cardPressed": "false"
+      },
+      "pass": true
+    },
+    "zoom200": {
+      "dedicatedView": false,
+      "boardHidden": false,
+      "backLabel": "Back to context",
+      "titleTop": 592,
+      "viewportH": 450,
+      "focusOnTitle": false,
+      "panelBeforeBoard": false,
+      "liveCardVisibleBeforeDetail": true,
+      "checks": {
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 720,
+          "clientWidth": 720,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "boardColumnsPerRow": 2,
+          "minCardWidth": 338,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 54,
+            "textareaHeight": 20,
+            "bottom": 2159,
+            "pageHeight": 2175
+          }
+        }
+      },
+      "afterBack": {
+        "boardVisible": true,
+        "focusOnCard": true,
+        "cardPressed": "false"
+      },
+      "pass": true
+    },
+    "text200": {
+      "dedicatedView": false,
+      "boardHidden": false,
+      "backLabel": "Back to context",
+      "titleTop": 1097,
+      "viewportH": 900,
+      "focusOnTitle": false,
+      "panelBeforeBoard": false,
+      "liveCardVisibleBeforeDetail": true,
+      "checks": {
+        "midword": [],
+        "clipping": [],
+        "overlap": [],
+        "layout": {
+          "horizontalScroll": false,
+          "scrollWidth": 1440,
+          "clientWidth": 1440,
+          "railCollapsed": true,
+          "railBesideContent": false,
+          "boardColumnsPerRow": 2,
+          "minCardWidth": 698,
+          "panelPosition": "below board",
+          "composer": {
+            "position": "static",
+            "height": 114,
+            "textareaHeight": 80,
+            "bottom": 3543,
+            "pageHeight": 3559
+          }
+        }
+      },
+      "afterBack": {
+        "boardVisible": true,
+        "focusOnCard": true,
+        "cardPressed": "false"
+      },
+      "pass": true
+    }
+  },
+  "historyBack": {
+    "boardScrollBefore": 1147,
+    "opened": {
+      "view": true,
+      "boardVisible": false,
+      "scrollY": 0,
+      "focusOnCard": false,
+      "focusOnTitle": true,
+      "url": "?select=rd1"
+    },
+    "afterBrowserBack": {
+      "view": false,
+      "boardVisible": true,
+      "scrollY": 1147,
+      "focusOnCard": true,
+      "focusOnTitle": false,
+      "url": ""
+    },
+    "afterForward": {
+      "view": true,
+      "boardVisible": false,
+      "scrollY": 0,
+      "focusOnCard": false,
+      "focusOnTitle": true,
+      "url": "?select=rd1"
+    },
+    "afterBackToStudio": {
+      "view": false,
+      "boardVisible": true,
+      "scrollY": 1147,
+      "focusOnCard": true,
+      "focusOnTitle": false,
+      "url": ""
+    },
+    "stateAfterButton": {
+      "vgBoard": true,
+      "scrollY": 1147,
+      "card": "rd1"
+    },
+    "deepOpened": {
+      "view": true,
+      "url": "?select=rd1"
+    },
+    "deepBack": {
+      "view": false,
+      "boardVisible": true,
+      "focusOnCard": true,
+      "url": ""
+    },
+    "pass": true
+  },
+  "renderTextCheck": {
+    "R01_today_text200_1440": {
+      "rootFontSizeBefore": "32px",
+      "rootFontSizeAfter": "32px"
+    },
+    "R02_studio-ready_text200_1440": {
+      "rootFontSizeBefore": "32px",
+      "rootFontSizeAfter": "32px"
+    },
+    "R03_today_zoom200": {
+      "rootFontSizeBefore": "16px",
+      "rootFontSizeAfter": "16px"
+    },
+    "R04_studio-ready_zoom200": {
+      "rootFontSizeBefore": "16px",
+      "rootFontSizeAfter": "16px"
+    },
+    "R05_today_320_complete": {
+      "rootFontSizeBefore": "16px",
+      "rootFontSizeAfter": "16px"
+    },
+    "R05b_today_320_menu-open": {
+      "rootFontSizeBefore": "16px",
+      "rootFontSizeAfter": "16px"
+    },
+    "R06_studio_320_media-and-ready-detail": {
+      "rootFontSizeBefore": "16px",
+      "rootFontSizeAfter": "16px"
+    },
+    "R06b_studio_320_menu-open": {
+      "rootFontSizeBefore": "16px",
+      "rootFontSizeAfter": "16px"
+    },
+    "R07a_composer_one-line_1440": {
+      "rootFontSizeBefore": "16px",
+      "rootFontSizeAfter": "16px"
+    },
+    "R07b_composer_five-lines_1440": {
+      "rootFontSizeBefore": "16px",
+      "rootFontSizeAfter": "16px"
+    },
+    "R07c_composer_one-line_320": {
+      "rootFontSizeBefore": "16px",
+      "rootFontSizeAfter": "16px"
+    },
+    "R07d_composer_five-lines_320": {
+      "rootFontSizeBefore": "16px",
+      "rootFontSizeAfter": "16px"
+    },
+    "R07e_composer_placeholder_text200": {
+      "rootFontSizeBefore": "32px",
+      "rootFontSizeAfter": "32px"
+    },
+    "R13_studio_320_object-view_ready": {
+      "rootFontSizeBefore": "16px",
+      "rootFontSizeAfter": "16px"
+    },
+    "R13b_studio_320_after-back-to-studio": {
+      "rootFontSizeBefore": "16px",
+      "rootFontSizeAfter": "16px"
+    },
+    "R14_account_1440": {
+      "rootFontSizeBefore": "16px",
+      "rootFontSizeAfter": "16px"
+    },
+    "R14b_account_320_menu-open": {
+      "rootFontSizeBefore": "16px",
+      "rootFontSizeAfter": "16px"
+    },
+    "R08_knowledge_1440": {
+      "rootFontSizeBefore": "16px",
+      "rootFontSizeAfter": "16px"
+    },
+    "R09_account_1440": {
+      "rootFontSizeBefore": "16px",
+      "rootFontSizeAfter": "16px"
+    },
+    "R10_making_1440": {
+      "rootFontSizeBefore": "16px",
+      "rootFontSizeAfter": "16px"
+    },
+    "R11_week-one_1440": {
+      "rootFontSizeBefore": "16px",
+      "rootFontSizeAfter": "16px"
+    },
+    "R12_qa-deferred_1440": {
+      "rootFontSizeBefore": "16px",
+      "rootFontSizeAfter": "16px"
+    }
+  }
+}

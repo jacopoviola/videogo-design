@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knowledge — Videogo</title>
+<script src="js/boot.js"></script>
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+<!-- Checkpoint B · Source: screens/B3_page_knowledge.png · videogo_ux3_prototype.html:976–1003 · FH §5 -->
+<a class="vg-skip" href="#main">Skip to main content</a>
+<div class="vg-app">
+  <aside class="vg-rail">
+    <div class="vg-rail__bar">
+      <div class="vg-lockup"><img src="assets/videogo-lockup-inverse-outlined.svg" width="940" height="140" alt="VIDEOGO"></div>
+      <button class="vg-menu" type="button" aria-expanded="false" aria-controls="vg-nav-panel">Menu</button>
+    </div>
+    <div class="vg-rail__panel" id="vg-nav-panel">
+      <nav class="vg-nav" aria-label="Primary">
+        <ul>
+          <li><a href="today.html" title="Open Today">Today</a></li>
+          <li><a href="studio.html" title="Open Studio">Studio</a></li>
+          <li><a href="knowledge.html" aria-current="page" title="Open Knowledge">Knowledge</a></li>
+          <li><a href="#" title="Open Connections" data-out-of-scope="Connections — not in Checkpoint B">Connections</a></li>
+        </ul>
+      </nav>
+      <a class="vg-account" href="account.html" title="Account / Settings">
+        <span class="vg-account__initials" aria-hidden="true">MI</span>
+        <span><span class="vg-account__name">Moretti Impianti</span><span class="vg-account__sector">Home services</span></span>
+        <span class="vg-visually-hidden">— Account and settings</span>
+      </a>
+    </div>
+  </aside>
+
+  <main class="vg-main" id="main" tabindex="-1">
+    <header class="vg-page-head">
+      <h1 class="vg-page-title">Knowledge</h1>
+      <p class="vg-page-sub">Update what VIDEOGO knows about you</p>
+    </header>
+    <div class="vg-page vg-page--wide">
+      <div class="vg-knowledge">
+        <section class="vg-convo" aria-labelledby="convo-title">
+          <h2 class="vg-visually-hidden" id="convo-title">Conversation with VIDEOGO</h2>
+          <ol>
+            <li class="vg-turn vg-turn--owner"><p class="vg-turn__text"><span class="vg-visually-hidden">You: </span>The €89 check ends on November 30.</p></li>
+            <li class="vg-turn"><svg class="vg-turn__mark" role="img" aria-label="Videogo" viewBox="21.36 21.35 337.28 337.28"><g fill="currentColor" transform="translate(10.82 8.13) translate(176 190) rotate(-45) translate(-259 -259)"><rect x="148" y="136" width="49" height="239"/><rect x="148" y="136" width="238" height="54"/><rect x="148" y="322" width="237.5" height="53"/><rect x="240" y="228" width="136" height="46"/></g></svg><p class="vg-turn__text">Got it — added the end date to the offer. Two upcoming videos mention the check; both now say “until November 30”.</p></li>
+            <li class="vg-turn vg-turn--owner"><p class="vg-turn__text"><span class="vg-visually-hidden">You: </span>And Marco joined — he can be on camera too.</p></li>
+            <li class="vg-turn"><svg class="vg-turn__mark" role="img" aria-label="Videogo" viewBox="21.36 21.35 337.28 337.28"><g fill="currentColor" transform="translate(10.82 8.13) translate(176 190) rotate(-45) translate(-259 -259)"><rect x="148" y="136" width="49" height="239"/><rect x="148" y="136" width="238" height="54"/><rect x="148" y="322" width="237.5" height="53"/><rect x="240" y="228" width="136" height="46"/></g></svg><p class="vg-turn__text">Welcome Marco. Added him under People &amp; assets — I'll ask for his own consent the first time a recording involves him.</p></li>
+          </ol>
+          <form class="vg-convo__input" onsubmit="return false" aria-label="Tell VIDEOGO something">
+            <label class="vg-visually-hidden" for="knowledge-input">Message to VIDEOGO</label>
+            <input class="vg-field-input" id="knowledge-input" type="text" placeholder="Tell VIDEOGO something…">
+            <button class="vg-btn vg-btn--primary" type="submit">Send</button>
+          </form>
+        </section>
+        <section class="vg-facts" aria-labelledby="facts-title">
+          <h2 class="vg-visually-hidden" id="facts-title">What VIDEOGO knows</h2>
+          <div class="vg-fact"><h3 class="vg-fact__label">About</h3><button class="vg-btn vg-btn--quiet vg-btn--compact" type="button" aria-label="Update About" data-source-action="PR:976 toast — tell VIDEOGO the change in the chat">Update</button><p class="vg-fact__value">Moretti Impianti — family-run heating &amp; plumbing, Varese, since 1998.</p></div>
+          <div class="vg-fact"><h3 class="vg-fact__label">Customers</h3><button class="vg-btn vg-btn--quiet vg-btn--compact" type="button" aria-label="Update Customers" data-source-action="PR:976 toast">Update</button><p class="vg-fact__value">Homeowners &amp; small condos, Varese area; older housing stock.</p></div>
+          <div class="vg-fact"><h3 class="vg-fact__label">What we sell</h3><button class="vg-btn vg-btn--quiet vg-btn--compact" type="button" aria-label="Update What we sell" data-source-action="PR:976 toast">Update</button><p class="vg-fact__value">Boiler service &amp; repair · heat-pump installs · €89 pre-winter check <span class="vg-fact__qual">· until Nov 30</span></p></div>
+          <div class="vg-fact"><h3 class="vg-fact__label">How we sound</h3><button class="vg-btn vg-btn--quiet vg-btn--compact" type="button" aria-label="Update How we sound" data-source-action="PR:976 toast">Update</button><p class="vg-fact__value">Practical, direct, no scare tactics. Boundary: never fear-based selling <span class="vg-fact__qual">· confirmed</span></p></div>
+          <div class="vg-fact"><h3 class="vg-fact__label">People &amp; assets</h3><button class="vg-btn vg-btn--quiet vg-btn--compact" type="button" aria-label="Update People and assets" data-source-action="PR:976 toast">Update</button><p class="vg-fact__value">Luca (on camera: allowed) · Marco (consent pending) · 46 job photos</p><p class="vg-fact__value"><a class="vg-link" href="#" data-source-action="PR:998 toast — Manage use surface undesigned">Manage use</a></p></div>
+          <div class="vg-fact"><h3 class="vg-fact__label">What we talk about</h3><button class="vg-btn vg-btn--quiet vg-btn--compact" type="button" aria-label="Update What we talk about" data-source-action="PR:976 toast">Update</button><p class="vg-fact__value">Boiler care · honest pricing · heat pumps · seasonal checklists</p></div>
+        </section>
+      </div>
+    </div>
+
+  </main>
+</div>
+<script src="js/shell.js"></script>
+</body>
+</html>

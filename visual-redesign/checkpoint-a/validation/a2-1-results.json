@@ -1,0 +1,57 @@
+{
+  "axe": [
+    {
+      "url": "/today-ready.html",
+      "violations": [],
+      "cardNames": []
+    },
+    {
+      "url": "/studio.html",
+      "violations": [],
+      "cardNames": [
+        "Demo fixture Photo · 4:3 Why w … , source photo, 4:3, demo fixture",
+        "No media yet Radiator bleeding … , no media yet",
+        "Rendering 3 signs your boiler  … , media rendering",
+        "Demo fixture Reel · 9:16 0:41  … , video poster frame, Instagram Reel, 9:16, 0:41, demo fixture",
+        "Demo fixture Instagram The €89 … , video poster frame, Instagram, demo fixture"
+      ]
+    },
+    {
+      "url": "/studio.html?select=rd1",
+      "violations": [],
+      "cardNames": [
+        "Demo fixture Photo · 4:3 Why w … , source photo, 4:3, demo fixture",
+        "No media yet Radiator bleeding … , no media yet",
+        "Rendering 3 signs your boiler  … , media rendering",
+        "Demo fixture Reel · 9:16 0:41  … , video poster frame, Instagram Reel, 9:16, 0:41, demo fixture",
+        "Demo fixture Instagram The €89 … , video poster frame, Instagram, demo fixture"
+      ]
+    },
+    {
+      "url": "/studio.html?feed=specimen",
+      "violations": [],
+      "cardNames": [
+        "Demo fixture Photo · 4:3 Why w … , source photo, 4:3, demo fixture",
+        "No media yet Radiator bleeding … , no media yet",
+        "Rendering 3 signs your boiler  … , media rendering",
+        "Demo fixture Reel · 9:16 0:41  … , video poster frame, Instagram Reel, 9:16, 0:41, demo fixture",
+        "Demo fixture Instagram The €89 … , video poster frame, Instagram, demo fixture"
+      ]
+    },
+    {
+      "url": "/media-specimens.html",
+      "violations": [],
+      "cardNames": []
+    },
+    {
+      "url": "/today-ready.html?study=narrow",
+      "violations": [],
+      "cardNames": []
+    }
+  ],
+  "keyboard": {
+    "selected": "true",
+    "inspectImageAlt": "Poster frame for “Heat pump vs new boiler: the honest math” (demo fixture)",
+    "trust": "VIDEOGO only publishes within permissions you grant."
+  }
+}

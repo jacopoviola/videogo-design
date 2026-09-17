@@ -1,0 +1,288 @@
+{
+  "account": {
+    "today.html": {
+      "tag": "A",
+      "href": "account.html",
+      "title": "Account / Settings",
+      "h": 56,
+      "w": 176,
+      "visible": true,
+      "font": "\"Instrument Sans\"",
+      "color": "rgb(29, 29, 31)",
+      "focusRing": "solid 2px rgb(0, 87, 217)",
+      "navCurrent": [
+        "Today"
+      ]
+    },
+    "today-ready.html": {
+      "tag": "A",
+      "href": "account.html",
+      "title": "Account / Settings",
+      "h": 56,
+      "w": 176,
+      "visible": true,
+      "font": "\"Instrument Sans\"",
+      "color": "rgb(29, 29, 31)",
+      "focusRing": "solid 2px rgb(0, 87, 217)",
+      "navCurrent": [
+        "Today"
+      ]
+    },
+    "studio.html": {
+      "tag": "A",
+      "href": "account.html",
+      "title": "Account / Settings",
+      "h": 56,
+      "w": 176,
+      "visible": true,
+      "font": "\"Instrument Sans\"",
+      "color": "rgb(29, 29, 31)",
+      "focusRing": "solid 2px rgb(0, 87, 217)",
+      "navCurrent": [
+        "Studio"
+      ]
+    },
+    "knowledge.html": {
+      "tag": "A",
+      "href": "account.html",
+      "title": "Account / Settings",
+      "h": 56,
+      "w": 176,
+      "visible": true,
+      "font": "\"Instrument Sans\"",
+      "color": "rgb(29, 29, 31)",
+      "focusRing": "solid 2px rgb(0, 87, 217)",
+      "navCurrent": [
+        "Knowledge"
+      ]
+    },
+    "account.html": {
+      "tag": "A",
+      "href": "account.html",
+      "title": "Account / Settings",
+      "h": 56,
+      "w": 176,
+      "visible": true,
+      "font": "\"Instrument Sans\"",
+      "color": "rgb(29, 29, 31)",
+      "focusRing": "solid 2px rgb(0, 87, 217)",
+      "navCurrent": [
+        "Today"
+      ]
+    },
+    "making.html": {
+      "tag": "A",
+      "href": "account.html",
+      "title": "Account / Settings",
+      "h": 56,
+      "w": 176,
+      "visible": true,
+      "font": "\"Instrument Sans\"",
+      "color": "rgb(29, 29, 31)",
+      "focusRing": "solid 2px rgb(0, 87, 217)",
+      "navCurrent": [
+        "Studio"
+      ]
+    },
+    "week-one.html": {
+      "tag": "A",
+      "href": "account.html",
+      "title": "Account / Settings",
+      "h": 56,
+      "w": 176,
+      "visible": true,
+      "font": "\"Instrument Sans\"",
+      "color": "rgb(29, 29, 31)",
+      "focusRing": "solid 2px rgb(0, 87, 217)",
+      "navCurrent": [
+        "Studio"
+      ]
+    },
+    "first-video-deferred.html": {
+      "tag": "A",
+      "href": "account.html",
+      "title": "Account / Settings",
+      "h": 56,
+      "w": 176,
+      "visible": true,
+      "font": "\"Instrument Sans\"",
+      "color": "rgb(29, 29, 31)",
+      "focusRing": "solid 2px rgb(0, 87, 217)",
+      "navCurrent": [
+        "Today"
+      ]
+    }
+  },
+  "touch": {
+    "today.html": {
+      "tag": "A",
+      "href": "account.html",
+      "title": "Account / Settings",
+      "h": 56,
+      "w": 176,
+      "visible": true,
+      "font": "\"Instrument Sans\"",
+      "color": "rgb(29, 29, 31)",
+      "focusRing": "not focused",
+      "navCurrent": [
+        "Today"
+      ]
+    },
+    "today-ready.html": {
+      "tag": "A",
+      "href": "account.html",
+      "title": "Account / Settings",
+      "h": 56,
+      "w": 176,
+      "visible": true,
+      "font": "\"Instrument Sans\"",
+      "color": "rgb(29, 29, 31)",
+      "focusRing": "not focused",
+      "navCurrent": [
+        "Today"
+      ]
+    },
+    "studio.html": {
+      "tag": "A",
+      "href": "account.html",
+      "title": "Account / Settings",
+      "h": 56,
+      "w": 176,
+      "visible": true,
+      "font": "\"Instrument Sans\"",
+      "color": "rgb(29, 29, 31)",
+      "focusRing": "not focused",
+      "navCurrent": [
+        "Studio"
+      ]
+    },
+    "knowledge.html": {
+      "tag": "A",
+      "href": "account.html",
+      "title": "Account / Settings",
+      "h": 56,
+      "w": 176,
+      "visible": true,
+      "font": "\"Instrument Sans\"",
+      "color": "rgb(29, 29, 31)",
+      "focusRing": "not focused",
+      "navCurrent": [
+        "Knowledge"
+      ]
+    },
+    "account.html": {
+      "tag": "A",
+      "href": "account.html",
+      "title": "Account / Settings",
+      "h": 56,
+      "w": 176,
+      "visible": true,
+      "font": "\"Instrument Sans\"",
+      "color": "rgb(29, 29, 31)",
+      "focusRing": "not focused",
+      "navCurrent": [
+        "Today"
+      ]
+    },
+    "making.html": {
+      "tag": "A",
+      "href": "account.html",
+      "title": "Account / Settings",
+      "h": 56,
+      "w": 176,
+      "visible": true,
+      "font": "\"Instrument Sans\"",
+      "color": "rgb(29, 29, 31)",
+      "focusRing": "not focused",
+      "navCurrent": [
+        "Studio"
+      ]
+    },
+    "week-one.html": {
+      "tag": "A",
+      "href": "account.html",
+      "title": "Account / Settings",
+      "h": 56,
+      "w": 176,
+      "visible": true,
+      "font": "\"Instrument Sans\"",
+      "color": "rgb(29, 29, 31)",
+      "focusRing": "not focused",
+      "navCurrent": [
+        "Studio"
+      ]
+    },
+    "first-video-deferred.html": {
+      "tag": "A",
+      "href": "account.html",
+      "title": "Account / Settings",
+      "h": 56,
+      "w": 176,
+      "visible": true,
+      "font": "\"Instrument Sans\"",
+      "color": "rgb(29, 29, 31)",
+      "focusRing": "not focused",
+      "navCurrent": [
+        "Today"
+      ]
+    }
+  },
+  "videogoMarks": [
+    {
+      "role": "img",
+      "label": "Videogo",
+      "hidden": null
+    },
+    {
+      "role": "img",
+      "label": "Videogo",
+      "hidden": null
+    }
+  ],
+  "trustLine": true,
+  "feed_populated": {
+    "gridOrder": [
+      "Planned 2024-10-19T11:00 · crop title-safe · 50% 18%",
+      "Scheduled 2024-10-17T18:00 · crop title-safe · 50% 10%",
+      "Live · crop title-safe · 50% 50%",
+      "Live · crop centre · 50% 50%",
+      "Live · crop centre · 50% 50%",
+      "Live · crop centre · 50% 50%"
+    ],
+    "untimedApart": []
+  },
+  "feed_untimed": {
+    "gridOrder": [
+      "Scheduled 2024-10-17T18:00 · crop title-safe · 50% 10%",
+      "Live · crop title-safe · 50% 50%",
+      "Live · crop centre · 50% 50%",
+      "Live · crop centre · 50% 50%",
+      "Live · crop centre · 50% 50%",
+      "Live · crop centre · 50% 50%"
+    ],
+    "untimedApart": [
+      "Planned"
+    ]
+  },
+  "feed_partial": {
+    "gridOrder": [
+      "Scheduled 2024-10-17T18:00 · crop title-safe · 50% 10%",
+      "Live · crop title-safe · 50% 50%",
+      "Live · crop n/a · ",
+      "Live · crop centre · 50% 50%"
+    ],
+    "untimedApart": []
+  },
+  "summary": {
+    "allLinks": true,
+    "sameHeight": true,
+    "sameWidth": true,
+    "sameColor": true,
+    "sameFont": true,
+    "sameFocus": true,
+    "touchTargetsOk": true,
+    "accountNavCurrent": [
+      "Today"
+    ]
+  }
+}

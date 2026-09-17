@@ -1,0 +1,116 @@
+/* Videogo — Composed Expertise · Checkpoint A tokens actually used by the proof.
+   Source: native-design-system/TOKENS.json v0.1.0 (working baseline).
+   Values marked PROPOSED are not part of v0.1 and are pending Jacopo's approval.
+   Type sizes are rem at a 16px root so user text scaling applies. */
+
+:root {
+  /* ---------- Colour · surfaces ---------- */
+  --vg-surface-canvas: #F5F5F7;
+  --vg-surface-content: #FFFFFF;
+  --vg-surface-subtle: #EFEFF1;
+  --vg-surface-selected: #E3E3E8;        /* PROPOSED: selected nav item on the subtle rail (text-primary 12.9:1) */
+
+  /* ---------- Colour · text ---------- */
+  --vg-text-primary: #1D1D1F;
+  --vg-text-secondary: #5C5C63;
+  --vg-text-tertiary: #68686E;
+  --vg-text-on-primary: #FFFFFF;
+
+  /* ---------- Colour · borders ---------- */
+  --vg-border-subtle: #D8D8DD;           /* non-essential division only */
+  --vg-border-control: #85858B;          /* essential control boundaries */
+
+  /* ---------- Colour · actions ---------- */
+  --vg-action-primary: #1D1D1F;
+  --vg-action-primary-hover: #343437;
+  --vg-action-primary-pressed: #080809;
+  --vg-authorization: #0057D9;
+  --vg-authorization-hover: #004CC2;
+  --vg-authorization-pressed: #003E9E;
+  --vg-authorization-surface: #EDF3FF;
+
+  /* ---------- Colour · status ---------- */
+  --vg-need: #B42318;
+  --vg-need-surface: #FFF1F0;
+  --vg-focus: #0057D9;
+
+  /* ---------- Typography ---------- */
+  --vg-font-ui: "Instrument Sans";      /* LOCKED A2.1: official OFL variable font, no fallback family (a load failure is visible) */
+
+  /* page title — locked A2.1: 44/48 · 600 · −0.02em */
+  --vg-page-title-size: 2.75rem;         /* 44px — LOCKED A2.1 */
+  --vg-page-title-line: 3rem;            /* 48px — LOCKED A2.1 */
+  --vg-page-title-weight: 600;
+  --vg-page-title-track: -0.02em;
+
+  --vg-object-title-size: 1.375rem;      /* 22px */
+  --vg-object-title-line: 1.8125rem;     /* 29px */
+  --vg-section-size: 1.125rem;           /* 18px */
+  --vg-section-line: 1.5rem;             /* 24px */
+  --vg-body-size: 1rem;                  /* 16px */
+  --vg-body-line: 1.5rem;                /* 24px */
+  --vg-compact-size: 0.875rem;           /* 14px */
+  --vg-compact-line: 1.25rem;            /* 20px */
+  --vg-meta-size: 0.8125rem;             /* 13px */
+  --vg-meta-line: 1.125rem;              /* 18px */
+  --vg-status-size: 0.75rem;             /* 12px */
+  --vg-status-line: 1rem;                /* 16px */
+
+  /* ---------- Spacing (4px base) ---------- */
+  --vg-space-1: 4px;
+  --vg-space-2: 8px;
+  --vg-space-3: 12px;
+  --vg-space-4: 16px;
+  --vg-space-5: 20px;
+  --vg-space-6: 24px;
+  --vg-space-8: 32px;
+  --vg-space-10: 40px;
+  --vg-space-object: 24px;
+  --vg-space-object-compact: 16px;
+  --vg-space-evidence-row: 12px;
+  --vg-space-section: 32px;
+
+  /* ---------- Geometry ---------- */
+  --vg-radius-status: 6px;
+  --vg-radius-control: 8px;
+  --vg-radius-media: 10px;
+  --vg-radius-object: 14px;
+
+  /* ---------- Elevation ---------- */
+  --vg-elevation-content: none;
+
+  /* ---------- Sizes ---------- */
+  --vg-size-nav: 208px;
+  --vg-size-control-compact: 32px;
+  --vg-size-control: 36px;
+  --vg-size-target-touch: 44px;
+  --vg-size-today-measure: 880px;
+  --vg-size-panel-min: 304px;
+  --vg-size-panel-max: 360px;
+  --vg-size-need-zone: 88px;             /* PROPOSED: NEED leading zone width, from the accepted reference */
+
+  /* ---------- Motion ---------- */
+  --vg-motion-fast: 120ms;
+  --vg-motion-standard: 180ms;
+  --vg-ease-in: cubic-bezier(0.2, 0, 0, 1);
+}
+
+/* Historical comparison switch (?title=44). Since A2.1 the locked token itself is 44/48 · 600 · −0.02em, so this
+   block is identical to the default and kept only so earlier approval-board URLs still render. */
+:root[data-title="44"] {
+  --vg-page-title-size: 2.75rem;         /* 44px */
+  --vg-page-title-line: 3rem;            /* 48px */
+}
+
+/* Locked UI font (A2.1): official OFL Instrument Sans variable font (google/fonts), weight axis 400–700, so 400,
+   500, 600 and 700 render as true weights. Synthesis is disabled and no fallback family is listed, so a load failure
+   or faux weight cannot pass silently. ?font=instrument / ?font=system are historical comparison switches only. */
+@font-face { font-family: "Instrument Sans"; src: url("../assets/fonts/InstrumentSans-VariableFont_wdth,wght.ttf") format("truetype"); font-weight: 400 700; font-stretch: 75% 100%; font-display: block; }
+:root { font-synthesis: none; }
+:root[data-font="instrument"] { --vg-font-ui: "Instrument Sans"; }
+:root[data-font="system"] { --vg-font-ui: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }  /* historical comparison only */
+:root[data-title="32"] { --vg-page-title-size: 2rem; --vg-page-title-line: 2.375rem; }  /* historical comparison only */
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --vg-motion-fast: 0ms; --vg-motion-standard: 0ms; }
+}

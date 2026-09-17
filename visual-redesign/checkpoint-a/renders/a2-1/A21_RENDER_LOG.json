@@ -1,0 +1,230 @@
+[
+  {
+    "name": "A21-1_today-ready-media_1440",
+    "url": "/today-ready.html",
+    "viewport": "1440×900",
+    "renderedFonts": [
+      "Instrument Sans [font file]"
+    ],
+    "title": "44px/48px · 600 · -0.88px",
+    "brokenImages": [],
+    "horizontalScroll": false,
+    "panelBelowBoard": null,
+    "cards": [],
+    "demoFixtureLabels": 1,
+    "fixtureImages": 1,
+    "playControls": 0,
+    "commentary": false
+  },
+  {
+    "name": "A21-2_today-ready-media_1216",
+    "url": "/today-ready.html",
+    "viewport": "1216×1050",
+    "renderedFonts": [
+      "Instrument Sans [font file]"
+    ],
+    "title": "44px/48px · 600 · -0.88px",
+    "brokenImages": [],
+    "horizontalScroll": false,
+    "panelBelowBoard": null,
+    "cards": [],
+    "demoFixtureLabels": 1,
+    "fixtureImages": 1,
+    "playControls": 0,
+    "commentary": false
+  },
+  {
+    "name": "A21-3_studio-populated-media_1440",
+    "url": "/studio.html",
+    "viewport": "1440×900",
+    "renderedFonts": [
+      "Instrument Sans [font file]"
+    ],
+    "title": "44px/48px · 600 · -0.88px",
+    "brokenImages": [],
+    "horizontalScroll": false,
+    "panelBelowBoard": false,
+    "cards": [
+      "idea1:189px:cover",
+      "idea2:189px:absent",
+      "mk1:189px:vg-media--rendering",
+      "rd1:189px:cover",
+      "lv1:189px:cover"
+    ],
+    "demoFixtureLabels": 9,
+    "fixtureImages": 9,
+    "playControls": 0,
+    "commentary": false
+  },
+  {
+    "name": "A21-4_studio-selected-detail_1440",
+    "url": "/studio.html?select=rd1",
+    "viewport": "1440×900",
+    "renderedFonts": [
+      "Instrument Sans [font file]"
+    ],
+    "title": "44px/48px · 600 · -0.88px",
+    "brokenImages": [],
+    "horizontalScroll": false,
+    "panelBelowBoard": false,
+    "cards": [
+      "idea1:189px:cover",
+      "idea2:189px:absent",
+      "mk1:189px:vg-media--rendering",
+      "rd1:189px:cover",
+      "lv1:189px:cover"
+    ],
+    "demoFixtureLabels": 4,
+    "fixtureImages": 4,
+    "playControls": 0,
+    "commentary": false
+  },
+  {
+    "name": "A21-5_studio-selected-detail-below_1216",
+    "url": "/studio.html?select=rd1",
+    "viewport": "1216×1050",
+    "renderedFonts": [
+      "Instrument Sans [font file]"
+    ],
+    "title": "44px/48px · 600 · -0.88px",
+    "brokenImages": [],
+    "horizontalScroll": false,
+    "panelBelowBoard": true,
+    "cards": [
+      "idea1:231px:cover",
+      "idea2:231px:absent",
+      "mk1:231px:vg-media--rendering",
+      "rd1:231px:cover",
+      "lv1:231px:cover"
+    ],
+    "demoFixtureLabels": 4,
+    "fixtureImages": 4,
+    "playControls": 0,
+    "commentary": false
+  },
+  {
+    "name": "A21-6_feed-specimen-populated",
+    "url": "/feed-specimen.html?mode=populated",
+    "viewport": "1440×900",
+    "renderedFonts": [
+      "Instrument Sans [font file]"
+    ],
+    "title": null,
+    "brokenImages": [],
+    "horizontalScroll": false,
+    "panelBelowBoard": null,
+    "cards": [],
+    "demoFixtureLabels": 6,
+    "fixtureImages": 6,
+    "playControls": 0,
+    "commentary": false
+  },
+  {
+    "name": "A21-12_feed-specimen-untimed-planned",
+    "url": "/feed-specimen.html?mode=untimed",
+    "viewport": "1440×900",
+    "renderedFonts": [
+      "Instrument Sans [font file]"
+    ],
+    "title": null,
+    "brokenImages": [],
+    "horizontalScroll": false,
+    "panelBelowBoard": null,
+    "cards": [],
+    "demoFixtureLabels": 7,
+    "fixtureImages": 7,
+    "playControls": 0,
+    "commentary": false
+  },
+  {
+    "name": "A21-7_feed-specimen-empty",
+    "url": "/feed-specimen.html?mode=empty",
+    "viewport": "1440×900",
+    "renderedFonts": [
+      "Instrument Sans [font file]"
+    ],
+    "title": null,
+    "brokenImages": [],
+    "horizontalScroll": false,
+    "panelBelowBoard": null,
+    "cards": [],
+    "demoFixtureLabels": 0,
+    "fixtureImages": 0,
+    "playControls": 0,
+    "commentary": false
+  },
+  {
+    "name": "A21-10_feed-specimen-partial-failure",
+    "url": "/feed-specimen.html?mode=partial",
+    "viewport": "1440×900",
+    "renderedFonts": [
+      "Instrument Sans [font file]"
+    ],
+    "title": null,
+    "brokenImages": [],
+    "horizontalScroll": false,
+    "panelBelowBoard": null,
+    "cards": [],
+    "demoFixtureLabels": 3,
+    "fixtureImages": 3,
+    "playControls": 0,
+    "commentary": false
+  },
+  {
+    "name": "A21-11_studio-feed-below_1216",
+    "url": "/studio.html",
+    "viewport": "1216×1050",
+    "renderedFonts": [
+      "Instrument Sans [font file]"
+    ],
+    "title": "44px/48px · 600 · -0.88px",
+    "brokenImages": [],
+    "horizontalScroll": false,
+    "panelBelowBoard": true,
+    "cards": [
+      "idea1:231px:cover",
+      "idea2:231px:absent",
+      "mk1:231px:vg-media--rendering",
+      "rd1:231px:cover",
+      "lv1:231px:cover"
+    ],
+    "demoFixtureLabels": 9,
+    "fixtureImages": 9,
+    "playControls": 0,
+    "commentary": false
+  },
+  {
+    "name": "A21-8_media-states-specimen",
+    "url": "/media-specimens.html",
+    "viewport": "1440×900",
+    "renderedFonts": [
+      "Instrument Sans [font file]"
+    ],
+    "title": null,
+    "brokenImages": [],
+    "horizontalScroll": false,
+    "panelBelowBoard": null,
+    "cards": [],
+    "demoFixtureLabels": 10,
+    "fixtureImages": 10,
+    "playControls": 0,
+    "commentary": false
+  },
+  {
+    "name": "A21-9_media-component-sheet",
+    "url": "/media-specimens.html",
+    "viewport": "1440×900",
+    "renderedFonts": [
+      "Instrument Sans [font file]"
+    ],
+    "title": null,
+    "brokenImages": [],
+    "horizontalScroll": false,
+    "panelBelowBoard": null,
+    "cards": [],
+    "demoFixtureLabels": 10,
+    "fixtureImages": 10,
+    "playControls": 0,
+    "commentary": false
+  }
+]

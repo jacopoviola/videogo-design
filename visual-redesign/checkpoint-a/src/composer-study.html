@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Composer study — Videogo</title>
+<script src="js/boot.js"></script>
+<script>
+  /* Study switches (not product behavior): field=input (current single-line input, for comparison) · state=empty|long · text=200 (root text 200%) */
+  (function () { var q = new URLSearchParams(location.search); if (q.get('text') === '200') document.documentElement.style.fontSize = '200%'; })();
+</script>
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/components.css">
+<style>
+  body { margin: 0; background: var(--vg-surface-canvas); }
+  .study-frame { padding: 24px 40px; }
+  @media (max-width: 560px) { .study-frame { padding: 16px; } }
+</style>
+</head>
+<body>
+<!-- Responsive composer STUDY (blocking the 38-screen rollout). Not applied to product screens.
+     Interaction behavior (Enter / Shift+Enter, growth trigger, submit) is OPEN: no key handling exists in the sources. -->
+<main class="study-frame">
+  <h1 class="vg-visually-hidden">Composer study</h1>
+  <form class="vg-composer vg-composer--study" id="composer" aria-label="Tell VIDEOGO something" onsubmit="return false">
+    <button class="vg-btn vg-btn--quiet-fill vg-composer__attach" type="button">Attach</button>
+    <div class="vg-composer__field">
+      <label class="vg-visually-hidden" for="composer-text">Message to VIDEOGO</label>
+      <textarea class="vg-composer__textarea" id="composer-text" rows="1" placeholder="Tell VIDEOGO something — e.g. “talk about our new boiler service”"></textarea>
+    </div>
+    <button class="vg-btn vg-btn--primary vg-composer__send" type="submit">Send</button>
+  </form>
+</main>
+<script>
+  (function () {
+    var q = new URLSearchParams(location.search), f = document.getElementById('composer'), t = document.getElementById('composer-text');
+    if (q.get('field') === 'input') { f.classList.remove('vg-composer--study'); var i = document.createElement('input'); i.className = 'vg-composer__input'; i.id = 'composer-text'; i.type = 'text'; i.placeholder = t.placeholder; t.replaceWith(i); t = i; }
+    if (q.get('state') === 'long') t.value = 'The €89 pre-winter check now ends on November 30, not December 15 — please update both upcoming videos, and mention that Marco joined the team and is happy to be on camera for the boiler service video next week. Also the new showroom opening hours are Monday to Saturday, 8:00 to 18:30, closed on Sundays and public holidays.';
+  })();
+</script>
+</body>
+</html>

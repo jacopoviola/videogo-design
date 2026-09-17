@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-label="DEMO FIXTURE — illustrative stand-in for a job photo (not a photograph)">
+<title>DEMO FIXTURE — illustrative stand-in for a job photo (not a photograph)</title><desc>Representative design fixture for the Videogo visual redesign review. Not customer media, not a real Videogo output, not evidence.</desc>
+<rect width="1600" height="1200" fill="#DCD5CA"/>
+<rect y="860" width="1600" height="340" fill="#B9AE9E"/>
+<rect x="110" y="160" width="360" height="460" rx="8" fill="#EFE9DF"/>
+<path d="M110 390h360M290 160v460" stroke="#CFC6B8" stroke-width="12"/>
+<g transform="translate(740 170)">
+  <rect width="380" height="560" rx="26" fill="#F3EFE8"/>
+  <rect x="70" y="80" width="240" height="96" rx="14" fill="#2B3538"/>
+  <rect x="104" y="108" width="72" height="40" rx="6" fill="#7FB6A8"/>
+  <path d="M110 560v250M190 560v290M270 560v250" stroke="#B87333" stroke-width="30" stroke-linecap="round"/>
+  <path d="M110 810h-260M270 810h240" stroke="#B87333" stroke-width="30" stroke-linecap="round"/>
+</g>
+<g transform="translate(1240 880)">
+  <rect width="250" height="150" rx="14" fill="#9C3D2E"/>
+  <rect x="80" y="-40" width="90" height="56" rx="12" fill="none" stroke="#2B3538" stroke-width="16"/>
+</g>
+</svg>

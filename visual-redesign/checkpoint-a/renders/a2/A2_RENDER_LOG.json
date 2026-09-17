@@ -1,0 +1,217 @@
+[
+  {
+    "name": "A2-1_today-ready-media_1440",
+    "url": "/today-ready.html",
+    "viewport": "1440×900",
+    "brokenImages": [],
+    "horizontalScroll": false,
+    "cards": [],
+    "actionsBottom": 404,
+    "trustBottom": 430,
+    "fixtureLabels": 1,
+    "fixtureImages": 1,
+    "playControls": 0
+  },
+  {
+    "name": "A2-2_studio-populated-media_1440",
+    "url": "/studio.html?media=fixtures",
+    "viewport": "1440×900",
+    "brokenImages": [],
+    "horizontalScroll": false,
+    "cards": [
+      {
+        "key": "idea1",
+        "width": 189,
+        "crop": "cover",
+        "media": "171×214"
+      },
+      {
+        "key": "idea2",
+        "width": 189,
+        "crop": "absent",
+        "media": null
+      },
+      {
+        "key": "mk1",
+        "width": 189,
+        "crop": "absent",
+        "media": null
+      },
+      {
+        "key": "rd1",
+        "width": 189,
+        "crop": "cover",
+        "media": "171×214"
+      },
+      {
+        "key": "lv1",
+        "width": 189,
+        "crop": "cover",
+        "media": "171×214"
+      }
+    ],
+    "actionsBottom": null,
+    "trustBottom": null,
+    "fixtureLabels": 3,
+    "fixtureImages": 3,
+    "playControls": 0
+  },
+  {
+    "name": "A2-3_studio-selected-media-detail_1440",
+    "url": "/studio.html?media=fixtures&select=rd1",
+    "viewport": "1440×900",
+    "brokenImages": [],
+    "horizontalScroll": false,
+    "cards": [
+      {
+        "key": "idea1",
+        "width": 189,
+        "crop": "cover",
+        "media": "171×214"
+      },
+      {
+        "key": "idea2",
+        "width": 189,
+        "crop": "absent",
+        "media": null
+      },
+      {
+        "key": "mk1",
+        "width": 189,
+        "crop": "absent",
+        "media": null
+      },
+      {
+        "key": "rd1",
+        "width": 189,
+        "crop": "cover",
+        "media": "171×214"
+      },
+      {
+        "key": "lv1",
+        "width": 189,
+        "crop": "cover",
+        "media": "171×214"
+      }
+    ],
+    "actionsBottom": 812,
+    "trustBottom": 860,
+    "fixtureLabels": 4,
+    "fixtureImages": 4,
+    "playControls": 0
+  },
+  {
+    "name": "A2-4_studio-media-absent-fallback_1440",
+    "url": "/studio.html",
+    "viewport": "1440×900",
+    "brokenImages": [],
+    "horizontalScroll": false,
+    "cards": [
+      {
+        "key": "idea1",
+        "width": 189,
+        "crop": "absent",
+        "media": null
+      },
+      {
+        "key": "idea2",
+        "width": 189,
+        "crop": "absent",
+        "media": null
+      },
+      {
+        "key": "mk1",
+        "width": 189,
+        "crop": "absent",
+        "media": null
+      },
+      {
+        "key": "rd1",
+        "width": 189,
+        "crop": "absent",
+        "media": null
+      },
+      {
+        "key": "lv1",
+        "width": 189,
+        "crop": "absent",
+        "media": null
+      }
+    ],
+    "actionsBottom": null,
+    "trustBottom": null,
+    "fixtureLabels": 0,
+    "fixtureImages": 0,
+    "playControls": 0
+  },
+  {
+    "name": "A2-5_media-component-specimens",
+    "url": "/media-specimens.html",
+    "viewport": "1440×900",
+    "brokenImages": [],
+    "horizontalScroll": false,
+    "cards": [],
+    "actionsBottom": null,
+    "trustBottom": null,
+    "fixtureLabels": 11,
+    "fixtureImages": 10,
+    "playControls": 0
+  },
+  {
+    "name": "A2-6_today-ready-media_1216",
+    "url": "/today-ready.html",
+    "viewport": "1216×1050",
+    "brokenImages": [],
+    "horizontalScroll": false,
+    "cards": [],
+    "actionsBottom": 396,
+    "trustBottom": 422,
+    "fixtureLabels": 1,
+    "fixtureImages": 1,
+    "playControls": 0
+  },
+  {
+    "name": "A2-7_studio-selected-media-detail_1216",
+    "url": "/studio.html?media=fixtures&select=rd1",
+    "viewport": "1216×1050",
+    "brokenImages": [],
+    "horizontalScroll": false,
+    "cards": [
+      {
+        "key": "idea1",
+        "width": 155,
+        "crop": "cover",
+        "media": "137×171"
+      },
+      {
+        "key": "idea2",
+        "width": 155,
+        "crop": "absent",
+        "media": null
+      },
+      {
+        "key": "mk1",
+        "width": 155,
+        "crop": "absent",
+        "media": null
+      },
+      {
+        "key": "rd1",
+        "width": 155,
+        "crop": "cover",
+        "media": "137×171"
+      },
+      {
+        "key": "lv1",
+        "width": 155,
+        "crop": "cover",
+        "media": "137×171"
+      }
+    ],
+    "actionsBottom": 777,
+    "trustBottom": 825,
+    "fixtureLabels": 4,
+    "fixtureImages": 4,
+    "playControls": 0
+  }
+]

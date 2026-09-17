@@ -1,0 +1,754 @@
+{
+  "chrome": "152.0.7977.84",
+  "date": "2026-09-17T13:07:39.222Z",
+  "pages": {
+    "/knowledge.html": {
+      "1216": {
+        "fonts": [
+          "Instrument Sans [font file]"
+        ],
+        "axe": [],
+        "contrastMin": 4.82,
+        "contrastFailures": [],
+        "keyboard": {
+          "stops": 15,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "input \"Tell VIDEOGO something…\"",
+            "button \"Send\"",
+            "button \"Update About\"",
+            "button \"Update Customers\"",
+            "button \"Update What we sell\"",
+            "button \"Update How we sound\"",
+            "button \"Update People and assets\"",
+            "a \"Manage use\"",
+            "button \"Update What we talk about\""
+          ],
+          "missingRing": [],
+          "obscured": [],
+          "under24px": []
+        },
+        "overflow": {
+          "horizontalScroll": false,
+          "textOverflow": [],
+          "clippedPlaceholders": []
+        }
+      },
+      "1440": {
+        "fonts": [
+          "Instrument Sans [font file]"
+        ],
+        "axe": [],
+        "contrastMin": 4.82,
+        "contrastFailures": [],
+        "keyboard": {
+          "stops": 15,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "input \"Tell VIDEOGO something…\"",
+            "button \"Send\"",
+            "button \"Update About\"",
+            "button \"Update Customers\"",
+            "button \"Update What we sell\"",
+            "button \"Update How we sound\"",
+            "button \"Update People and assets\"",
+            "a \"Manage use\"",
+            "button \"Update What we talk about\""
+          ],
+          "missingRing": [],
+          "obscured": [],
+          "under24px": []
+        },
+        "overflow": {
+          "horizontalScroll": false,
+          "textOverflow": [],
+          "clippedPlaceholders": []
+        }
+      },
+      "text200": {
+        "horizontalScroll": false,
+        "textOverflow": [],
+        "clippedPlaceholders": []
+      },
+      "reflow320": {
+        "horizontalScroll": false,
+        "textOverflow": [],
+        "clippedPlaceholders": []
+      },
+      "touchTargetsUnder44": []
+    },
+    "/account.html": {
+      "1216": {
+        "fonts": [
+          "Instrument Sans [font file]"
+        ],
+        "axe": [],
+        "contrastMin": 4.82,
+        "contrastFailures": [],
+        "keyboard": {
+          "stops": 12,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Change how VIDEOGO reaches y\"",
+            "button \"Manage subscription\"",
+            "button \"Cancel subscription\"",
+            "button \"Revoke organic educational a\"",
+            "button \"Export my data\"",
+            "button \"Delete account\""
+          ],
+          "missingRing": [],
+          "obscured": [],
+          "under24px": []
+        },
+        "overflow": {
+          "horizontalScroll": false,
+          "textOverflow": [],
+          "clippedPlaceholders": []
+        }
+      },
+      "1440": {
+        "fonts": [
+          "Instrument Sans [font file]"
+        ],
+        "axe": [],
+        "contrastMin": 4.82,
+        "contrastFailures": [],
+        "keyboard": {
+          "stops": 12,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Change how VIDEOGO reaches y\"",
+            "button \"Manage subscription\"",
+            "button \"Cancel subscription\"",
+            "button \"Revoke organic educational a\"",
+            "button \"Export my data\"",
+            "button \"Delete account\""
+          ],
+          "missingRing": [],
+          "obscured": [],
+          "under24px": []
+        },
+        "overflow": {
+          "horizontalScroll": false,
+          "textOverflow": [],
+          "clippedPlaceholders": []
+        }
+      },
+      "text200": {
+        "horizontalScroll": false,
+        "textOverflow": [],
+        "clippedPlaceholders": []
+      },
+      "reflow320": {
+        "horizontalScroll": false,
+        "textOverflow": [],
+        "clippedPlaceholders": []
+      },
+      "touchTargetsUnder44": []
+    },
+    "/making.html": {
+      "1216": {
+        "fonts": [
+          "Instrument Sans [font file]"
+        ],
+        "axe": [],
+        "contrastMin": 4.82,
+        "contrastFailures": [],
+        "keyboard": {
+          "stops": 9,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Attach\"",
+            "input \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\""
+          ],
+          "missingRing": [],
+          "obscured": [],
+          "under24px": []
+        },
+        "overflow": {
+          "horizontalScroll": false,
+          "textOverflow": [],
+          "clippedPlaceholders": []
+        }
+      },
+      "1440": {
+        "fonts": [
+          "Instrument Sans [font file]"
+        ],
+        "axe": [],
+        "contrastMin": 4.82,
+        "contrastFailures": [],
+        "keyboard": {
+          "stops": 9,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Attach\"",
+            "input \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\""
+          ],
+          "missingRing": [],
+          "obscured": [],
+          "under24px": []
+        },
+        "overflow": {
+          "horizontalScroll": false,
+          "textOverflow": [],
+          "clippedPlaceholders": []
+        }
+      },
+      "text200": {
+        "horizontalScroll": false,
+        "textOverflow": [],
+        "clippedPlaceholders": [
+          "Tell VIDEOGO something — e.g. "
+        ]
+      },
+      "reflow320": {
+        "horizontalScroll": false,
+        "textOverflow": [],
+        "clippedPlaceholders": [
+          "Tell VIDEOGO something — e.g. "
+        ]
+      },
+      "touchTargetsUnder44": []
+    },
+    "/week-one.html": {
+      "1216": {
+        "fonts": [
+          "Instrument Sans [font file]"
+        ],
+        "axe": [],
+        "contrastMin": 4.82,
+        "contrastFailures": [],
+        "keyboard": {
+          "stops": 9,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Attach\"",
+            "input \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\""
+          ],
+          "missingRing": [],
+          "obscured": [],
+          "under24px": []
+        },
+        "overflow": {
+          "horizontalScroll": false,
+          "textOverflow": [],
+          "clippedPlaceholders": []
+        }
+      },
+      "1440": {
+        "fonts": [
+          "Instrument Sans [font file]"
+        ],
+        "axe": [],
+        "contrastMin": 4.82,
+        "contrastFailures": [],
+        "keyboard": {
+          "stops": 9,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Attach\"",
+            "input \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\""
+          ],
+          "missingRing": [],
+          "obscured": [],
+          "under24px": []
+        },
+        "overflow": {
+          "horizontalScroll": false,
+          "textOverflow": [],
+          "clippedPlaceholders": []
+        }
+      },
+      "text200": {
+        "horizontalScroll": false,
+        "textOverflow": [],
+        "clippedPlaceholders": [
+          "Tell VIDEOGO something — e.g. "
+        ]
+      },
+      "reflow320": {
+        "horizontalScroll": false,
+        "textOverflow": [],
+        "clippedPlaceholders": [
+          "Tell VIDEOGO something — e.g. "
+        ]
+      },
+      "touchTargetsUnder44": []
+    },
+    "/first-video-deferred.html": {
+      "1216": {
+        "fonts": [
+          "Instrument Sans [font file]"
+        ],
+        "axe": [],
+        "contrastMin": 4.82,
+        "contrastFailures": [],
+        "keyboard": {
+          "stops": 7,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Notify me by email\""
+          ],
+          "missingRing": [],
+          "obscured": [],
+          "under24px": []
+        },
+        "overflow": {
+          "horizontalScroll": false,
+          "textOverflow": [],
+          "clippedPlaceholders": []
+        }
+      },
+      "1440": {
+        "fonts": [
+          "Instrument Sans [font file]"
+        ],
+        "axe": [],
+        "contrastMin": 4.82,
+        "contrastFailures": [],
+        "keyboard": {
+          "stops": 7,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Notify me by email\""
+          ],
+          "missingRing": [],
+          "obscured": [],
+          "under24px": []
+        },
+        "overflow": {
+          "horizontalScroll": false,
+          "textOverflow": [],
+          "clippedPlaceholders": []
+        }
+      },
+      "text200": {
+        "horizontalScroll": false,
+        "textOverflow": [],
+        "clippedPlaceholders": []
+      },
+      "reflow320": {
+        "horizontalScroll": false,
+        "textOverflow": [],
+        "clippedPlaceholders": []
+      },
+      "touchTargetsUnder44": []
+    },
+    "/studio.html": {
+      "1216": {
+        "fonts": [
+          "Instrument Sans [font file]"
+        ],
+        "axe": [],
+        "contrastMin": 4.82,
+        "contrastFailures": [],
+        "keyboard": {
+          "stops": 16,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Demo fixturePhoto · 4:3Why w\"",
+            "button \"No previewRadiator bleeding \"",
+            "button \"Rendering3 signs your boiler\"",
+            "button \"Demo fixtureReel · 9:160:41H\"",
+            "button \"Demo fixtureInstagramThe €89\"",
+            "button \"Feed\"",
+            "button \"Calendar\"",
+            "button \"Attach\"",
+            "input \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\""
+          ],
+          "missingRing": [],
+          "obscured": [],
+          "under24px": []
+        },
+        "overflow": {
+          "horizontalScroll": false,
+          "textOverflow": [],
+          "clippedPlaceholders": []
+        }
+      },
+      "1440": {
+        "fonts": [
+          "Instrument Sans [font file]"
+        ],
+        "axe": [],
+        "contrastMin": 4.82,
+        "contrastFailures": [],
+        "keyboard": {
+          "stops": 16,
+          "order": [
+            "a \"Skip to main content\"",
+            "a \"Today\"",
+            "a \"Studio\"",
+            "a \"Knowledge\"",
+            "a \"Connections\"",
+            "a \"MI Moretti ImpiantiHome serv\"",
+            "button \"Demo fixturePhoto · 4:3Why w\"",
+            "button \"No previewRadiator bleeding \"",
+            "button \"Rendering3 signs your boiler\"",
+            "button \"Demo fixtureReel · 9:160:41H\"",
+            "button \"Demo fixtureInstagramThe €89\"",
+            "button \"Attach\"",
+            "input \"Tell VIDEOGO something — e.g\"",
+            "button \"Send\"",
+            "button \"Feed\"",
+            "button \"Calendar\""
+          ],
+          "missingRing": [],
+          "obscured": [],
+          "under24px": []
+        },
+        "overflow": {
+          "horizontalScroll": false,
+          "textOverflow": [],
+          "clippedPlaceholders": []
+        }
+      },
+      "text200": {
+        "horizontalScroll": false,
+        "textOverflow": [],
+        "clippedPlaceholders": [
+          "Tell VIDEOGO something — e.g. "
+        ]
+      },
+      "reflow320": {
+        "horizontalScroll": false,
+        "textOverflow": [],
+        "clippedPlaceholders": [
+          "Tell VIDEOGO something — e.g. "
+        ]
+      },
+      "touchTargetsUnder44": []
+    },
+    "/feed-specimen.html?mode=populated": {
+      "1216": {
+        "fonts": [
+          "Instrument Sans [font file]"
+        ],
+        "axe": [],
+        "contrastMin": 5.78,
+        "contrastFailures": [],
+        "keyboard": {
+          "stops": 2,
+          "order": [
+            "button \"Feed\"",
+            "button \"Calendar\""
+          ],
+          "missingRing": [],
+          "obscured": [],
+          "under24px": []
+        },
+        "overflow": {
+          "horizontalScroll": false,
+          "textOverflow": [],
+          "clippedPlaceholders": []
+        }
+      },
+      "1440": {
+        "fonts": [
+          "Instrument Sans [font file]"
+        ],
+        "axe": [],
+        "contrastMin": 5.78,
+        "contrastFailures": [],
+        "keyboard": {
+          "stops": 2,
+          "order": [
+            "button \"Feed\"",
+            "button \"Calendar\""
+          ],
+          "missingRing": [],
+          "obscured": [],
+          "under24px": []
+        },
+        "overflow": {
+          "horizontalScroll": false,
+          "textOverflow": [],
+          "clippedPlaceholders": []
+        }
+      },
+      "text200": {
+        "horizontalScroll": false,
+        "textOverflow": [],
+        "clippedPlaceholders": []
+      },
+      "reflow320": {
+        "horizontalScroll": false,
+        "textOverflow": [],
+        "clippedPlaceholders": []
+      },
+      "touchTargetsUnder44": []
+    },
+    "/feed-specimen.html?mode=partial": {
+      "1216": {
+        "fonts": [
+          "Instrument Sans [font file]"
+        ],
+        "axe": [],
+        "contrastMin": 5.78,
+        "contrastFailures": [],
+        "keyboard": {
+          "stops": 2,
+          "order": [
+            "button \"Feed\"",
+            "button \"Calendar\""
+          ],
+          "missingRing": [],
+          "obscured": [],
+          "under24px": []
+        },
+        "overflow": {
+          "horizontalScroll": false,
+          "textOverflow": [],
+          "clippedPlaceholders": []
+        }
+      },
+      "1440": {
+        "fonts": [
+          "Instrument Sans [font file]"
+        ],
+        "axe": [],
+        "contrastMin": 5.78,
+        "contrastFailures": [],
+        "keyboard": {
+          "stops": 2,
+          "order": [
+            "button \"Feed\"",
+            "button \"Calendar\""
+          ],
+          "missingRing": [],
+          "obscured": [],
+          "under24px": []
+        },
+        "overflow": {
+          "horizontalScroll": false,
+          "textOverflow": [],
+          "clippedPlaceholders": []
+        }
+      },
+      "text200": {
+        "horizontalScroll": false,
+        "textOverflow": [],
+        "clippedPlaceholders": []
+      },
+      "reflow320": {
+        "horizontalScroll": false,
+        "textOverflow": [],
+        "clippedPlaceholders": []
+      },
+      "touchTargetsUnder44": []
+    },
+    "/feed-specimen.html?mode=untimed": {
+      "1216": {
+        "fonts": [
+          "Instrument Sans [font file]"
+        ],
+        "axe": [],
+        "contrastMin": 5.78,
+        "contrastFailures": [],
+        "keyboard": {
+          "stops": 2,
+          "order": [
+            "button \"Feed\"",
+            "button \"Calendar\""
+          ],
+          "missingRing": [],
+          "obscured": [],
+          "under24px": []
+        },
+        "overflow": {
+          "horizontalScroll": false,
+          "textOverflow": [],
+          "clippedPlaceholders": []
+        }
+      },
+      "1440": {
+        "fonts": [
+          "Instrument Sans [font file]"
+        ],
+        "axe": [],
+        "contrastMin": 5.78,
+        "contrastFailures": [],
+        "keyboard": {
+          "stops": 2,
+          "order": [
+            "button \"Feed\"",
+            "button \"Calendar\""
+          ],
+          "missingRing": [],
+          "obscured": [],
+          "under24px": []
+        },
+        "overflow": {
+          "horizontalScroll": false,
+          "textOverflow": [],
+          "clippedPlaceholders": []
+        }
+      },
+      "text200": {
+        "horizontalScroll": false,
+        "textOverflow": [],
+        "clippedPlaceholders": []
+      },
+      "reflow320": {
+        "horizontalScroll": false,
+        "textOverflow": [],
+        "clippedPlaceholders": []
+      },
+      "touchTargetsUnder44": []
+    },
+    "/feed-specimen.html?mode=empty": {
+      "1216": {
+        "fonts": [
+          "Instrument Sans [font file]"
+        ],
+        "axe": [],
+        "contrastMin": 5.78,
+        "contrastFailures": [],
+        "keyboard": {
+          "stops": 2,
+          "order": [
+            "button \"Feed\"",
+            "button \"Calendar\""
+          ],
+          "missingRing": [],
+          "obscured": [],
+          "under24px": []
+        },
+        "overflow": {
+          "horizontalScroll": false,
+          "textOverflow": [],
+          "clippedPlaceholders": []
+        }
+      },
+      "1440": {
+        "fonts": [
+          "Instrument Sans [font file]"
+        ],
+        "axe": [],
+        "contrastMin": 5.78,
+        "contrastFailures": [],
+        "keyboard": {
+          "stops": 2,
+          "order": [
+            "button \"Feed\"",
+            "button \"Calendar\""
+          ],
+          "missingRing": [],
+          "obscured": [],
+          "under24px": []
+        },
+        "overflow": {
+          "horizontalScroll": false,
+          "textOverflow": [],
+          "clippedPlaceholders": []
+        }
+      },
+      "text200": {
+        "horizontalScroll": false,
+        "textOverflow": [],
+        "clippedPlaceholders": []
+      },
+      "reflow320": {
+        "horizontalScroll": false,
+        "textOverflow": [],
+        "clippedPlaceholders": []
+      },
+      "touchTargetsUnder44": []
+    }
+  },
+  "longContent": {
+    "knowledge@1216": {
+      "horizontalScroll": false,
+      "textOverflow": [],
+      "clippedPlaceholders": []
+    },
+    "knowledge@390": {
+      "horizontalScroll": false,
+      "textOverflow": [],
+      "clippedPlaceholders": []
+    },
+    "account@1216": {
+      "horizontalScroll": false,
+      "textOverflow": [],
+      "clippedPlaceholders": []
+    },
+    "account@390": {
+      "horizontalScroll": false,
+      "textOverflow": [],
+      "clippedPlaceholders": []
+    },
+    "making@1216": {
+      "horizontalScroll": false,
+      "textOverflow": [],
+      "clippedPlaceholders": []
+    },
+    "making@390": {
+      "horizontalScroll": false,
+      "textOverflow": [],
+      "clippedPlaceholders": [
+        "Tell VIDEOGO something — e.g. "
+      ]
+    }
+  }
+}

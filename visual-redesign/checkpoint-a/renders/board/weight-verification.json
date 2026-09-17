@@ -1,0 +1,84 @@
+{
+  "weights": {
+    "400": {
+      "renderedFont": [
+        "Instrument Sans [loaded font file]"
+      ],
+      "advanceWidthCss": 777.55,
+      "inkDarkness": 31.222
+    },
+    "500": {
+      "renderedFont": [
+        "Instrument Sans [loaded font file]"
+      ],
+      "advanceWidthCss": 788.3,
+      "inkDarkness": 37.342
+    },
+    "600": {
+      "renderedFont": [
+        "Instrument Sans [loaded font file]"
+      ],
+      "advanceWidthCss": 799.05,
+      "inkDarkness": 42.997
+    },
+    "700": {
+      "renderedFont": [
+        "Instrument Sans [loaded font file]"
+      ],
+      "advanceWidthCss": 809.8,
+      "inkDarkness": 48.403
+    }
+  },
+  "controls": {
+    "staticRegular": {
+      "renderedFont": [
+        "Instrument Sans [loaded font file]"
+      ],
+      "advanceWidthCss": 777.55,
+      "inkDarkness": 31.222
+    },
+    "staticBold": {
+      "renderedFont": [
+        "Instrument Sans [loaded font file]"
+      ],
+      "advanceWidthCss": 809.8,
+      "inkDarkness": 48.403
+    }
+  },
+  "checks": {
+    "allLoadedFromFontFile": true,
+    "widthsStrictlyIncrease": true,
+    "inkStrictlyIncreases": true,
+    "w400MatchesStaticRegularWidth": true,
+    "w700MatchesStaticBoldWidth": true,
+    "w500DistinctFromRegularAndBold": true,
+    "w600DistinctFromRegularAndBold": true
+  },
+  "screens": {
+    "/today.html?title=44&font=instrument": {
+      "weightsUsed": {
+        "400": 16,
+        "500": 5,
+        "600": 8
+      },
+      "fontSynthesis": "none",
+      "family": "\"Instrument Sans\"",
+      "faceStatus": [
+        "Instrument Sans 400 700 loaded"
+      ]
+    },
+    "/studio.html?select=rd1&title=44&font=instrument": {
+      "weightsUsed": {
+        "400": 26,
+        "500": 13,
+        "600": 16
+      },
+      "fontSynthesis": "none",
+      "family": "\"Instrument Sans\"",
+      "faceStatus": [
+        "Instrument Sans 400 700 loaded"
+      ]
+    }
+  },
+  "pass": true
+}
