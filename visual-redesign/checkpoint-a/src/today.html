@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Today — Videogo</title>
+<script src="js/boot.js"></script>
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+<!-- Source: screens/04_today_need.png · videogo_ux3_prototype.html:429–445 · FH §3. Tone: TODAY_NEED_DIRECTION_REFERENCE_v1.png -->
+<a class="vg-skip" href="#main">Skip to main content</a>
+<div class="vg-app">
+  <aside class="vg-rail">
+    <div class="vg-rail__bar">
+      <div class="vg-lockup"><img src="assets/videogo-lockup-inverse-outlined.svg" width="940" height="140" alt="VIDEOGO"></div>
+      <button class="vg-menu" type="button" aria-expanded="false" aria-controls="vg-nav-panel">Menu</button>
+    </div>
+    <div class="vg-rail__panel" id="vg-nav-panel">
+      <nav class="vg-nav" aria-label="Primary">
+        <ul>
+          <li><a href="today.html" aria-current="page" title="Open Today">Today</a></li>
+          <li><a href="studio.html" title="Open Studio">Studio</a></li>
+          <li><a href="knowledge.html" title="Open Knowledge">Knowledge</a></li>
+          <li><a href="#" title="Open Connections" data-out-of-scope="Connections — Checkpoint B">Connections</a></li>
+        </ul>
+      </nav>
+      <a class="vg-account" href="account.html" title="Account / Settings">
+        <span class="vg-account__initials" aria-hidden="true">MI</span>
+        <span><span class="vg-account__name">Moretti Impianti</span><span class="vg-account__sector">Home services</span></span>
+        <span class="vg-visually-hidden">— Account and settings</span>
+      </a>
+    </div>
+  </aside>
+
+  <main class="vg-main" id="main" tabindex="-1">
+    <header class="vg-page-head">
+      <h1 class="vg-page-title">Today</h1>
+      <p class="vg-page-sub">Tuesday 8 October</p>
+    </header>
+
+    <div class="vg-today">
+      <article class="vg-object vg-object--need" aria-labelledby="need-title">
+        <div class="vg-object__zone" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><circle cx="12" cy="12" r="9.25"/><path d="M12 7.25v6.25"/><path d="M12 16.75v.01" stroke-width="2.25"/></svg>
+        </div>
+        <div class="vg-object__body">
+          <span class="vg-status vg-status--need">Need</span>
+          <h2 class="vg-object__title" id="need-title">Instagram connection expired — publishing is paused</h2>
+          <p class="vg-object__consequence">Thursday's boiler-check video is scheduled but can't go live until the connection is restored. Takes about a minute.</p>
+          <div class="vg-actions">
+            <button class="vg-btn vg-btn--primary" type="button" data-source-action="PR:438 — reconnect flow undesigned; prototype shows a toast only (UN-19)">Fix connection</button>
+          </div>
+        </div>
+      </article>
+
+      <section aria-labelledby="upcoming-title">
+        <div class="vg-section-head">
+          <h2 class="vg-section-title" id="upcoming-title">Upcoming</h2>
+          <span class="vg-section-meta">Next 7 days</span>
+        </div>
+        <ul class="vg-schedule">
+          <li><time>Thu 18:00</time><span class="vg-schedule__title">“3 signs your boiler needs a check”</span><span class="vg-schedule__channel">Instagram</span><span class="vg-schedule__state">Scheduled</span></li>
+          <li><time>Sat 11:00</time><span class="vg-schedule__title">“Radiator bleeding in 90 seconds”</span><span class="vg-schedule__channel">Instagram + TikTok</span><span class="vg-schedule__state">Scheduled</span></li>
+        </ul>
+      </section>
+    </div>
+
+    <form class="vg-composer vg-main__end" aria-label="Tell VIDEOGO something" data-composer>
+      <button class="vg-btn vg-btn--quiet-fill" type="button" data-source-action="Attach — no file behavior in source">Attach</button>
+      <div class="vg-composer__field">
+        <label class="vg-visually-hidden" for="composer-input">Message to VIDEOGO</label>
+        <div class="vg-composer__box"><textarea class="vg-composer__textarea" id="composer-input" rows="1" enterkeyhint="enter" placeholder="Tell VIDEOGO something — e.g. “talk about our new boiler service”"></textarea></div>
+      </div>
+      <button class="vg-btn vg-btn--primary" type="submit">Send</button>
+    </form>
+  </main>
+</div>
+<script src="js/shell.js"></script>
+<script src="js/composer.js"></script>
+</body>
+</html>

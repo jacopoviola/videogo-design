@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Media component specimens — Videogo</title>
+<script src="js/boot.js"></script>
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/components.css">
+<style>
+  body { padding: 40px; }
+  .sheet-head { margin-bottom: 32px; }
+  .sheet-head h1 { font-size: var(--vg-page-title-size); line-height: var(--vg-page-title-line); font-weight: 600; letter-spacing: -0.02em; }
+  .sheet-head p { color: var(--vg-text-secondary); max-width: 90ch; }
+  .spec { background: var(--vg-surface-content); border: 1px solid var(--vg-border-subtle); border-radius: 14px; padding: 24px; margin-bottom: 24px; }
+  .spec h2 { font-size: var(--vg-section-size); line-height: var(--vg-section-line); margin-bottom: 4px; }
+  .spec > p { color: var(--vg-text-secondary); font-size: var(--vg-compact-size); margin-bottom: 20px; max-width: 110ch; }
+  .row { display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-start; }
+  .cell { display: flex; flex-direction: column; gap: 8px; }
+  .cap { font-size: var(--vg-meta-size); line-height: var(--vg-meta-line); color: var(--vg-text-secondary); max-width: 220px; }
+  .cap b { color: var(--vg-text-primary); font-weight: 600; display: block; }
+  .board-bg { background: var(--vg-surface-canvas); padding: 12px; border-radius: 10px; }
+  .orig { height: 240px; width: auto; }
+  .orig img { height: 100%; width: auto; }
+  code { font: inherit; }
+  .is-focus { outline: 2px solid var(--vg-focus); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+<header class="sheet-head">
+  <h1>Media component · specimens</h1>
+  <p>Component sheet for review, not a product screen. Specimen images are neutral guides; Videogo images are demo fixtures (no real media exists in the repositories), labelled once per instance. Fixture illustration style is not Videogo’s brand style. Crop mode is computed by <code>js/media.js</code> from each image’s focal point, subject box and title box.</p>
+</header>
+
+<section class="spec">
+  <h2>1 · Source ratios → 4:5 card crop</h2>
+  <p>Original shown whole (left of each pair) and as the 4:5 Studio card crop (right). Cover crop is used only when the subject and on-screen title stay inside the window; otherwise the card shows the full frame on a neutral mat and says so.</p>
+  <div class="row" id="ratios"></div>
+</section>
+
+<section class="spec">
+  <h2>2 · Media types and provenance</h2>
+  <p>Video poster frame with format/channel and duration; image preview identified as a source photo; provenance always visible on fixtures.</p>
+  <div class="row" id="types"></div>
+</section>
+
+<section class="spec">
+  <h2>3 · Media states</h2>
+  <p><b>Available</b> real image or poster frame · <b>Rendering</b> reserved media area with an explicit state · <b>Unavailable</b> bounded “Preview unavailable” (media exists but cannot be shown; product trigger TBD) · <b>Absent</b> compact text, no media rectangle. Then selected and keyboard focus on an available card.</p>
+  <div class="row board-bg" id="states"></div>
+</section>
+
+<section class="spec">
+  <h2>4 · Responsive card widths</h2>
+  <p>The 4:5 crop scales with the card; chips and provenance stay fixed size. 154px ≈ 1216 viewport · 189px ≈ 1440 viewport · 280px ≈ two-column reflow.</p>
+  <div class="row board-bg" id="responsive"></div>
+</section>
+
+</main>
+<script src="js/media-fixtures.js"></script>
+<script src="js/media.js"></script>
+<script>
+(function () {
+  var M = window.VG_MEDIA, V = window.VGMedia;
+  var S = {
+    v916: { kind: 'video', src: 'assets/media/specimen_9x16.svg', w: 1080, h: 1920, ratioLabel: '9:16', channel: 'Instagram Reel', duration: '0:32', focus: [0.5, 0.45], titleSafe: [0.1, 0.22, 0.8, 0.1], subjectSafe: [0.25, 0.42, 0.5, 0.28], fixture: false },
+    s11: { kind: 'image', src: 'assets/media/specimen_1x1.svg', w: 1080, h: 1080, ratioLabel: '1:1', focus: [0.5, 0.5], titleSafe: [0.14, 0.18, 0.72, 0.14], subjectSafe: [0.3, 0.38, 0.4, 0.4], fixture: false },
+    p45: { kind: 'image', src: 'assets/media/specimen_4x5.svg', w: 1080, h: 1350, ratioLabel: '4:5', focus: [0.5, 0.5], titleSafe: [0.1, 0.18, 0.8, 0.14], subjectSafe: [0.28, 0.36, 0.44, 0.38], fixture: false },
+    l169: { kind: 'video', src: 'assets/media/specimen_16x9_wide-title.svg', w: 1920, h: 1080, ratioLabel: '16:9', channel: 'Video', duration: '1:08', focus: [0.5, 0.5], titleSafe: [0.06, 0.12, 0.88, 0.18], subjectSafe: [0.4, 0.4, 0.2, 0.36], fixture: false }
+  };
+  function card(m, title, meta, extra) {
+    return '<button class="vg-card vg-card--media' + (extra || '') + '" type="button" style="width:189px" aria-pressed="' + (/selected/.test(extra || '') ? 'true' : 'false') + '">' + V.card(m) + '<span class="vg-card__title">' + title + '</span><span class="vg-card__meta">' + meta + '</span></button>';
+  }
+  var r = '';
+  [['Vertical 9:16', S.v916], ['Square 1:1', S.s11], ['Portrait 4:5', S.p45], ['Landscape 16:9 · wide title', S.l169]].forEach(function (x) {
+    var c = V.crop(x[1], 0.8);
+    r += '<div class="cell"><div class="row" style="gap:12px;align-items:flex-end"><figure class="vg-media vg-media--inspect orig" style="aspect-ratio:' + x[1].w + '/' + x[1].h + '"><img src="' + x[1].src + '" alt="' + x[0] + ' specimen"></figure>' +
+      '<div class="board-bg">' + card(x[1], 'Specimen', x[0]) + '</div></div><p class="cap"><b>' + x[0] + '</b>Crop: ' + (c.mode === 'cover' ? 'cover at ' + V.crop(x[1], 0.8).position : 'full frame — title would be cut or covered by chips') + ' · subject ' + (c.subjectInside ? 'inside' : 'outside') + ' · title ' + (c.titleInside ? 'inside' : 'outside') + '</p></div>';
+  });
+  document.getElementById('ratios').innerHTML = r;
+
+  document.getElementById('types').innerHTML =
+    '<div class="cell board-bg">' + card(M.rd1, 'Heat pump vs new boiler: the honest math', 'Passed quality review') + '<p class="cap"><b>Video poster frame</b>Reel · 9:16 and 0:41 from source; image is a demo fixture</p></div>' +
+    '<div class="cell board-bg">' + card(M.idea1, 'Why we show the price before we start the job', 'Trust video · Luca voiceover') + '<p class="cap"><b>Image preview · visual source</b>Source: your job photos; image is a demo fixture</p></div>' +
+    '<div class="cell board-bg">' + card(M.lv1, 'The €89 pre-winter check, explained', 'Live 5 days · collecting') + '<p class="cap"><b>Video poster · partial metadata</b>Channel known; ratio and duration not in source, so not shown</p></div>' +
+    '<div class="cell" style="max-width:560px">' + V.inspect(M.rd1) + '<p class="cap"><b>Inspection (never cropped)</b>Original ratio, facts beside the frame</p></div>';
+
+  var base = function (extra) { return card(M.rd1, 'Heat pump vs new boiler: the honest math', 'Passed quality review', extra); };
+  var plain = function (m, title, meta, cls) { return '<button class="vg-card ' + cls + '" type="button" style="width:189px">' + V.card(m) + '<span class="vg-card__title">' + title + '</span><span class="vg-card__meta">' + meta + '</span></button>'; };
+  document.getElementById('states').innerHTML =
+    '<div class="cell">' + base('') + '<p class="cap"><b>Available</b>Poster frame · format, duration, provenance</p></div>' +
+    '<div class="cell">' + plain(M.mk1, '3 signs your boiler needs a check', 'Rendering · ready by ~15:00', 'vg-card--media') + '<p class="cap"><b>Rendering</b>Reserved 4:5 area · explicit state · no motion</p></div>' +
+    '<div class="cell">' + plain({ state: 'unavailable' }, 'Heat pump vs new boiler: the honest math', 'Passed quality review', 'vg-card--media') + '<p class="cap"><b>Unavailable</b>Bounded, dashed · “Preview unavailable” · trigger TBD</p></div>' +
+    '<div class="cell">' + plain(M.idea2, 'Radiator bleeding in 90 seconds', 'How-to · faceless', 'vg-card--absent') + '<p class="cap"><b>Absent</b>Compact text · no media rectangle</p></div>' +
+    '<div class="cell">' + base(' is-selected-demo') + '<p class="cap"><b>Selected</b>2px #1D1D1F</p></div>' +
+    '<div class="cell">' + base(' is-focus') + '<p class="cap"><b>Keyboard focus</b>2px #0057D9 ring, 2px offset</p></div>';
+  document.querySelectorAll('.is-selected-demo').forEach(function (b) { b.setAttribute('aria-pressed', 'true'); });
+
+  document.getElementById('responsive').innerHTML = [154, 189, 280].map(function (w) {
+    return '<div class="cell">' + card(M.rd1, 'Heat pump vs new boiler: the honest math', 'Passed quality review').replace('width:189px', 'width:' + w + 'px') + '<p class="cap"><b>' + w + 'px card</b></p></div>';
+  }).join('');
+})();
+</script>
+</body>
+</html>

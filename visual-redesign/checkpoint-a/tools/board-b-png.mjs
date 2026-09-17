@@ -1,0 +1,12 @@
+import path from 'node:path';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+import { chromium } from 'playwright-core';
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const page = await browser.newPage({ viewport: { width: 1600, height: 1000 }, deviceScaleFactor: 1 });
+await page.goto(pathToFileURL(path.join(root, 'APPROVAL_BOARD_B.html')).href, { waitUntil: 'load' });
+const broken = await page.$$eval('img', i => i.filter(x => !x.naturalWidth).map(x => x.src));
+if (broken.length) throw new Error('Missing: ' + broken);
+await page.screenshot({ path: path.join(root, 'renders/APPROVAL_BOARD_B.png'), fullPage: true });
+console.log('ok', await page.evaluate(() => document.documentElement.scrollHeight));
+await browser.close();

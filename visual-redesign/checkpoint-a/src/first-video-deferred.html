@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your first video needs a little more time — Videogo</title>
+<script src="js/boot.js"></script>
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+<!-- Checkpoint B · Source: screens/02_onboarding_qa_deferred.png · videogo_ux3_prototype.html:381–396 · FH §1 (QA failure) -->
+<a class="vg-skip" href="#main">Skip to main content</a>
+<div class="vg-app">
+  <aside class="vg-rail">
+    <div class="vg-rail__bar">
+      <div class="vg-lockup"><img src="assets/videogo-lockup-inverse-outlined.svg" width="940" height="140" alt="VIDEOGO"></div>
+      <button class="vg-menu" type="button" aria-expanded="false" aria-controls="vg-nav-panel">Menu</button>
+    </div>
+    <div class="vg-rail__panel" id="vg-nav-panel">
+      <nav class="vg-nav" aria-label="Primary">
+        <ul>
+          <li><a href="today.html" aria-current="page" title="Open Today">Today</a></li>
+          <li><a href="studio.html" title="Open Studio">Studio</a></li>
+          <li><a href="knowledge.html" title="Open Knowledge">Knowledge</a></li>
+          <li><a href="#" title="Open Connections" data-out-of-scope="Connections — not in Checkpoint B">Connections</a></li>
+        </ul>
+      </nav>
+      <a class="vg-account" href="account.html" title="Account / Settings">
+        <span class="vg-account__initials" aria-hidden="true">MI</span>
+        <span><span class="vg-account__name">Moretti Impianti</span><span class="vg-account__sector">Home services</span></span>
+        <span class="vg-visually-hidden">— Account and settings</span>
+      </a>
+    </div>
+  </aside>
+
+  <main class="vg-main" id="main" tabindex="-1">
+    <div class="vg-onboard">
+      <ol class="vg-steps" aria-label="Setup progress">
+        <li><span class="vg-step vg-step--done"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span class="vg-visually-hidden">Step 1, done</span></span></li>
+        <li><span class="vg-step vg-step--done"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span class="vg-visually-hidden">Step 2, done</span></span></li>
+        <li aria-current="step"><span class="vg-step vg-step--now"><span aria-hidden="true">3</span><span class="vg-visually-hidden">Step 3, current</span></span></li>
+        <li><span class="vg-step"><span aria-hidden="true">4</span><span class="vg-visually-hidden">Step 4</span></span></li>
+      </ol>
+      <h1 class="vg-onboard__title">Your first video needs a little more time</h1>
+      <p class="vg-onboard__lead">We hold every video to a quality bar before you see it, and this one isn't there yet. We'll email you the moment it's ready.</p>
+      <section class="vg-object" aria-label="Production status">
+        <div class="vg-object__body">
+          <ol class="vg-stages" aria-label="Production stages">
+            <li class="vg-stage vg-stage--now" aria-current="step"><span class="vg-stage__mark" aria-hidden="true"><i></i></span><span><span class="vg-stage__name">Building your first video</span><span class="vg-status vg-stage__tag">Reworking</span><span class="vg-stage__desc">Trying a different production approach</span></span></li>
+            <li class="vg-stage vg-stage--next"><span class="vg-stage__mark" aria-hidden="true"><i></i></span><span><span class="vg-stage__name">Checking it</span><span class="vg-status vg-stage__tag">Pending</span><span class="vg-stage__desc">Only a video that passes review will reach you</span></span></li>
+          </ol>
+        </div>
+      </section>
+      <p class="vg-onboard__note">Nothing is needed from you. Your understanding of the business is saved.</p>
+      <button class="vg-btn vg-btn--secondary" type="button" data-source-action="PR:394 toast “We’ll email you at luca@morettimpianti.it”">Notify me by email</button>
+    </div>
+
+  </main>
+</div>
+<script src="js/shell.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+{
+  "chrome": "152.0.7977.84",
+  "platform": "darwin arm64",
+  "date": "2026-09-17T10:21:06.653Z",
+  "screens": {
+    "today_system_44": {
+      "url": "/today.html?title=44",
+      "viewport": "1440\u00d7900",
+      "deviceScaleFactor": 2,
+      "title": "44px/48px \u00b7 600 \u00b7 -0.88px",
+      "fonts": {
+        ".vg-page-title": [
+          ".SF NS [platform font]"
+        ],
+        ".vg-page-sub": [
+          ".SF NS [platform font]"
+        ],
+        ".vg-btn": [
+          ".SF NS [platform font]"
+        ],
+        ".vg-status": [
+          ".SF NS [platform font]"
+        ]
+      }
+    },
+    "today_instrument_44": {
+      "url": "/today.html?title=44&font=instrument",
+      "viewport": "1440\u00d7900",
+      "deviceScaleFactor": 2,
+      "title": "44px/48px \u00b7 600 \u00b7 -0.88px",
+      "fonts": {
+        ".vg-page-title": [
+          "Instrument Sans [loaded font file]"
+        ],
+        ".vg-page-sub": [
+          "Instrument Sans [loaded font file]"
+        ],
+        ".vg-btn": [
+          "Instrument Sans [loaded font file]"
+        ],
+        ".vg-status": [
+          "Instrument Sans [loaded font file]"
+        ]
+      }
+    },
+    "studio_system_44": {
+      "url": "/studio.html?select=rd1&title=44",
+      "viewport": "1440\u00d7900",
+      "deviceScaleFactor": 2,
+      "title": "44px/48px \u00b7 600 \u00b7 -0.88px",
+      "fonts": {
+        ".vg-page-title": [
+          ".SF NS [platform font]"
+        ],
+        ".vg-page-sub": [
+          ".SF NS [platform font]"
+        ],
+        ".vg-btn": [
+          ".SF NS [platform font]"
+        ],
+        ".vg-status": [
+          ".SF NS [platform font]"
+        ]
+      }
+    },
+    "studio_instrument_44": {
+      "url": "/studio.html?select=rd1&title=44&font=instrument",
+      "viewport": "1440\u00d7900",
+      "deviceScaleFactor": 2,
+      "title": "44px/48px \u00b7 600 \u00b7 -0.88px",
+      "fonts": {
+        ".vg-page-title": [
+          "Instrument Sans [loaded font file]"
+        ],
+        ".vg-page-sub": [
+          "Instrument Sans [loaded font file]"
+        ],
+        ".vg-btn": [
+          "Instrument Sans [loaded font file]"
+        ],
+        ".vg-status": [
+          "Instrument Sans [loaded font file]"
+        ]
+      }
+    },
+    "today_system_32": {
+      "url": "/today.html",
+      "viewport": "1440\u00d7900",
+      "deviceScaleFactor": 2,
+      "title": "32px/38px \u00b7 600 \u00b7 -0.64px",
+      "fonts": {
+        ".vg-page-title": [
+          ".SF NS [platform font]"
+        ],
+        ".vg-page-sub": [
+          ".SF NS [platform font]"
+        ],
+        ".vg-btn": [
+          ".SF NS [platform font]"
+        ],
+        ".vg-status": [
+          ".SF NS [platform font]"
+        ]
+      }
+    },
+    "today_instrument_32": {
+      "url": "/today.html?font=instrument",
+      "viewport": "1440\u00d7900",
+      "deviceScaleFactor": 2,
+      "title": "32px/38px \u00b7 600 \u00b7 -0.64px",
+      "fonts": {
+        ".vg-page-title": [
+          "Instrument Sans [loaded font file]"
+        ],
+        ".vg-page-sub": [
+          "Instrument Sans [loaded font file]"
+        ],
+        ".vg-btn": [
+          "Instrument Sans [loaded font file]"
+        ],
+        ".vg-status": [
+          "Instrument Sans [loaded font file]"
+        ]
+      }
+    }
+  },
+  "crops": {
+    "need_with_icon": {
+      "url": "/today.html",
+      "clipCss": {
+        "x": 232,
+        "y": 122,
+        "width": 912,
+        "height": 255
+      }
+    },
+    "need_without_icon": {
+      "url": "/today.html?needicon=off",
+      "clipCss": {
+        "x": 232,
+        "y": 122,
+        "width": 912,
+        "height": 255
+      }
+    },
+    "ready_authorization": {
+      "url": "/studio.html?select=rd1",
+      "clipCss": {
+        "x": 1073,
+        "y": 0,
+        "width": 375,
+        "height": 464
+      }
+    },
+    "nav_lockup": {
+      "url": "/today.html",
+      "clipCss": {
+        "x": 0,
+        "y": 0,
+        "width": 208,
+        "height": 251.0625
+      }
+    },
+    "no_still_40px": {
+      "url": "/studio.html",
+      "clipCss": {
+        "x": 657,
+        "y": 171,
+        "width": 175,
+        "height": 52
+      }
+    },
+    "card_default": {
+      "url": "/studio.html",
+      "clipCss": {
+        "x": 643,
+        "y": 157,
+        "width": 203,
+        "height": 154
+      }
+    },
+    "card_selected": {
+      "url": "/studio.html?select=rd1",
+      "clipCss": {
+        "x": 643,
+        "y": 157,
+        "width": 203,
+        "height": 154
+      }
+    },
+    "focusVisible": true,
+    "card_keyboard_focus": {
+      "url": "/studio.html",
+      "clipCss": {
+        "x": 643,
+        "y": 157,
+        "width": 203,
+        "height": 154
+      }
+    }
+  },
+  "stateContrast": {
+    "method": "Pixels sampled from renders/board/card_*.png at card mid-height, left edge (device scale 2).",
+    "canvas": "#F5F5F7",
+    "card_surface": "#FFFFFF",
+    "passive_border": {
+      "pixel": "#D8D8DD",
+      "vs_canvas": 1.3
+    },
+    "selected_border": {
+      "pixel": "#1D1D1F",
+      "width_css": 2,
+      "vs_canvas": 15.46,
+      "vs_card_surface": 16.83,
+      "vs_passive_border": 11.85
+    },
+    "keyboard_focus_ring": {
+      "pixel": "#0057D9",
+      "width_css": 2,
+      "offset_css": 2,
+      "vs_canvas_both_sides": 5.73
+    }
+  },
+  "cardGeometry": {
+    "default": {
+      "box": {
+        "x": 650,
+        "y": 164,
+        "width": 189,
+        "height": 140
+      },
+      "clip": {
+        "x": 643,
+        "y": 157,
+        "width": 203,
+        "height": 154
+      }
+    },
+    "selected": {
+      "box": {
+        "x": 650,
+        "y": 164,
+        "width": 189,
+        "height": 140
+      },
+      "clip": {
+        "x": 643,
+        "y": 157,
+        "width": 203,
+        "height": 154
+      }
+    },
+    "focus": {
+      "box": {
+        "x": 650,
+        "y": 164,
+        "width": 189,
+        "height": 140
+      },
+      "clip": {
+        "x": 643,
+        "y": 157,
+        "width": 203,
+        "height": 154
+      }
+    }
+  },
+  "instrumentSansWeights": {
+    "allLoadedFromFontFile": true,
+    "widthsStrictlyIncrease": true,
+    "inkStrictlyIncreases": true,
+    "w400MatchesStaticRegularWidth": true,
+    "w700MatchesStaticBoldWidth": true,
+    "w500DistinctFromRegularAndBold": true,
+    "w600DistinctFromRegularAndBold": true
+  }
+}

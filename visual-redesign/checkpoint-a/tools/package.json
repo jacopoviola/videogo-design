@@ -1,0 +1,17 @@
+{
+  "name": "videogo-checkpoint-a-tools",
+  "private": true,
+  "type": "module",
+  "description": "Render, outline and validation tooling for the Checkpoint A visual proof. Not product code.",
+  "scripts": {
+    "outline": "node outline-lockup.mjs",
+    "serve": "node serve.mjs",
+    "render": "node render.mjs",
+    "validate": "node validate.mjs"
+  },
+  "devDependencies": {
+    "axe-core": "^4.13.0",
+    "opentype.js": "^2.0.0",
+    "playwright-core": "^1.63.0"
+  }
+}

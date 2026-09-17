@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio · Week one — Videogo</title>
+<script src="js/boot.js"></script>
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+<!-- Checkpoint B · Source: screens/E1_week_one_empty_states.png · videogo_ux3_prototype.html:1074–1089 · FH §9 (week one) -->
+<a class="vg-skip" href="#main">Skip to main content</a>
+<div class="vg-app">
+  <aside class="vg-rail">
+    <div class="vg-rail__bar">
+      <div class="vg-lockup"><img src="assets/videogo-lockup-inverse-outlined.svg" width="940" height="140" alt="VIDEOGO"></div>
+      <button class="vg-menu" type="button" aria-expanded="false" aria-controls="vg-nav-panel">Menu</button>
+    </div>
+    <div class="vg-rail__panel" id="vg-nav-panel">
+      <nav class="vg-nav" aria-label="Primary">
+        <ul>
+          <li><a href="today.html" title="Open Today">Today</a></li>
+          <li><a href="studio.html" aria-current="page" title="Open Studio">Studio</a></li>
+          <li><a href="knowledge.html" title="Open Knowledge">Knowledge</a></li>
+          <li><a href="#" title="Open Connections" data-out-of-scope="Connections — not in Checkpoint B">Connections</a></li>
+        </ul>
+      </nav>
+      <a class="vg-account" href="account.html" title="Account / Settings">
+        <span class="vg-account__initials" aria-hidden="true">MI</span>
+        <span><span class="vg-account__name">Moretti Impianti</span><span class="vg-account__sector">Home services</span></span>
+        <span class="vg-visually-hidden">— Account and settings</span>
+      </a>
+    </div>
+  </aside>
+
+  <main class="vg-main" id="main" tabindex="-1">
+    <header class="vg-page-head">
+      <h1 class="vg-page-title">Studio</h1>
+      <p class="vg-page-sub">From idea to published result.</p>
+    </header>
+    <div class="vg-page">
+      <section class="vg-empty" aria-labelledby="empty-title">
+        <h2 class="vg-empty__statement" id="empty-title">VIDEOGO is preparing your first batch.</h2>
+        <p class="vg-empty__body">I'm finding the strongest opportunities and building the first executions. Nothing is needed from you right now.</p>
+        <div class="vg-quiet-section" style="margin-top:var(--vg-space-8)">
+          <span class="vg-status">Live</span>
+          <h3 class="vg-empty__live" style="font-size:var(--vg-section-size);line-height:var(--vg-section-line);font-weight:600">Nothing live yet.</h3>
+          <p>I'll start showing results and learnings here after your first video is published.</p>
+        </div>
+      </section>
+    </div>
+    <form class="vg-composer vg-main__end" aria-label="Tell VIDEOGO something" data-composer>
+      <button class="vg-btn vg-btn--quiet-fill" type="button" data-source-action="Attach — no file behavior in source">Attach</button>
+      <div class="vg-composer__field">
+        <label class="vg-visually-hidden" for="composer-input">Message to VIDEOGO</label>
+        <div class="vg-composer__box"><textarea class="vg-composer__textarea" id="composer-input" rows="1" enterkeyhint="enter" placeholder="Tell VIDEOGO something — e.g. “talk about our new boiler service”"></textarea></div>
+      </div>
+      <button class="vg-btn vg-btn--primary" type="submit">Send</button>
+    </form>
+  </main>
+</div>
+<script src="js/shell.js"></script>
+<script src="js/composer.js"></script>
+</body>
+</html>

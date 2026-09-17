@@ -1,0 +1,557 @@
+{
+  "meta": {
+    "name": "Videogo — Composed Expertise · Checkpoint A tokens actually used",
+    "baseline": "native-design-system/TOKENS.json v0.1.0",
+    "implementation": "src/styles/tokens.css",
+    "units": "Type sizes in rem at a 16px root (px equivalents in tokens.css comments).",
+    "rule": "v0.1 values are unchanged except where locked by approval: UI font Instrument Sans and page title 44/48 · 600 · −0.02em (A2.1). PROPOSED entries await approval."
+  },
+  "tokens": [
+    {
+      "css": "--vg-surface-canvas",
+      "value": "#F5F5F7",
+      "status": "v0.1 working token",
+      "v01Source": "color.surface.canvas",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-surface-content",
+      "value": "#FFFFFF",
+      "status": "v0.1 working token",
+      "v01Source": "color.surface.content",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-surface-subtle",
+      "value": "#EFEFF1",
+      "status": "v0.1 working token",
+      "v01Source": "color.surface.subtle",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-surface-selected",
+      "value": "#E3E3E8",
+      "status": "PROPOSED (not in v0.1)",
+      "v01Source": null,
+      "usedByProof": true,
+      "note": "selected nav item on the subtle rail (text-primary 12.9:1)"
+    },
+    {
+      "css": "--vg-text-primary",
+      "value": "#1D1D1F",
+      "status": "v0.1 working token",
+      "v01Source": "color.text.primary",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-text-secondary",
+      "value": "#5C5C63",
+      "status": "v0.1 working token",
+      "v01Source": "color.text.secondary",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-text-tertiary",
+      "value": "#68686E",
+      "status": "v0.1 working token",
+      "v01Source": "color.text.tertiary",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-text-on-primary",
+      "value": "#FFFFFF",
+      "status": "v0.1 working token",
+      "v01Source": "color.text.onPrimary",
+      "usedByProof": true,
+      "note": "---------- Colour · borders ----------"
+    },
+    {
+      "css": "--vg-border-subtle",
+      "value": "#D8D8DD",
+      "status": "v0.1 working token",
+      "v01Source": "color.border.subtle",
+      "usedByProof": true,
+      "note": "non-essential division only"
+    },
+    {
+      "css": "--vg-border-control",
+      "value": "#85858B",
+      "status": "v0.1 working token",
+      "v01Source": "color.border.control",
+      "usedByProof": true,
+      "note": "essential control boundaries"
+    },
+    {
+      "css": "--vg-action-primary",
+      "value": "#1D1D1F",
+      "status": "v0.1 working token",
+      "v01Source": "color.action.primary",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-action-primary-hover",
+      "value": "#343437",
+      "status": "v0.1 working token",
+      "v01Source": "color.action.primaryHover",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-action-primary-pressed",
+      "value": "#080809",
+      "status": "v0.1 working token",
+      "v01Source": "color.action.primaryPressed",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-authorization",
+      "value": "#0057D9",
+      "status": "v0.1 working token",
+      "v01Source": "color.action.authorization",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-authorization-hover",
+      "value": "#004CC2",
+      "status": "v0.1 working token",
+      "v01Source": "color.action.authorizationHover",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-authorization-pressed",
+      "value": "#003E9E",
+      "status": "v0.1 working token",
+      "v01Source": "color.action.authorizationPressed",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-authorization-surface",
+      "value": "#EDF3FF",
+      "status": "v0.1 working token",
+      "v01Source": "color.action.authorizationSurface",
+      "usedByProof": true,
+      "note": "---------- Colour · status ----------"
+    },
+    {
+      "css": "--vg-need",
+      "value": "#B42318",
+      "status": "v0.1 working token",
+      "v01Source": "color.status.need",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-need-surface",
+      "value": "#FFF1F0",
+      "status": "v0.1 working token",
+      "v01Source": "color.status.needSurface",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-focus",
+      "value": "#0057D9",
+      "status": "v0.1 working token",
+      "v01Source": "color.status.focus",
+      "usedByProof": true,
+      "note": "---------- Typography ----------"
+    },
+    {
+      "css": "--vg-font-ui",
+      "value": "\"Instrument Sans\"",
+      "status": "locked A2.1",
+      "v01Source": "font.family.ui",
+      "usedByProof": true,
+      "note": "official OFL variable font; no fallback family; synthesis off"
+    },
+    {
+      "css": "--vg-page-title-size",
+      "value": "2.75rem",
+      "status": "locked A2.1",
+      "v01Source": "font.role.pageTitle.size",
+      "usedByProof": true,
+      "note": "44px"
+    },
+    {
+      "css": "--vg-page-title-line",
+      "value": "3rem",
+      "status": "locked A2.1",
+      "v01Source": "font.role.pageTitle.lineHeight",
+      "usedByProof": true,
+      "note": "48px"
+    },
+    {
+      "css": "--vg-page-title-weight",
+      "value": "600",
+      "status": "locked A2.1",
+      "v01Source": "font.role.pageTitle.weight",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-page-title-track",
+      "value": "-0.02em",
+      "status": "locked A2.1",
+      "v01Source": "font.role.pageTitle.letterSpacing",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-object-title-size",
+      "value": "1.375rem",
+      "status": "v0.1 working token",
+      "v01Source": "font.role.objectTitle.size",
+      "usedByProof": true,
+      "note": "22px"
+    },
+    {
+      "css": "--vg-object-title-line",
+      "value": "1.8125rem",
+      "status": "v0.1 working token",
+      "v01Source": "font.role.objectTitle.lineHeight",
+      "usedByProof": true,
+      "note": "29px"
+    },
+    {
+      "css": "--vg-section-size",
+      "value": "1.125rem",
+      "status": "v0.1 working token",
+      "v01Source": "font.role.sectionHeading.size",
+      "usedByProof": true,
+      "note": "18px"
+    },
+    {
+      "css": "--vg-section-line",
+      "value": "1.5rem",
+      "status": "v0.1 working token",
+      "v01Source": "font.role.sectionHeading.lineHeight",
+      "usedByProof": true,
+      "note": "24px"
+    },
+    {
+      "css": "--vg-body-size",
+      "value": "1rem",
+      "status": "v0.1 working token",
+      "v01Source": "font.role.body.size",
+      "usedByProof": true,
+      "note": "16px"
+    },
+    {
+      "css": "--vg-body-line",
+      "value": "1.5rem",
+      "status": "v0.1 working token",
+      "v01Source": "font.role.body.lineHeight",
+      "usedByProof": true,
+      "note": "24px"
+    },
+    {
+      "css": "--vg-compact-size",
+      "value": "0.875rem",
+      "status": "v0.1 working token",
+      "v01Source": "font.role.compact.size / control.size",
+      "usedByProof": true,
+      "note": "14px"
+    },
+    {
+      "css": "--vg-compact-line",
+      "value": "1.25rem",
+      "status": "v0.1 working token",
+      "v01Source": "font.role.compact.lineHeight",
+      "usedByProof": true,
+      "note": "20px"
+    },
+    {
+      "css": "--vg-meta-size",
+      "value": "0.8125rem",
+      "status": "v0.1 working token",
+      "v01Source": "font.role.metadata.size",
+      "usedByProof": true,
+      "note": "13px"
+    },
+    {
+      "css": "--vg-meta-line",
+      "value": "1.125rem",
+      "status": "v0.1 working token",
+      "v01Source": "font.role.metadata.lineHeight",
+      "usedByProof": true,
+      "note": "18px"
+    },
+    {
+      "css": "--vg-status-size",
+      "value": "0.75rem",
+      "status": "v0.1 working token",
+      "v01Source": "font.role.status.size",
+      "usedByProof": true,
+      "note": "12px"
+    },
+    {
+      "css": "--vg-status-line",
+      "value": "1rem",
+      "status": "v0.1 working token",
+      "v01Source": "font.role.status.lineHeight",
+      "usedByProof": true,
+      "note": "16px"
+    },
+    {
+      "css": "--vg-space-1",
+      "value": "4px",
+      "status": "v0.1 working token",
+      "v01Source": "space.1",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-space-2",
+      "value": "8px",
+      "status": "v0.1 working token",
+      "v01Source": "space.2",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-space-3",
+      "value": "12px",
+      "status": "v0.1 working token",
+      "v01Source": "space.3",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-space-4",
+      "value": "16px",
+      "status": "v0.1 working token",
+      "v01Source": "space.4",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-space-5",
+      "value": "20px",
+      "status": "v0.1 working token",
+      "v01Source": "space.5",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-space-6",
+      "value": "24px",
+      "status": "v0.1 working token",
+      "v01Source": "space.6",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-space-8",
+      "value": "32px",
+      "status": "v0.1 working token",
+      "v01Source": "space.8",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-space-10",
+      "value": "40px",
+      "status": "v0.1 working token",
+      "v01Source": "space.10",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-space-object",
+      "value": "24px",
+      "status": "v0.1 working token",
+      "v01Source": "space.object",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-space-evidence-row",
+      "value": "12px",
+      "status": "v0.1 working token",
+      "v01Source": "space.evidenceRow",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-space-section",
+      "value": "32px",
+      "status": "v0.1 working token",
+      "v01Source": "space.section",
+      "usedByProof": true,
+      "note": "---------- Geometry ----------"
+    },
+    {
+      "css": "--vg-radius-status",
+      "value": "6px",
+      "status": "v0.1 working token",
+      "v01Source": "radius.status",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-radius-control",
+      "value": "8px",
+      "status": "v0.1 working token",
+      "v01Source": "radius.control",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-radius-object",
+      "value": "14px",
+      "status": "v0.1 working token",
+      "v01Source": "radius.object",
+      "usedByProof": true,
+      "note": "---------- Elevation ----------"
+    },
+    {
+      "css": "--vg-elevation-content",
+      "value": "none",
+      "status": "v0.1 working token",
+      "v01Source": "elevation.content",
+      "usedByProof": true,
+      "note": "---------- Sizes ----------"
+    },
+    {
+      "css": "--vg-size-nav",
+      "value": "208px",
+      "status": "v0.1 working token",
+      "v01Source": "size.navDesktop",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-size-control-compact",
+      "value": "32px",
+      "status": "v0.1 working token",
+      "v01Source": "size.controlCompactMin",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-size-control",
+      "value": "36px",
+      "status": "v0.1 working token",
+      "v01Source": "size.controlDesktopMin",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-size-target-touch",
+      "value": "44px",
+      "status": "v0.1 working token",
+      "v01Source": "size.targetTouchMin",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-size-today-measure",
+      "value": "880px",
+      "status": "v0.1 working token",
+      "v01Source": "size.todayMeasureMax",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-size-panel-min",
+      "value": "304px",
+      "status": "v0.1 working token",
+      "v01Source": "size.studioPanelMin",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-size-panel-max",
+      "value": "360px",
+      "status": "v0.1 working token",
+      "v01Source": "size.studioPanelMax",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-size-need-zone",
+      "value": "88px",
+      "status": "PROPOSED (not in v0.1)",
+      "v01Source": null,
+      "usedByProof": true,
+      "note": "NEED leading zone width, from the accepted reference"
+    },
+    {
+      "css": "--vg-motion-fast",
+      "value": "120ms",
+      "status": "v0.1 working token",
+      "v01Source": "motion.fast",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-motion-standard",
+      "value": "180ms",
+      "status": "v0.1 working token",
+      "v01Source": "motion.standard",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-ease-in",
+      "value": "cubic-bezier(0.2, 0, 0, 1)",
+      "status": "v0.1 working token",
+      "v01Source": "motion.easeIn",
+      "usedByProof": true,
+      "note": null
+    },
+    {
+      "css": "--vg-radius-media",
+      "value": "10px",
+      "status": "v0.1 working token",
+      "v01Source": "radius.media",
+      "usedByProof": true,
+      "note": "media frames (A2)"
+    }
+  ],
+  "declaredButUnused": [
+    "--vg-space-object-compact"
+  ],
+  "proposedPageTitleAlternative": {
+    "status": "Resolved — locked A2.1 as the page-title token (44/48 · 600 · −0.02em). ?title=32 renders the historical baseline for old boards only.",
+    "values": {
+      "--vg-page-title-size": "2.75rem (44px)",
+      "--vg-page-title-line": "3rem (48px)"
+    }
+  },
+  "v01TokensNotUsedByCheckpointA": [
+    "font.role.onboardingLead",
+    "font.role.metric",
+    "color.surface.scrim",
+    "color.disabled.*",
+    "radius.media",
+    "radius.sheet",
+    "elevation.overlay",
+    "motion.immediate",
+    "motion.panel",
+    "motion.easeOut",
+    "space.12",
+    "space.16",
+    "space.fieldGap"
+  ],
+  "fontOption": {
+    "status": "Resolved — locked A2.1 as --vg-font-ui (?font=system renders the historical comparison only)",
+    "family": "Instrument Sans (variable)",
+    "file": "src/assets/fonts/InstrumentSans-VariableFont_wdth,wght.ttf",
+    "source": "google/fonts ofl/instrumentsans, provenance in src/assets/fonts/SOURCE.md",
+    "license": "OFL 1.1 (src/assets/fonts/OFL.txt)",
+    "axes": "wght 400–700, wdth 75–100",
+    "note": "True 400, 500, 600 and 700 weights; font-synthesis disabled; verified in renders/board/weight-verification.json"
+  }
+}

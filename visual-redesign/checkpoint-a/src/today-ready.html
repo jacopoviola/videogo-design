@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Today (READY with media) — Videogo</title>
+<script src="js/boot.js"></script>
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+<!-- Checkpoint A2 · Source: screens/B1_page_today.png · videogo_ux3_prototype.html:956–972 (READY object, Upcoming) · same object’s evidence from PR:895 (Why this) and PR:582 (Format) · media = DEMO FIXTURE (js/media-fixtures.js) -->
+<a class="vg-skip" href="#main">Skip to main content</a>
+<div class="vg-app">
+  <aside class="vg-rail">
+    <div class="vg-rail__bar">
+      <div class="vg-lockup"><img src="assets/videogo-lockup-inverse-outlined.svg" width="940" height="140" alt="VIDEOGO"></div>
+      <button class="vg-menu" type="button" aria-expanded="false" aria-controls="vg-nav-panel">Menu</button>
+    </div>
+    <div class="vg-rail__panel" id="vg-nav-panel">
+      <nav class="vg-nav" aria-label="Primary">
+        <ul>
+          <li><a href="today.html" aria-current="page" title="Open Today">Today</a></li>
+          <li><a href="studio.html" title="Open Studio">Studio</a></li>
+          <li><a href="knowledge.html" title="Open Knowledge">Knowledge</a></li>
+          <li><a href="#" title="Open Connections" data-out-of-scope="Connections — Checkpoint B">Connections</a></li>
+        </ul>
+      </nav>
+      <a class="vg-account" href="account.html" title="Account / Settings">
+        <span class="vg-account__initials" aria-hidden="true">MI</span>
+        <span><span class="vg-account__name">Moretti Impianti</span><span class="vg-account__sector">Home services</span></span>
+        <span class="vg-visually-hidden">— Account and settings</span>
+      </a>
+    </div>
+  </aside>
+
+  <main class="vg-main" id="main" tabindex="-1">
+    <header class="vg-page-head">
+      <h1 class="vg-page-title">Today</h1>
+      <p class="vg-page-sub">Thu · 17 Oct</p>
+    </header>
+
+    <div class="vg-today">
+      <article class="vg-object vg-object--media" aria-labelledby="ready-title">
+        <div class="vg-object__media" id="ready-media"></div>
+        <div class="vg-object__body">
+          <span class="vg-status vg-status--ready">Ready</span>
+          <h2 class="vg-object__title" id="ready-title">“Heat pump vs new boiler” is ready for your go</h2>
+          <p class="vg-object__consequence">Passed quality review. Recommended: Instagram Reel, today 18:00 — caption and timing are pre-filled, change anything.</p>
+          <dl class="vg-evidence vg-evidence--object">
+            <dt>Why this</dt><dd>'Which one is worth it?' is your most-asked consultation question.</dd>
+            <dt>Format</dt><dd>Consideration · voiceover + comparison graphics · passed quality review</dd>
+          </dl>
+          <div class="vg-actions">
+            <button class="vg-btn vg-btn--authorize" type="button" data-source-action="PR:966 go(9) → Ready → Publish sheet (review, not an immediate publish)">Review &amp; publish</button>
+          </div>
+          <p class="vg-trust">VIDEOGO only publishes within permissions you grant.</p>
+        </div>
+      </article>
+
+      <section aria-labelledby="upcoming-title">
+        <div class="vg-section-head">
+          <h2 class="vg-section-title" id="upcoming-title">Upcoming</h2>
+          <span class="vg-section-meta">Next 7 days</span>
+        </div>
+        <ul class="vg-schedule">
+          <li><time>Sat 11:00</time><span class="vg-schedule__title">“Radiator bleeding in 90 seconds”</span><span class="vg-schedule__channel"></span><span class="vg-schedule__state">Planned</span></li>
+        </ul>
+      </section>
+    </div>
+
+    <form class="vg-composer vg-main__end" aria-label="Tell VIDEOGO something" data-composer>
+      <button class="vg-btn vg-btn--quiet-fill" type="button" data-source-action="Attach — no file behavior in source">Attach</button>
+      <div class="vg-composer__field">
+        <label class="vg-visually-hidden" for="composer-input">Message to VIDEOGO</label>
+        <div class="vg-composer__box"><textarea class="vg-composer__textarea" id="composer-input" rows="1" enterkeyhint="enter" placeholder="Tell VIDEOGO something — e.g. “talk about our new boiler service”"></textarea></div>
+      </div>
+      <button class="vg-btn vg-btn--primary" type="submit">Send</button>
+    </form>
+  </main>
+</div>
+<script src="js/media-fixtures.js"></script>
+<script src="js/media.js"></script>
+<script>
+  (function () {
+    var m = window.VG_MEDIA.rd1;
+    var slot = document.getElementById('ready-media');
+    slot.innerHTML = '<figure class="vg-media vg-media--inspect" style="aspect-ratio:' + m.w + ' / ' + m.h + '"><img src="' + m.src + '" alt="' + m.alt + '"><span class="vg-media__prov">Demo fixture</span></figure>' +
+      '<p class="vg-object__caption">' + m.channel + ' · ' + m.ratioLabel + ' · ' + m.duration + '</p>';
+  })();
+</script>
+<script src="js/shell.js"></script>
+<script src="js/composer.js"></script>
+</body>
+</html>

@@ -1,0 +1,726 @@
+{
+  "chrome": "Chrome (playwright channel)",
+  "date": "2026-09-17T13:07:00.904Z",
+  "results": [
+    {
+      "name": "textarea_1440_empty",
+      "variant": "textarea",
+      "label": "1440",
+      "w": 1440,
+      "h": 200,
+      "touch": false,
+      "text": "",
+      "state": "empty",
+      "textareaHeight": 36,
+      "maxHeight": 116,
+      "lines": 1,
+      "scrollsInside": false,
+      "horizontalScroll": false,
+      "placeholderFullyVisible": true,
+      "placeholderLines": 1,
+      "targets": [
+        {
+          "n": "Attach",
+          "w": 78,
+          "h": 36
+        },
+        {
+          "n": "textarea",
+          "w": 691,
+          "h": 36
+        },
+        {
+          "n": "Send",
+          "w": 68,
+          "h": 36
+        }
+      ],
+      "buttonsOrder": [
+        "Attach@33",
+        "Send@33"
+      ],
+      "axe": [],
+      "focusRing": "solid 2px"
+    },
+    {
+      "name": "textarea_1440_long",
+      "variant": "textarea",
+      "label": "1440",
+      "w": 1440,
+      "h": 200,
+      "touch": false,
+      "text": "",
+      "state": "long",
+      "textareaHeight": 96,
+      "maxHeight": 116,
+      "lines": 4,
+      "scrollsInside": false,
+      "horizontalScroll": false,
+      "targets": [
+        {
+          "n": "Attach",
+          "w": 78,
+          "h": 36
+        },
+        {
+          "n": "textarea",
+          "w": 691,
+          "h": 96
+        },
+        {
+          "n": "Send",
+          "w": 68,
+          "h": 36
+        }
+      ],
+      "buttonsOrder": [
+        "Attach@93",
+        "Send@93"
+      ],
+      "axe": []
+    },
+    {
+      "name": "textarea_1216_empty",
+      "variant": "textarea",
+      "label": "1216",
+      "w": 1216,
+      "h": 200,
+      "touch": false,
+      "text": "",
+      "state": "empty",
+      "textareaHeight": 36,
+      "maxHeight": 116,
+      "lines": 1,
+      "scrollsInside": false,
+      "horizontalScroll": false,
+      "placeholderFullyVisible": true,
+      "placeholderLines": 1,
+      "targets": [
+        {
+          "n": "Attach",
+          "w": 78,
+          "h": 36
+        },
+        {
+          "n": "textarea",
+          "w": 691,
+          "h": 36
+        },
+        {
+          "n": "Send",
+          "w": 68,
+          "h": 36
+        }
+      ],
+      "buttonsOrder": [
+        "Attach@33",
+        "Send@33"
+      ],
+      "axe": []
+    },
+    {
+      "name": "textarea_1216_long",
+      "variant": "textarea",
+      "label": "1216",
+      "w": 1216,
+      "h": 200,
+      "touch": false,
+      "text": "",
+      "state": "long",
+      "textareaHeight": 96,
+      "maxHeight": 116,
+      "lines": 4,
+      "scrollsInside": false,
+      "horizontalScroll": false,
+      "targets": [
+        {
+          "n": "Attach",
+          "w": 78,
+          "h": 36
+        },
+        {
+          "n": "textarea",
+          "w": 691,
+          "h": 96
+        },
+        {
+          "n": "Send",
+          "w": 68,
+          "h": 36
+        }
+      ],
+      "buttonsOrder": [
+        "Attach@93",
+        "Send@93"
+      ],
+      "axe": []
+    },
+    {
+      "name": "textarea_390-touch_empty",
+      "variant": "textarea",
+      "label": "390-touch",
+      "w": 390,
+      "h": 360,
+      "touch": true,
+      "text": "",
+      "state": "empty",
+      "textareaHeight": 64,
+      "maxHeight": 136,
+      "lines": 2,
+      "scrollsInside": false,
+      "horizontalScroll": false,
+      "placeholderFullyVisible": true,
+      "placeholderLines": 2,
+      "targets": [
+        {
+          "n": "Attach",
+          "w": 78,
+          "h": 44
+        },
+        {
+          "n": "textarea",
+          "w": 340,
+          "h": 64
+        },
+        {
+          "n": "Send",
+          "w": 68,
+          "h": 44
+        }
+      ],
+      "buttonsOrder": [
+        "Attach@97",
+        "Send@97"
+      ],
+      "axe": [],
+      "smallTargets": []
+    },
+    {
+      "name": "textarea_390-touch_long",
+      "variant": "textarea",
+      "label": "390-touch",
+      "w": 390,
+      "h": 360,
+      "touch": true,
+      "text": "",
+      "state": "long",
+      "textareaHeight": 136,
+      "maxHeight": 136,
+      "lines": 5,
+      "scrollsInside": true,
+      "horizontalScroll": false,
+      "targets": [
+        {
+          "n": "Attach",
+          "w": 78,
+          "h": 44
+        },
+        {
+          "n": "textarea",
+          "w": 340,
+          "h": 136
+        },
+        {
+          "n": "Send",
+          "w": 68,
+          "h": 44
+        }
+      ],
+      "buttonsOrder": [
+        "Attach@169",
+        "Send@169"
+      ],
+      "axe": [],
+      "smallTargets": []
+    },
+    {
+      "name": "textarea_320-touch_empty",
+      "variant": "textarea",
+      "label": "320-touch",
+      "w": 320,
+      "h": 400,
+      "touch": true,
+      "text": "",
+      "state": "empty",
+      "textareaHeight": 64,
+      "maxHeight": 136,
+      "lines": 2,
+      "scrollsInside": false,
+      "horizontalScroll": false,
+      "placeholderFullyVisible": true,
+      "placeholderLines": 2,
+      "targets": [
+        {
+          "n": "Attach",
+          "w": 78,
+          "h": 44
+        },
+        {
+          "n": "textarea",
+          "w": 270,
+          "h": 64
+        },
+        {
+          "n": "Send",
+          "w": 68,
+          "h": 44
+        }
+      ],
+      "buttonsOrder": [
+        "Attach@97",
+        "Send@97"
+      ],
+      "axe": [],
+      "smallTargets": []
+    },
+    {
+      "name": "textarea_320-touch_long",
+      "variant": "textarea",
+      "label": "320-touch",
+      "w": 320,
+      "h": 400,
+      "touch": true,
+      "text": "",
+      "state": "long",
+      "textareaHeight": 136,
+      "maxHeight": 136,
+      "lines": 5,
+      "scrollsInside": true,
+      "horizontalScroll": false,
+      "targets": [
+        {
+          "n": "Attach",
+          "w": 78,
+          "h": 44
+        },
+        {
+          "n": "textarea",
+          "w": 270,
+          "h": 136
+        },
+        {
+          "n": "Send",
+          "w": 68,
+          "h": 44
+        }
+      ],
+      "buttonsOrder": [
+        "Attach@169",
+        "Send@169"
+      ],
+      "axe": [],
+      "smallTargets": []
+    },
+    {
+      "name": "textarea_1440-text200_empty",
+      "variant": "textarea",
+      "label": "1440-text200",
+      "w": 1440,
+      "h": 400,
+      "touch": false,
+      "text": "200",
+      "state": "empty",
+      "textareaHeight": 96,
+      "maxHeight": 216,
+      "lines": 2,
+      "scrollsInside": false,
+      "horizontalScroll": false,
+      "placeholderFullyVisible": true,
+      "placeholderLines": 2,
+      "targets": [
+        {
+          "n": "Attach",
+          "w": 123,
+          "h": 56
+        },
+        {
+          "n": "textarea",
+          "w": 612,
+          "h": 96
+        },
+        {
+          "n": "Send",
+          "w": 102,
+          "h": 56
+        }
+      ],
+      "buttonsOrder": [
+        "Attach@73",
+        "Send@73"
+      ],
+      "axe": []
+    },
+    {
+      "name": "textarea_1440-text200_long",
+      "variant": "textarea",
+      "label": "1440-text200",
+      "w": 1440,
+      "h": 400,
+      "touch": false,
+      "text": "200",
+      "state": "long",
+      "textareaHeight": 216,
+      "maxHeight": 216,
+      "lines": 5,
+      "scrollsInside": true,
+      "horizontalScroll": false,
+      "targets": [
+        {
+          "n": "Attach",
+          "w": 123,
+          "h": 56
+        },
+        {
+          "n": "textarea",
+          "w": 612,
+          "h": 216
+        },
+        {
+          "n": "Send",
+          "w": 102,
+          "h": 56
+        }
+      ],
+      "buttonsOrder": [
+        "Attach@193",
+        "Send@193"
+      ],
+      "axe": []
+    },
+    {
+      "name": "input_1440_empty",
+      "variant": "input",
+      "label": "1440",
+      "w": 1440,
+      "h": 200,
+      "touch": false,
+      "text": "",
+      "state": "empty",
+      "textareaHeight": 36,
+      "lines": 1,
+      "placeholderFullyVisible": true,
+      "placeholderLines": 1,
+      "horizontalScroll": false,
+      "targets": [
+        {
+          "n": "Attach",
+          "w": 78,
+          "h": 36
+        },
+        {
+          "n": "input",
+          "w": 691,
+          "h": 36
+        },
+        {
+          "n": "Send",
+          "w": 68,
+          "h": 36
+        }
+      ],
+      "axe": [],
+      "focusRing": "solid 2px"
+    },
+    {
+      "name": "input_1440_long",
+      "variant": "input",
+      "label": "1440",
+      "w": 1440,
+      "h": 200,
+      "touch": false,
+      "text": "",
+      "state": "long",
+      "textareaHeight": 36,
+      "lines": 1,
+      "placeholderFullyVisible": true,
+      "placeholderLines": 1,
+      "horizontalScroll": false,
+      "targets": [
+        {
+          "n": "Attach",
+          "w": 78,
+          "h": 36
+        },
+        {
+          "n": "input",
+          "w": 691,
+          "h": 36
+        },
+        {
+          "n": "Send",
+          "w": 68,
+          "h": 36
+        }
+      ],
+      "axe": []
+    },
+    {
+      "name": "input_1216_empty",
+      "variant": "input",
+      "label": "1216",
+      "w": 1216,
+      "h": 200,
+      "touch": false,
+      "text": "",
+      "state": "empty",
+      "textareaHeight": 36,
+      "lines": 1,
+      "placeholderFullyVisible": true,
+      "placeholderLines": 1,
+      "horizontalScroll": false,
+      "targets": [
+        {
+          "n": "Attach",
+          "w": 78,
+          "h": 36
+        },
+        {
+          "n": "input",
+          "w": 691,
+          "h": 36
+        },
+        {
+          "n": "Send",
+          "w": 68,
+          "h": 36
+        }
+      ],
+      "axe": []
+    },
+    {
+      "name": "input_1216_long",
+      "variant": "input",
+      "label": "1216",
+      "w": 1216,
+      "h": 200,
+      "touch": false,
+      "text": "",
+      "state": "long",
+      "textareaHeight": 36,
+      "lines": 1,
+      "placeholderFullyVisible": true,
+      "placeholderLines": 1,
+      "horizontalScroll": false,
+      "targets": [
+        {
+          "n": "Attach",
+          "w": 78,
+          "h": 36
+        },
+        {
+          "n": "input",
+          "w": 691,
+          "h": 36
+        },
+        {
+          "n": "Send",
+          "w": 68,
+          "h": 36
+        }
+      ],
+      "axe": []
+    },
+    {
+      "name": "input_390-touch_empty",
+      "variant": "input",
+      "label": "390-touch",
+      "w": 390,
+      "h": 360,
+      "touch": true,
+      "text": "",
+      "state": "empty",
+      "textareaHeight": 44,
+      "lines": 1,
+      "placeholderFullyVisible": false,
+      "placeholderLines": 1,
+      "horizontalScroll": false,
+      "targets": [
+        {
+          "n": "Attach",
+          "w": 78,
+          "h": 44
+        },
+        {
+          "n": "input",
+          "w": 340,
+          "h": 44
+        },
+        {
+          "n": "Send",
+          "w": 68,
+          "h": 44
+        }
+      ],
+      "axe": [],
+      "smallTargets": []
+    },
+    {
+      "name": "input_390-touch_long",
+      "variant": "input",
+      "label": "390-touch",
+      "w": 390,
+      "h": 360,
+      "touch": true,
+      "text": "",
+      "state": "long",
+      "textareaHeight": 44,
+      "lines": 1,
+      "placeholderFullyVisible": false,
+      "placeholderLines": 1,
+      "horizontalScroll": false,
+      "targets": [
+        {
+          "n": "Attach",
+          "w": 78,
+          "h": 44
+        },
+        {
+          "n": "input",
+          "w": 340,
+          "h": 44
+        },
+        {
+          "n": "Send",
+          "w": 68,
+          "h": 44
+        }
+      ],
+      "axe": [],
+      "smallTargets": []
+    },
+    {
+      "name": "input_320-touch_empty",
+      "variant": "input",
+      "label": "320-touch",
+      "w": 320,
+      "h": 400,
+      "touch": true,
+      "text": "",
+      "state": "empty",
+      "textareaHeight": 44,
+      "lines": 1,
+      "placeholderFullyVisible": false,
+      "placeholderLines": 1,
+      "horizontalScroll": false,
+      "targets": [
+        {
+          "n": "Attach",
+          "w": 78,
+          "h": 44
+        },
+        {
+          "n": "input",
+          "w": 270,
+          "h": 44
+        },
+        {
+          "n": "Send",
+          "w": 68,
+          "h": 44
+        }
+      ],
+      "axe": [],
+      "smallTargets": []
+    },
+    {
+      "name": "input_320-touch_long",
+      "variant": "input",
+      "label": "320-touch",
+      "w": 320,
+      "h": 400,
+      "touch": true,
+      "text": "",
+      "state": "long",
+      "textareaHeight": 44,
+      "lines": 1,
+      "placeholderFullyVisible": false,
+      "placeholderLines": 1,
+      "horizontalScroll": false,
+      "targets": [
+        {
+          "n": "Attach",
+          "w": 78,
+          "h": 44
+        },
+        {
+          "n": "input",
+          "w": 270,
+          "h": 44
+        },
+        {
+          "n": "Send",
+          "w": 68,
+          "h": 44
+        }
+      ],
+      "axe": [],
+      "smallTargets": []
+    },
+    {
+      "name": "input_1440-text200_empty",
+      "variant": "input",
+      "label": "1440-text200",
+      "w": 1440,
+      "h": 400,
+      "touch": false,
+      "text": "200",
+      "state": "empty",
+      "textareaHeight": 56,
+      "lines": 1,
+      "placeholderFullyVisible": false,
+      "placeholderLines": 1,
+      "horizontalScroll": false,
+      "targets": [
+        {
+          "n": "Attach",
+          "w": 123,
+          "h": 56
+        },
+        {
+          "n": "input",
+          "w": 612,
+          "h": 56
+        },
+        {
+          "n": "Send",
+          "w": 102,
+          "h": 56
+        }
+      ],
+      "axe": []
+    },
+    {
+      "name": "input_1440-text200_long",
+      "variant": "input",
+      "label": "1440-text200",
+      "w": 1440,
+      "h": 400,
+      "touch": false,
+      "text": "200",
+      "state": "long",
+      "textareaHeight": 56,
+      "lines": 1,
+      "placeholderFullyVisible": false,
+      "placeholderLines": 1,
+      "horizontalScroll": false,
+      "targets": [
+        {
+          "n": "Attach",
+          "w": 123,
+          "h": 56
+        },
+        {
+          "n": "input",
+          "w": 612,
+          "h": 56
+        },
+        {
+          "n": "Send",
+          "w": 102,
+          "h": 56
+        }
+      ],
+      "axe": []
+    }
+  ]
+}

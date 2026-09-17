@@ -1,0 +1,1652 @@
+{
+  "chrome": "152.0.7977.84",
+  "platform": "darwin arm64",
+  "date": "2026-09-17T09:56:24.656Z",
+  "checks": {
+    "fonts": [
+      {
+        "url": "/today.html",
+        "nodes": [
+          {
+            "selector": ".vg-page-title",
+            "declared": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "rendered": [
+              ".SF NS (.SFNS-Regular_wdth_opsz200000_GRAD_wght2580000) ×5"
+            ]
+          },
+          {
+            "selector": ".vg-page-sub",
+            "declared": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "rendered": [
+              ".SF NS (.SFNS-Regular) ×17"
+            ]
+          },
+          {
+            "selector": ".vg-nav a",
+            "declared": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "rendered": [
+              ".SF NS (.SFNS-Bold) ×5"
+            ]
+          },
+          {
+            "selector": ".vg-btn",
+            "declared": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "rendered": [
+              ".SF NS (.SFNS-Bold) ×14"
+            ]
+          },
+          {
+            "selector": ".vg-status",
+            "declared": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "rendered": [
+              ".SF NS (.SFNS-Bold) ×4"
+            ]
+          },
+          {
+            "selector": ".vg-object__title, .vg-card__title",
+            "declared": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "rendered": [
+              ".SF NS (.SFNS-Regular_wdth_opsz160000_GRAD_wght2580000) ×51"
+            ]
+          },
+          {
+            "selector": ".vg-composer__input",
+            "declared": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "rendered": [
+              ".SF NS (.SFNS-Regular) ×65"
+            ]
+          }
+        ],
+        "webFontsRequested": [],
+        "images": [
+          {
+            "src": "assets/videogo-lockup-inverse-outlined.svg",
+            "complete": true,
+            "naturalWidth": 940
+          }
+        ]
+      },
+      {
+        "url": "/studio.html?select=rd1",
+        "nodes": [
+          {
+            "selector": ".vg-page-title",
+            "declared": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "rendered": [
+              ".SF NS (.SFNS-Regular_wdth_opsz200000_GRAD_wght2580000) ×6"
+            ]
+          },
+          {
+            "selector": ".vg-page-sub",
+            "declared": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "rendered": [
+              ".SF NS (.SFNS-Regular) ×39"
+            ]
+          },
+          {
+            "selector": ".vg-nav a",
+            "declared": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "rendered": [
+              ".SF NS (.SFNS-Regular) ×5"
+            ]
+          },
+          {
+            "selector": ".vg-btn",
+            "declared": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "rendered": [
+              ".SF NS (.SFNS-Regular) ×6"
+            ]
+          },
+          {
+            "selector": ".vg-status",
+            "declared": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "rendered": [
+              ".SF NS (.SFNS-Bold) ×5"
+            ]
+          },
+          {
+            "selector": ".vg-object__title, .vg-card__title",
+            "declared": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "rendered": [
+              ".SF NS (.SFNS-Bold) ×44"
+            ]
+          },
+          {
+            "selector": ".vg-composer__input",
+            "declared": "system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+            "rendered": [
+              ".SF NS (.SFNS-Regular) ×65"
+            ]
+          }
+        ],
+        "webFontsRequested": [],
+        "images": [
+          {
+            "src": "assets/videogo-lockup-inverse-outlined.svg",
+            "complete": true,
+            "naturalWidth": 940
+          }
+        ]
+      }
+    ],
+    "textContrast": [
+      {
+        "url": "/today.html",
+        "min": 4.82,
+        "failures": [],
+        "pairs": [
+          {
+            "sample": "Home services",
+            "fg": "rgb(104, 104, 110)",
+            "bg": "rgb(239, 239, 241)",
+            "size": 13,
+            "weight": 400,
+            "ratio": 4.82,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Next 7 days",
+            "fg": "rgb(104, 104, 110)",
+            "bg": "rgb(245, 245, 247)",
+            "size": 13,
+            "weight": 400,
+            "ratio": 5.08,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "composer placeholder",
+            "fg": "rgb(104, 104, 110)",
+            "bg": "rgb(255, 255, 255)",
+            "size": 14,
+            "weight": 400,
+            "ratio": 5.54,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Connections",
+            "fg": "rgb(92, 92, 99)",
+            "bg": "rgb(239, 239, 241)",
+            "size": 16,
+            "weight": 500,
+            "ratio": 5.78,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Need",
+            "fg": "rgb(180, 35, 24)",
+            "bg": "rgb(255, 241, 240)",
+            "size": 12,
+            "weight": 600,
+            "ratio": 5.98,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Tuesday 8 October",
+            "fg": "rgb(92, 92, 99)",
+            "bg": "rgb(245, 245, 247)",
+            "size": 16,
+            "weight": 400,
+            "ratio": 6.09,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Thu 18:00",
+            "fg": "rgb(92, 92, 99)",
+            "bg": "rgb(245, 245, 247)",
+            "size": 14,
+            "weight": 400,
+            "ratio": 6.09,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Thursday's boiler-check video is schedul",
+            "fg": "rgb(92, 92, 99)",
+            "bg": "rgb(255, 255, 255)",
+            "size": 16,
+            "weight": 400,
+            "ratio": 6.63,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Today",
+            "fg": "rgb(29, 29, 31)",
+            "bg": "rgb(227, 227, 232)",
+            "size": 16,
+            "weight": 600,
+            "ratio": 13.16,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "MI",
+            "fg": "rgb(29, 29, 31)",
+            "bg": "rgb(227, 227, 232)",
+            "size": 13,
+            "weight": 600,
+            "ratio": 13.16,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Attach",
+            "fg": "rgb(29, 29, 31)",
+            "bg": "rgb(239, 239, 241)",
+            "size": 14,
+            "weight": 500,
+            "ratio": 14.66,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Today",
+            "fg": "rgb(29, 29, 31)",
+            "bg": "rgb(245, 245, 247)",
+            "size": 32,
+            "weight": 600,
+            "ratio": 15.46,
+            "required": 3,
+            "pass": true
+          },
+          {
+            "sample": "Upcoming",
+            "fg": "rgb(29, 29, 31)",
+            "bg": "rgb(245, 245, 247)",
+            "size": 18,
+            "weight": 600,
+            "ratio": 15.46,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Radiator bleeding in 90 seconds",
+            "fg": "rgb(29, 29, 31)",
+            "bg": "rgb(245, 245, 247)",
+            "size": 14,
+            "weight": 400,
+            "ratio": 15.46,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Instagram connection expired — publishin",
+            "fg": "rgb(29, 29, 31)",
+            "bg": "rgb(255, 255, 255)",
+            "size": 22,
+            "weight": 600,
+            "ratio": 16.83,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Send",
+            "fg": "rgb(255, 255, 255)",
+            "bg": "rgb(29, 29, 31)",
+            "size": 14,
+            "weight": 600,
+            "ratio": 16.83,
+            "required": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      {
+        "url": "/studio.html",
+        "min": 4.82,
+        "failures": [],
+        "pairs": [
+          {
+            "sample": "Home services",
+            "fg": "rgb(104, 104, 110)",
+            "bg": "rgb(239, 239, 241)",
+            "size": 13,
+            "weight": 400,
+            "ratio": 4.82,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "No still",
+            "fg": "rgb(104, 104, 110)",
+            "bg": "rgb(239, 239, 241)",
+            "size": 12,
+            "weight": 400,
+            "ratio": 4.82,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Live 5 days · collecting",
+            "fg": "rgb(104, 104, 110)",
+            "bg": "rgb(255, 255, 255)",
+            "size": 13,
+            "weight": 400,
+            "ratio": 5.54,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "composer placeholder",
+            "fg": "rgb(104, 104, 110)",
+            "bg": "rgb(255, 255, 255)",
+            "size": 14,
+            "weight": 400,
+            "ratio": 5.54,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Connections",
+            "fg": "rgb(92, 92, 99)",
+            "bg": "rgb(239, 239, 241)",
+            "size": 16,
+            "weight": 500,
+            "ratio": 5.78,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Calendar",
+            "fg": "rgb(92, 92, 99)",
+            "bg": "rgb(239, 239, 241)",
+            "size": 14,
+            "weight": 500,
+            "ratio": 5.78,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Live",
+            "fg": "rgb(92, 92, 99)",
+            "bg": "rgb(239, 239, 241)",
+            "size": 12,
+            "weight": 600,
+            "ratio": 5.78,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "What VIDEOGO is making, and where it is",
+            "fg": "rgb(92, 92, 99)",
+            "bg": "rgb(245, 245, 247)",
+            "size": 16,
+            "weight": 400,
+            "ratio": 6.09,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Ideas · veto window",
+            "fg": "rgb(92, 92, 99)",
+            "bg": "rgb(245, 245, 247)",
+            "size": 13,
+            "weight": 600,
+            "ratio": 6.09,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "@morettimpianti — how the grid looks wit",
+            "fg": "rgb(92, 92, 99)",
+            "bg": "rgb(255, 255, 255)",
+            "size": 13,
+            "weight": 400,
+            "ratio": 6.63,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Scheduled",
+            "fg": "rgb(92, 92, 99)",
+            "bg": "rgb(255, 255, 255)",
+            "size": 12,
+            "weight": 600,
+            "ratio": 6.63,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Studio",
+            "fg": "rgb(29, 29, 31)",
+            "bg": "rgb(227, 227, 232)",
+            "size": 16,
+            "weight": 600,
+            "ratio": 13.16,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "MI",
+            "fg": "rgb(29, 29, 31)",
+            "bg": "rgb(227, 227, 232)",
+            "size": 13,
+            "weight": 600,
+            "ratio": 13.16,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Attach",
+            "fg": "rgb(29, 29, 31)",
+            "bg": "rgb(239, 239, 241)",
+            "size": 14,
+            "weight": 500,
+            "ratio": 14.66,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Studio",
+            "fg": "rgb(29, 29, 31)",
+            "bg": "rgb(245, 245, 247)",
+            "size": 32,
+            "weight": 600,
+            "ratio": 15.46,
+            "required": 3,
+            "pass": true
+          },
+          {
+            "sample": "Feed",
+            "fg": "rgb(29, 29, 31)",
+            "bg": "rgb(255, 255, 255)",
+            "size": 14,
+            "weight": 600,
+            "ratio": 16.83,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Send",
+            "fg": "rgb(255, 255, 255)",
+            "bg": "rgb(29, 29, 31)",
+            "size": 14,
+            "weight": 600,
+            "ratio": 16.83,
+            "required": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      {
+        "url": "/studio.html?select=rd1",
+        "min": 4.82,
+        "failures": [],
+        "pairs": [
+          {
+            "sample": "Home services",
+            "fg": "rgb(104, 104, 110)",
+            "bg": "rgb(239, 239, 241)",
+            "size": 13,
+            "weight": 400,
+            "ratio": 4.82,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "No still",
+            "fg": "rgb(104, 104, 110)",
+            "bg": "rgb(239, 239, 241)",
+            "size": 12,
+            "weight": 400,
+            "ratio": 4.82,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Live 5 days · collecting",
+            "fg": "rgb(104, 104, 110)",
+            "bg": "rgb(255, 255, 255)",
+            "size": 13,
+            "weight": 400,
+            "ratio": 5.54,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Status",
+            "fg": "rgb(104, 104, 110)",
+            "bg": "rgb(255, 255, 255)",
+            "size": 13,
+            "weight": 500,
+            "ratio": 5.54,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "composer placeholder",
+            "fg": "rgb(104, 104, 110)",
+            "bg": "rgb(255, 255, 255)",
+            "size": 14,
+            "weight": 400,
+            "ratio": 5.54,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Ready",
+            "fg": "rgb(0, 87, 217)",
+            "bg": "rgb(237, 243, 255)",
+            "size": 12,
+            "weight": 600,
+            "ratio": 5.61,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Connections",
+            "fg": "rgb(92, 92, 99)",
+            "bg": "rgb(239, 239, 241)",
+            "size": 16,
+            "weight": 500,
+            "ratio": 5.78,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "What VIDEOGO is making, and where it is",
+            "fg": "rgb(92, 92, 99)",
+            "bg": "rgb(245, 245, 247)",
+            "size": 16,
+            "weight": 400,
+            "ratio": 6.09,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Ideas · veto window",
+            "fg": "rgb(92, 92, 99)",
+            "bg": "rgb(245, 245, 247)",
+            "size": 13,
+            "weight": 600,
+            "ratio": 6.09,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Publish",
+            "fg": "rgb(255, 255, 255)",
+            "bg": "rgb(0, 87, 217)",
+            "size": 14,
+            "weight": 600,
+            "ratio": 6.24,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Studio",
+            "fg": "rgb(29, 29, 31)",
+            "bg": "rgb(227, 227, 232)",
+            "size": 16,
+            "weight": 600,
+            "ratio": 13.16,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "MI",
+            "fg": "rgb(29, 29, 31)",
+            "bg": "rgb(227, 227, 232)",
+            "size": 13,
+            "weight": 600,
+            "ratio": 13.16,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Attach",
+            "fg": "rgb(29, 29, 31)",
+            "bg": "rgb(239, 239, 241)",
+            "size": 14,
+            "weight": 500,
+            "ratio": 14.66,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Studio",
+            "fg": "rgb(29, 29, 31)",
+            "bg": "rgb(245, 245, 247)",
+            "size": 32,
+            "weight": 600,
+            "ratio": 15.46,
+            "required": 3,
+            "pass": true
+          },
+          {
+            "sample": "The €89 pre-winter check, explained",
+            "fg": "rgb(29, 29, 31)",
+            "bg": "rgb(255, 255, 255)",
+            "size": 14,
+            "weight": 600,
+            "ratio": 16.83,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Send",
+            "fg": "rgb(255, 255, 255)",
+            "bg": "rgb(29, 29, 31)",
+            "size": 14,
+            "weight": 600,
+            "ratio": 16.83,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Reject",
+            "fg": "rgb(29, 29, 31)",
+            "bg": "rgb(255, 255, 255)",
+            "size": 14,
+            "weight": 500,
+            "ratio": 16.83,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Heat pump vs new boiler: the honest math",
+            "fg": "rgb(29, 29, 31)",
+            "bg": "rgb(255, 255, 255)",
+            "size": 18,
+            "weight": 600,
+            "ratio": 16.83,
+            "required": 4.5,
+            "pass": true
+          },
+          {
+            "sample": "Waiting for your go — recommended: Thu 1",
+            "fg": "rgb(29, 29, 31)",
+            "bg": "rgb(255, 255, 255)",
+            "size": 13,
+            "weight": 400,
+            "ratio": 16.83,
+            "required": 4.5,
+            "pass": true
+          }
+        ]
+      }
+    ],
+    "nonTextContrast": [
+      {
+        "label": "Secondary button / field boundary on content",
+        "fg": "#85858B",
+        "bg": "#FFFFFF",
+        "ratio": 3.67,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "label": "Secondary button boundary on canvas",
+        "fg": "#85858B",
+        "bg": "#F5F5F7",
+        "ratio": 3.37,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "label": "Scheduled feed tile dashed boundary on content",
+        "fg": "#85858B",
+        "bg": "#FFFFFF",
+        "ratio": 3.67,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "label": "Selected Studio card boundary (text-primary) on canvas",
+        "fg": "#1D1D1F",
+        "bg": "#F5F5F7",
+        "ratio": 15.46,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "label": "Selected Studio card boundary vs default card boundary",
+        "fg": "#1D1D1F",
+        "bg": "#D8D8DD",
+        "ratio": 11.85,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "label": "Selected segmented option boundary on subtle",
+        "fg": "#85858B",
+        "bg": "#EFEFF1",
+        "ratio": 3.19,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "label": "Publish fill on content (authorization control)",
+        "fg": "#0057D9",
+        "bg": "#FFFFFF",
+        "ratio": 6.24,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "label": "Primary action fill on content",
+        "fg": "#1D1D1F",
+        "bg": "#FFFFFF",
+        "ratio": 16.83,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "label": "Primary action fill on canvas",
+        "fg": "#1D1D1F",
+        "bg": "#F5F5F7",
+        "ratio": 15.46,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "label": "Focus ring on canvas",
+        "fg": "#0057D9",
+        "bg": "#F5F5F7",
+        "ratio": 5.73,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "label": "Focus ring on content",
+        "fg": "#0057D9",
+        "bg": "#FFFFFF",
+        "ratio": 6.24,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "label": "Focus ring on subtle rail",
+        "fg": "#0057D9",
+        "bg": "#EFEFF1",
+        "ratio": 5.43,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "label": "Focus ring on selected nav fill",
+        "fg": "#0057D9",
+        "bg": "#E3E3E8",
+        "ratio": 4.88,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "label": "Focus ring adjacent to primary (near-black) fill",
+        "fg": "#0057D9",
+        "bg": "#1D1D1F",
+        "ratio": 2.7,
+        "required": 3,
+        "pass": false
+      },
+      {
+        "label": "NEED glyph on NEED surface",
+        "fg": "#B42318",
+        "bg": "#FFF1F0",
+        "ratio": 5.98,
+        "required": 3,
+        "pass": true
+      },
+      {
+        "label": "Card default boundary on canvas (decorative)",
+        "fg": "#D8D8DD",
+        "bg": "#F5F5F7",
+        "ratio": 1.3,
+        "required": null,
+        "pass": "n/a (not essential)"
+      }
+    ],
+    "axe": [
+      {
+        "url": "/today.html",
+        "violations": [],
+        "passes": 37,
+        "incomplete": []
+      },
+      {
+        "url": "/studio.html",
+        "violations": [],
+        "passes": 41,
+        "incomplete": []
+      },
+      {
+        "url": "/studio.html?select=rd1",
+        "violations": [],
+        "passes": 39,
+        "incomplete": []
+      },
+      {
+        "url": "/today.html?study=narrow",
+        "violations": [],
+        "passes": 35,
+        "incomplete": []
+      },
+      {
+        "url": "/studio.html?select=rd1&study=narrow",
+        "violations": [],
+        "passes": 37,
+        "incomplete": []
+      }
+    ],
+    "keyboard": [
+      {
+        "url": "/today.html",
+        "order": [
+          {
+            "el": "a.vg-skip \"Skip to main content\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "157×40"
+          },
+          {
+            "el": "a \"Today\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "176×36"
+          },
+          {
+            "el": "a \"Studio\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "176×36"
+          },
+          {
+            "el": "a \"Knowledge\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "176×36"
+          },
+          {
+            "el": "a \"Connections\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "176×36"
+          },
+          {
+            "el": "button.vg-account \"MI Moretti ImpiantiHome services — Account and s\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "176×56"
+          },
+          {
+            "el": "button.vg-btn \"Fix connection\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "132×36"
+          },
+          {
+            "el": "button.vg-btn \"Attach\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "77×36"
+          },
+          {
+            "el": "input.vg-composer__input \"Tell VIDEOGO something — e.g. “talk about our ne\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 0px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "691×36"
+          }
+        ]
+      },
+      {
+        "url": "/studio.html",
+        "order": [
+          {
+            "el": "a.vg-skip \"Skip to main content\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "157×40"
+          },
+          {
+            "el": "a \"Today\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "176×36"
+          },
+          {
+            "el": "a \"Studio\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "176×36"
+          },
+          {
+            "el": "a \"Knowledge\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "176×36"
+          },
+          {
+            "el": "a \"Connections\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "176×36"
+          },
+          {
+            "el": "button.vg-account \"MI Moretti ImpiantiHome services — Account and s\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "176×56"
+          },
+          {
+            "el": "button.vg-card \"No stillWhy we show the price before we start th\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "189×158"
+          },
+          {
+            "el": "button.vg-card \"No stillRadiator bleeding in 90 secondsHow-to · \"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "189×140"
+          },
+          {
+            "el": "button.vg-card \"No still3 signs your boiler needs a checkRenderi\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "189×158"
+          },
+          {
+            "el": "button.vg-card \"No stillHeat pump vs new boiler: the honest math\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "189×140"
+          },
+          {
+            "el": "button.vg-card \"No stillThe €89 pre-winter check, explainedLive \"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "189×140"
+          },
+          {
+            "el": "button.vg-btn \"Attach\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "77×36"
+          },
+          {
+            "el": "input.vg-composer__input \"Tell VIDEOGO something — e.g. “talk about our ne\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 0px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "603×36"
+          },
+          {
+            "el": "button.vg-btn \"Send\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "68×36"
+          }
+        ]
+      },
+      {
+        "url": "/studio.html?select=rd1",
+        "order": [
+          {
+            "el": "a.vg-skip \"Skip to main content\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "157×40"
+          },
+          {
+            "el": "a \"Today\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "176×36"
+          },
+          {
+            "el": "a \"Studio\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "176×36"
+          },
+          {
+            "el": "a \"Knowledge\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "176×36"
+          },
+          {
+            "el": "a \"Connections\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "176×36"
+          },
+          {
+            "el": "button.vg-account \"MI Moretti ImpiantiHome services — Account and s\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "176×56"
+          },
+          {
+            "el": "button.vg-card \"No stillWhy we show the price before we start th\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "189×158"
+          },
+          {
+            "el": "button.vg-card \"No stillRadiator bleeding in 90 secondsHow-to · \"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "189×140"
+          },
+          {
+            "el": "button.vg-card \"No still3 signs your boiler needs a checkRenderi\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "189×158"
+          },
+          {
+            "el": "button.vg-card \"No stillHeat pump vs new boiler: the honest math\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "189×140"
+          },
+          {
+            "el": "button.vg-card \"No stillThe €89 pre-winter check, explainedLive \"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "189×140"
+          },
+          {
+            "el": "button.vg-btn \"Attach\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "77×36"
+          },
+          {
+            "el": "input.vg-composer__input \"Tell VIDEOGO something — e.g. “talk about our ne\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 0px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "603×36"
+          },
+          {
+            "el": "button.vg-btn \"Send\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "68×36"
+          },
+          {
+            "el": "button.vg-btn \"Back to context\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "129×32"
+          },
+          {
+            "el": "button.vg-btn \"Publish\"",
+            "outline": "solid 2px rgb(0, 87, 217) offset 2px",
+            "visibleRing": true,
+            "notObscured": true,
+            "size": "84×36"
+          }
+        ]
+      }
+    ],
+    "studioSelectionKeyboard": [
+      {
+        "step": "Enter on Ready card",
+        "pressed": "true",
+        "panelTitle": "Heat pump vs new boiler: the honest math",
+        "focusStaysOnCard": true
+      },
+      {
+        "step": "Space on Idea card (switch selection)",
+        "rd1": "false",
+        "idea1": "true",
+        "panelTitle": "Why we show the price before we start the job"
+      },
+      {
+        "step": "Enter again on selected Idea card (toggle off)",
+        "idea1": "false",
+        "panelShowsContext": true
+      },
+      {
+        "step": "Back to context",
+        "rd1": "false",
+        "focusReturnedToCard": true,
+        "panelShowsContext": true
+      }
+    ],
+    "longContent": [
+      {
+        "screen": "Today NEED stress @1440",
+        "chars": {
+          "title": 81,
+          "body": 280,
+          "action": 35,
+          "placeholder": 65
+        },
+        "pageHorizontalScroll": false,
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "clipped": [],
+        "textOverflow": []
+      },
+      {
+        "screen": "Studio READY stress @1440",
+        "chars": {
+          "title": 81,
+          "evidence": 192
+        },
+        "pageHorizontalScroll": false,
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "clipped": [],
+        "textOverflow": []
+      },
+      {
+        "screen": "Today NEED stress @1216",
+        "chars": {
+          "title": 81,
+          "body": 280,
+          "action": 35,
+          "placeholder": 65
+        },
+        "pageHorizontalScroll": false,
+        "scrollWidth": 1216,
+        "clientWidth": 1216,
+        "clipped": [],
+        "textOverflow": []
+      },
+      {
+        "screen": "Studio READY stress @1216",
+        "chars": {
+          "title": 81,
+          "evidence": 192
+        },
+        "pageHorizontalScroll": false,
+        "scrollWidth": 1216,
+        "clientWidth": 1216,
+        "clipped": [],
+        "textOverflow": []
+      },
+      {
+        "screen": "Today NEED stress @390",
+        "chars": {
+          "title": 81,
+          "body": 280,
+          "action": 35,
+          "placeholder": 65
+        },
+        "pageHorizontalScroll": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "clipped": [],
+        "textOverflow": []
+      },
+      {
+        "screen": "Studio READY stress @390",
+        "chars": {
+          "title": 81,
+          "evidence": 192
+        },
+        "pageHorizontalScroll": false,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "clipped": [],
+        "textOverflow": []
+      }
+    ],
+    "textScale200": [
+      {
+        "url": "/today.html",
+        "viewport": "1440×900",
+        "titlePx": {
+          "before": 32,
+          "after": 64
+        },
+        "bodyPx": 32,
+        "controlPx": 28,
+        "pageHorizontalScroll": false,
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "clipped": [],
+        "textOverflow": [],
+        "render": "renders/E_text-200_today_1440.png"
+      },
+      {
+        "url": "/today.html",
+        "viewport": "1216×1050",
+        "titlePx": {
+          "before": 32,
+          "after": 64
+        },
+        "bodyPx": 32,
+        "controlPx": 28,
+        "pageHorizontalScroll": false,
+        "scrollWidth": 1216,
+        "clientWidth": 1216,
+        "clipped": [],
+        "textOverflow": [],
+        "render": "renders/E_text-200_today_1216.png"
+      },
+      {
+        "url": "/studio.html?select=rd1",
+        "viewport": "1440×900",
+        "titlePx": {
+          "before": 32,
+          "after": 64
+        },
+        "bodyPx": 32,
+        "controlPx": 28,
+        "pageHorizontalScroll": false,
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "clipped": [],
+        "textOverflow": [],
+        "render": "renders/E_text-200_studio-ready_1440.png"
+      },
+      {
+        "url": "/studio.html?select=rd1",
+        "viewport": "1216×1050",
+        "titlePx": {
+          "before": 32,
+          "after": 64
+        },
+        "bodyPx": 32,
+        "controlPx": 28,
+        "pageHorizontalScroll": false,
+        "scrollWidth": 1216,
+        "clientWidth": 1216,
+        "clipped": [],
+        "textOverflow": [],
+        "render": "renders/E_text-200_studio-ready_1216.png"
+      }
+    ],
+    "zoom200": [
+      {
+        "url": "/today.html",
+        "cssViewport": "720×450 (1440×900 at 200%)",
+        "pageHorizontalScroll": false,
+        "scrollWidth": 720,
+        "clientWidth": 720,
+        "clipped": [],
+        "textOverflow": [],
+        "render": "renders/E_zoom-200_today_1440.png"
+      },
+      {
+        "url": "/studio.html?select=rd1",
+        "cssViewport": "720×450 (1440×900 at 200%)",
+        "pageHorizontalScroll": false,
+        "scrollWidth": 720,
+        "clientWidth": 720,
+        "clipped": [],
+        "textOverflow": [],
+        "render": "renders/E_zoom-200_studio-ready_1440.png"
+      }
+    ],
+    "reflow320": [
+      {
+        "url": "/today.html?study=narrow",
+        "pageHorizontalScroll": false,
+        "scrollWidth": 320,
+        "clientWidth": 320,
+        "clipped": [],
+        "textOverflow": []
+      },
+      {
+        "url": "/studio.html?select=rd1&study=narrow",
+        "pageHorizontalScroll": false,
+        "scrollWidth": 320,
+        "clientWidth": 320,
+        "clipped": [],
+        "textOverflow": []
+      }
+    ],
+    "targets": [
+      {
+        "url": "/today.html",
+        "pointerCoarse": false,
+        "minimum": 24,
+        "failures": [],
+        "measured": [
+          {
+            "el": "a \"Today\"",
+            "w": 176,
+            "h": 36,
+            "pass": true
+          },
+          {
+            "el": "a \"Studio\"",
+            "w": 176,
+            "h": 36,
+            "pass": true
+          },
+          {
+            "el": "a \"Knowledge\"",
+            "w": 176,
+            "h": 36,
+            "pass": true
+          },
+          {
+            "el": "a \"Connections\"",
+            "w": 176,
+            "h": 36,
+            "pass": true
+          },
+          {
+            "el": "button.vg-account \"MI Moretti ImpiantiHome services — Account and s\"",
+            "w": 176,
+            "h": 56,
+            "pass": true
+          },
+          {
+            "el": "button.vg-btn \"Fix connection\"",
+            "w": 132,
+            "h": 36,
+            "pass": true
+          },
+          {
+            "el": "button.vg-btn \"Attach\"",
+            "w": 77,
+            "h": 36,
+            "pass": true
+          },
+          {
+            "el": "input.vg-composer__input \"Tell VIDEOGO something — e.g. “talk about our ne\"",
+            "w": 691,
+            "h": 36,
+            "pass": true
+          },
+          {
+            "el": "button.vg-btn \"Send\"",
+            "w": 68,
+            "h": 36,
+            "pass": true
+          }
+        ]
+      },
+      {
+        "url": "/studio.html?select=rd1",
+        "pointerCoarse": false,
+        "minimum": 24,
+        "failures": [],
+        "measured": [
+          {
+            "el": "a \"Today\"",
+            "w": 176,
+            "h": 36,
+            "pass": true
+          },
+          {
+            "el": "a \"Studio\"",
+            "w": 176,
+            "h": 36,
+            "pass": true
+          },
+          {
+            "el": "a \"Knowledge\"",
+            "w": 176,
+            "h": 36,
+            "pass": true
+          },
+          {
+            "el": "a \"Connections\"",
+            "w": 176,
+            "h": 36,
+            "pass": true
+          },
+          {
+            "el": "button.vg-account \"MI Moretti ImpiantiHome services — Account and s\"",
+            "w": 176,
+            "h": 56,
+            "pass": true
+          },
+          {
+            "el": "button.vg-card \"No stillWhy we show the price before we start th\"",
+            "w": 189,
+            "h": 158,
+            "pass": true
+          },
+          {
+            "el": "button.vg-card \"No stillRadiator bleeding in 90 secondsHow-to · \"",
+            "w": 189,
+            "h": 140,
+            "pass": true
+          },
+          {
+            "el": "button.vg-card \"No still3 signs your boiler needs a checkRenderi\"",
+            "w": 189,
+            "h": 158,
+            "pass": true
+          },
+          {
+            "el": "button.vg-card \"No stillHeat pump vs new boiler: the honest math\"",
+            "w": 189,
+            "h": 140,
+            "pass": true
+          },
+          {
+            "el": "button.vg-card \"No stillThe €89 pre-winter check, explainedLive \"",
+            "w": 189,
+            "h": 140,
+            "pass": true
+          },
+          {
+            "el": "button.vg-btn \"Attach\"",
+            "w": 77,
+            "h": 36,
+            "pass": true
+          },
+          {
+            "el": "input.vg-composer__input \"Tell VIDEOGO something — e.g. “talk about our ne\"",
+            "w": 603,
+            "h": 36,
+            "pass": true
+          },
+          {
+            "el": "button.vg-btn \"Send\"",
+            "w": 68,
+            "h": 36,
+            "pass": true
+          },
+          {
+            "el": "button.vg-btn \"Back to context\"",
+            "w": 129,
+            "h": 32,
+            "pass": true
+          },
+          {
+            "el": "button.vg-btn \"Publish\"",
+            "w": 84,
+            "h": 36,
+            "pass": true
+          },
+          {
+            "el": "button.vg-btn \"Schedule\"",
+            "w": 95,
+            "h": 36,
+            "pass": true
+          },
+          {
+            "el": "button.vg-btn \"Change something\"",
+            "w": 158,
+            "h": 36,
+            "pass": true
+          },
+          {
+            "el": "button.vg-btn \"Reject\"",
+            "w": 76,
+            "h": 36,
+            "pass": true
+          }
+        ]
+      },
+      {
+        "url": "/today.html?study=narrow",
+        "pointerCoarse": true,
+        "minimum": 44,
+        "failures": [],
+        "measured": [
+          {
+            "el": "button.vg-btn \"Fix connection\"",
+            "w": 132,
+            "h": 44,
+            "pass": true
+          },
+          {
+            "el": "button.vg-btn \"Attach\"",
+            "w": 77,
+            "h": 44,
+            "pass": true
+          },
+          {
+            "el": "input.vg-composer__input \"Tell VIDEOGO something — e.g. “talk about our ne\"",
+            "w": 340,
+            "h": 44,
+            "pass": true
+          },
+          {
+            "el": "button.vg-btn \"Send\"",
+            "w": 68,
+            "h": 44,
+            "pass": true
+          }
+        ]
+      },
+      {
+        "url": "/studio.html?select=rd1&study=narrow",
+        "pointerCoarse": true,
+        "minimum": 44,
+        "failures": [],
+        "measured": [
+          {
+            "el": "button.vg-card \"No stillWhy we show the price before we start th\"",
+            "w": 358,
+            "h": 120,
+            "pass": true
+          },
+          {
+            "el": "button.vg-card \"No stillRadiator bleeding in 90 secondsHow-to · \"",
+            "w": 358,
+            "h": 120,
+            "pass": true
+          },
+          {
+            "el": "button.vg-card \"No still3 signs your boiler needs a checkRenderi\"",
+            "w": 358,
+            "h": 120,
+            "pass": true
+          },
+          {
+            "el": "button.vg-card \"No stillHeat pump vs new boiler: the honest math\"",
+            "w": 358,
+            "h": 120,
+            "pass": true
+          },
+          {
+            "el": "button.vg-card \"No stillThe €89 pre-winter check, explainedLive \"",
+            "w": 358,
+            "h": 120,
+            "pass": true
+          },
+          {
+            "el": "button.vg-btn \"Attach\"",
+            "w": 77,
+            "h": 44,
+            "pass": true
+          },
+          {
+            "el": "input.vg-composer__input \"Tell VIDEOGO something — e.g. “talk about our ne\"",
+            "w": 340,
+            "h": 44,
+            "pass": true
+          },
+          {
+            "el": "button.vg-btn \"Send\"",
+            "w": 68,
+            "h": 44,
+            "pass": true
+          },
+          {
+            "el": "button.vg-btn \"Back to context\"",
+            "w": 129,
+            "h": 44,
+            "pass": true
+          },
+          {
+            "el": "button.vg-btn \"Publish\"",
+            "w": 84,
+            "h": 44,
+            "pass": true
+          },
+          {
+            "el": "button.vg-btn \"Schedule\"",
+            "w": 95,
+            "h": 44,
+            "pass": true
+          },
+          {
+            "el": "button.vg-btn \"Change something\"",
+            "w": 158,
+            "h": 44,
+            "pass": true
+          },
+          {
+            "el": "button.vg-btn \"Reject\"",
+            "w": 76,
+            "h": 44,
+            "pass": true
+          }
+        ]
+      }
+    ],
+    "reducedMotion": {
+      "card": "0s",
+      "button": "0s, 0s",
+      "nav": "0s, 0s",
+      "pass": true
+    },
+    "lockup": {
+      "svgTextElements": {
+        "videogo-lockup-inverse-outlined.svg": 0,
+        "videogo-lockup-outlined.svg": 0
+      },
+      "liveFontLoadedForComparison": true,
+      "comparisonRender": "renders/G_lockup_fallback-vs-live-vs-outlined.png",
+      "note": "Row 2 renders the source <text> in Chrome with the licensed face; row 3 is the outline. Chrome distributes textLength over n characters, SVG 2 over n−1 gaps: see 05_VALIDATION.md."
+    }
+  }
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio — Videogo</title>
+<script src="js/boot.js"></script>
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+<!-- Source: screens/B2_page_studio.png, B2b_studio_drawer_open.png · videogo_ux3_prototype.html:885–954 · FH §4 -->
+<a class="vg-skip" href="#main">Skip to main content</a>
+<div class="vg-app vg-app--split">
+  <aside class="vg-rail">
+    <div class="vg-rail__bar">
+      <div class="vg-lockup"><img src="assets/videogo-lockup-inverse-outlined.svg" width="940" height="140" alt="VIDEOGO"></div>
+      <button class="vg-menu" type="button" aria-expanded="false" aria-controls="vg-nav-panel">Menu</button>
+    </div>
+    <div class="vg-rail__panel" id="vg-nav-panel">
+      <nav class="vg-nav" aria-label="Primary">
+        <ul>
+          <li><a href="today.html" title="Open Today">Today</a></li>
+          <li><a href="studio.html" aria-current="page" title="Open Studio">Studio</a></li>
+          <li><a href="knowledge.html" title="Open Knowledge">Knowledge</a></li>
+          <li><a href="#" title="Open Connections" data-out-of-scope="Connections — Checkpoint B">Connections</a></li>
+        </ul>
+      </nav>
+      <a class="vg-account" href="account.html" title="Account / Settings">
+        <span class="vg-account__initials" aria-hidden="true">MI</span>
+        <span><span class="vg-account__name">Moretti Impianti</span><span class="vg-account__sector">Home services</span></span>
+        <span class="vg-visually-hidden">— Account and settings</span>
+      </a>
+    </div>
+  </aside>
+
+  <main class="vg-main" id="main" tabindex="-1">
+    <header class="vg-page-head">
+      <h1 class="vg-page-title">Studio</h1>
+      <p class="vg-page-sub">From idea to published result.</p>
+    </header>
+
+    <div class="vg-studio">
+      <div class="vg-board">
+        <section class="vg-column" aria-labelledby="col-ideas">
+          <h2 class="vg-column__head" id="col-ideas">Ideas · veto window</h2>
+          <ul>
+          <li><button class="vg-card" type="button" aria-pressed="false" aria-controls="context-panel" data-key="idea1"><span data-media-slot></span><span class="vg-card__title">Why we show the price before we start the job</span><span class="vg-card__meta">Trust video · Luca voiceover</span><span class="vg-visually-hidden"></span></button></li>
+          <li><button class="vg-card" type="button" aria-pressed="false" aria-controls="context-panel" data-key="idea2"><span data-media-slot></span><span class="vg-card__title">Radiator bleeding in 90 seconds</span><span class="vg-card__meta">How-to · faceless</span><span class="vg-visually-hidden"></span></button></li>
+          </ul>
+        </section>
+        <section class="vg-column" aria-labelledby="col-making">
+          <h2 class="vg-column__head" id="col-making">Making</h2>
+          <ul>
+          <li><button class="vg-card" type="button" aria-pressed="false" aria-controls="context-panel" data-key="mk1"><span data-media-slot></span><span class="vg-card__title">3 signs your boiler needs a check</span><span class="vg-card__meta">Rendering · ready by ~15:00</span><span class="vg-visually-hidden"></span></button></li>
+          </ul>
+        </section>
+        <section class="vg-column" aria-labelledby="col-ready">
+          <h2 class="vg-column__head" id="col-ready">Ready</h2>
+          <ul>
+          <li><button class="vg-card" type="button" aria-pressed="false" aria-controls="context-panel" data-key="rd1"><span data-media-slot></span><span class="vg-card__title">Heat pump vs new boiler: the honest math</span><span class="vg-card__meta">Passed quality review</span><span class="vg-visually-hidden"></span></button></li>
+          </ul>
+        </section>
+        <section class="vg-column" aria-labelledby="col-live">
+          <h2 class="vg-column__head" id="col-live">Live</h2>
+          <ul>
+          <li><button class="vg-card" type="button" aria-pressed="false" aria-controls="context-panel" data-key="lv1"><span data-media-slot></span><span class="vg-card__title">The €89 pre-winter check, explained</span><span class="vg-card__meta">Live 5 days · collecting</span><span class="vg-visually-hidden"></span></button></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <form class="vg-composer vg-main__end" aria-label="Tell VIDEOGO something" data-composer>
+      <button class="vg-btn vg-btn--quiet-fill" type="button" data-source-action="Attach — no file behavior in source">Attach</button>
+      <div class="vg-composer__field">
+        <label class="vg-visually-hidden" for="composer-input">Message to VIDEOGO</label>
+        <div class="vg-composer__box"><textarea class="vg-composer__textarea" id="composer-input" rows="1" enterkeyhint="enter" placeholder="Tell VIDEOGO something — e.g. “talk about our new boiler service”"></textarea></div>
+      </div>
+      <button class="vg-btn vg-btn--primary" type="submit">Send</button>
+    </form>
+  </main>
+
+  <section class="vg-panel" id="context-panel" aria-labelledby="context-title">
+    <h2 class="vg-visually-hidden" id="context-title">Studio context</h2>
+    <div class="vg-segmented" role="group" aria-label="Context">
+      <button type="button" aria-pressed="true">Feed</button>
+      <button type="button" aria-pressed="false" data-out-of-scope="Calendar context — B2c, outside Checkpoint A">Calendar</button>
+    </div>
+    <p class="vg-panel__note">@morettimpianti — how the grid looks with what's live and scheduled.</p>
+    <div class="vg-feed-preview" data-feed-preview></div>
+  </section>
+</div>
+<script src="js/shell.js"></script>
+<script src="js/composer.js"></script>
+<script src="js/media-fixtures.js"></script>
+<script src="js/media.js"></script>
+<script src="js/studio.js"></script>
+</body>
+</html>

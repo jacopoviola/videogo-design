@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Account / Settings — Videogo</title>
+<script src="js/boot.js"></script>
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+<!-- Checkpoint B · Source: screens/ACC_account_settings.png · videogo_ux3_prototype.html:1041–1069 · FH §8A -->
+<a class="vg-skip" href="#main">Skip to main content</a>
+<div class="vg-app">
+  <aside class="vg-rail">
+    <div class="vg-rail__bar">
+      <div class="vg-lockup"><img src="assets/videogo-lockup-inverse-outlined.svg" width="940" height="140" alt="VIDEOGO"></div>
+      <button class="vg-menu" type="button" aria-expanded="false" aria-controls="vg-nav-panel">Menu</button>
+    </div>
+    <div class="vg-rail__panel" id="vg-nav-panel">
+      <nav class="vg-nav" aria-label="Primary">
+        <ul>
+          <li><a href="today.html" title="Open Today">Today</a></li>
+          <li><a href="studio.html" title="Open Studio">Studio</a></li>
+          <li><a href="knowledge.html" title="Open Knowledge">Knowledge</a></li>
+          <li><a href="#" title="Open Connections" data-out-of-scope="Connections — not in Checkpoint B">Connections</a></li>
+        </ul>
+      </nav>
+      <a class="vg-account" href="account.html" title="Account / Settings" aria-current="page">
+        <span class="vg-account__initials" aria-hidden="true">MI</span>
+        <span><span class="vg-account__name">Moretti Impianti</span><span class="vg-account__sector">Home services</span></span>
+        <span class="vg-visually-hidden">— Account and settings</span>
+      </a>
+    </div>
+  </aside>
+
+  <main class="vg-main" id="main" tabindex="-1">
+    <header class="vg-page-head">
+      <h1 class="vg-page-title">Account / Settings</h1>
+    </header>
+    <div class="vg-settings">
+      <section class="vg-group" aria-labelledby="g-account">
+        <h2 class="vg-group__title" id="g-account">Account</h2>
+        <dl class="vg-rows">
+          <div><dt>Business</dt><dd>Moretti Impianti — Varese</dd></div>
+          <div><dt>Owner</dt><dd>Luca Moretti · <span class="vg-breakable">luca@morettimpianti.it</span></dd></div>
+          <div><dt>Reach me on</dt><dd class="vg-rows__with-action"><span>Email</span><button class="vg-btn vg-btn--quiet vg-btn--compact" type="button" aria-label="Change how VIDEOGO reaches you" data-source-action="PR:1052 Change — no handler in source">Change</button></dd></div>
+        </dl>
+      </section>
+      <section class="vg-group" aria-labelledby="g-billing">
+        <h2 class="vg-group__title" id="g-billing">Billing</h2>
+        <dl class="vg-rows">
+          <div><dt>Plan</dt><dd>Monthly · active <span class="vg-muted">· Pricing TBD (placeholder)</span></dd></div>
+        </dl>
+        <div class="vg-actions">
+          <button class="vg-btn vg-btn--secondary" type="button" data-source-action="PR:1056 Manage subscription — no handler">Manage subscription</button>
+          <button class="vg-btn vg-btn--quiet" type="button" data-source-action="PR:1056 toast">Cancel subscription</button>
+        </div>
+        <p class="vg-group__note">VIDEOGO only publishes within permissions you grant.</p>
+      </section>
+      <section class="vg-group" aria-labelledby="g-perms">
+        <h2 class="vg-group__title" id="g-perms">Permissions — what VIDEOGO may do on its own</h2>
+        <ul class="vg-perms">
+          <li class="vg-perm vg-perm--allowed"><span class="vg-perm__name">Organic educational auto-publish</span><span class="vg-perm__state">Allowed</span><button class="vg-btn vg-btn--secondary vg-btn--compact" type="button" aria-label="Revoke organic educational auto-publish" data-source-action="PR:1036 toast “Revoked — everything comes back to you for authorization”">Revoke</button></li>
+          <li class="vg-perm vg-perm--refused"><span class="vg-perm__name">Promotional auto-publish</span><span class="vg-perm__state">Not allowed</span><span></span></li>
+          <li class="vg-perm vg-perm--refused"><span class="vg-perm__name">DM response path</span><span class="vg-perm__state">Not allowed</span><span></span></li>
+          <li class="vg-perm vg-perm--refused"><span class="vg-perm__name">Paid spend</span><span class="vg-perm__state">Not allowed</span><span></span></li>
+        </ul>
+        <p class="vg-group__note">VIDEOGO can propose expanding a permission when it has earned it — only you can grant one. There is no global autonomous mode.</p>
+      </section>
+      <section class="vg-group" aria-labelledby="g-data">
+        <h2 class="vg-group__title" id="g-data">Your data</h2>
+        <div class="vg-actions" style="margin-top:0">
+          <button class="vg-btn vg-btn--secondary" type="button" data-source-action="PR:1062 toast “Preparing your export — we’ll email the download link”">Export my data</button>
+          <button class="vg-btn vg-btn--quiet" type="button" data-source-action="PR:1063 toast — destructive confirmation undesigned (VD-06)">Delete account</button>
+        </div>
+      </section>
+      <p class="vg-page-foot">Social and data connections are managed in <b>Connections</b>. Consent for people's footage and likeness is managed per person in <b>Knowledge → People &amp; assets → Manage use</b>.</p>
+    </div>
+
+  </main>
+</div>
+<script src="js/shell.js"></script>
+</body>
+</html>

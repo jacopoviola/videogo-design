@@ -1,0 +1,41 @@
+{
+  "axe": [
+    {
+      "url": "/today-ready.html",
+      "violations": [],
+      "cardNames": []
+    },
+    {
+      "url": "/studio.html?media=fixtures",
+      "violations": [],
+      "cardNames": [
+        "Demo fixture Photo · 4:3 Why w … , source photo, 4:3, demo fixture",
+        "No still Radiator bleeding in  … , no preview still available",
+        "No still 3 signs your boiler n … , no preview still available",
+        "Demo fixture Reel · 9:16 0:41  … , video poster frame, Instagram Reel, 9:16, 0:41, demo fixture",
+        "Demo fixture Instagram The €89 … , video poster frame, Instagram, demo fixture"
+      ]
+    },
+    {
+      "url": "/studio.html?media=fixtures&select=rd1",
+      "violations": [],
+      "cardNames": [
+        "Demo fixture Photo · 4:3 Why w … , source photo, 4:3, demo fixture",
+        "No still Radiator bleeding in  … , no preview still available",
+        "No still 3 signs your boiler n … , no preview still available",
+        "Demo fixture Reel · 9:16 0:41  … , video poster frame, Instagram Reel, 9:16, 0:41, demo fixture",
+        "Demo fixture Instagram The €89 … , video poster frame, Instagram, demo fixture"
+      ]
+    },
+    {
+      "url": "/today-ready.html?study=narrow",
+      "violations": [],
+      "cardNames": []
+    }
+  ],
+  "keyboard": {
+    "selected": "true",
+    "inspectImageAlt": "Poster frame for “Heat pump vs new boiler: the honest math” (demo fixture)",
+    "trust": "VIDEOGO only publishes within permissions you grant."
+  }
+}

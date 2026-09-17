@@ -1,0 +1,303 @@
+{
+  "fonts": [
+    {
+      "url": "/today.html",
+      "rendered": [
+        ".SF NS (.SFNS-Regular_wdth_opsz200000_GRAD_wght2580000)",
+        ".SF NS (.SFNS-Regular)",
+        ".SF NS (.SFNS-Bold)",
+        ".SF NS (.SFNS-Regular_wdth_opsz160000_GRAD_wght2580000)"
+      ],
+      "webFonts": 0,
+      "imagesLoaded": true
+    },
+    {
+      "url": "/studio.html?select=rd1",
+      "rendered": [
+        ".SF NS (.SFNS-Regular_wdth_opsz200000_GRAD_wght2580000)",
+        ".SF NS (.SFNS-Regular)",
+        ".SF NS (.SFNS-Bold)"
+      ],
+      "webFonts": 0,
+      "imagesLoaded": true
+    }
+  ],
+  "textContrastMin": [
+    {
+      "url": "/today.html",
+      "min": 4.82,
+      "failures": 0
+    },
+    {
+      "url": "/studio.html",
+      "min": 4.82,
+      "failures": 0
+    },
+    {
+      "url": "/studio.html?select=rd1",
+      "min": 4.82,
+      "failures": 0
+    }
+  ],
+  "nonTextFailures": [
+    "Focus ring adjacent to primary (near-black) fill"
+  ],
+  "axe": [
+    {
+      "url": "/today.html",
+      "violations": []
+    },
+    {
+      "url": "/studio.html",
+      "violations": []
+    },
+    {
+      "url": "/studio.html?select=rd1",
+      "violations": []
+    },
+    {
+      "url": "/today.html?study=narrow",
+      "violations": []
+    },
+    {
+      "url": "/studio.html?select=rd1&study=narrow",
+      "violations": []
+    }
+  ],
+  "keyboard": [
+    {
+      "url": "/today.html",
+      "order": [
+        "a.vg-skip \"Skip to main content\"",
+        "a \"Today\"",
+        "a \"Studio\"",
+        "a \"Knowledge\"",
+        "a \"Connections\"",
+        "button.vg-account \"MI Moretti ImpiantiHome services — Account and s\"",
+        "button.vg-btn \"Fix connection\"",
+        "button.vg-btn \"Attach\"",
+        "input.vg-composer__input \"Tell VIDEOGO something — e.g. “talk about our ne\""
+      ],
+      "allRingsVisible": true,
+      "obscured": []
+    },
+    {
+      "url": "/studio.html",
+      "order": [
+        "a.vg-skip \"Skip to main content\"",
+        "a \"Today\"",
+        "a \"Studio\"",
+        "a \"Knowledge\"",
+        "a \"Connections\"",
+        "button.vg-account \"MI Moretti ImpiantiHome services — Account and s\"",
+        "button.vg-card \"No stillWhy we show the price before we start th\"",
+        "button.vg-card \"No stillRadiator bleeding in 90 secondsHow-to · \"",
+        "button.vg-card \"No still3 signs your boiler needs a checkRenderi\"",
+        "button.vg-card \"No stillHeat pump vs new boiler: the honest math\"",
+        "button.vg-card \"No stillThe €89 pre-winter check, explainedLive \"",
+        "button.vg-btn \"Attach\"",
+        "input.vg-composer__input \"Tell VIDEOGO something — e.g. “talk about our ne\"",
+        "button.vg-btn \"Send\""
+      ],
+      "allRingsVisible": true,
+      "obscured": []
+    },
+    {
+      "url": "/studio.html?select=rd1",
+      "order": [
+        "a.vg-skip \"Skip to main content\"",
+        "a \"Today\"",
+        "a \"Studio\"",
+        "a \"Knowledge\"",
+        "a \"Connections\"",
+        "button.vg-account \"MI Moretti ImpiantiHome services — Account and s\"",
+        "button.vg-card \"No stillWhy we show the price before we start th\"",
+        "button.vg-card \"No stillRadiator bleeding in 90 secondsHow-to · \"",
+        "button.vg-card \"No still3 signs your boiler needs a checkRenderi\"",
+        "button.vg-card \"No stillHeat pump vs new boiler: the honest math\"",
+        "button.vg-card \"No stillThe €89 pre-winter check, explainedLive \"",
+        "button.vg-btn \"Attach\"",
+        "input.vg-composer__input \"Tell VIDEOGO something — e.g. “talk about our ne\"",
+        "button.vg-btn \"Send\"",
+        "button.vg-btn \"Back to context\"",
+        "button.vg-btn \"Publish\""
+      ],
+      "allRingsVisible": true,
+      "obscured": []
+    }
+  ],
+  "studioSelectionKeyboard": [
+    {
+      "step": "Enter on Ready card",
+      "pressed": "true",
+      "panelTitle": "Heat pump vs new boiler: the honest math",
+      "focusStaysOnCard": true
+    },
+    {
+      "step": "Space on Idea card (switch selection)",
+      "rd1": "false",
+      "idea1": "true",
+      "panelTitle": "Why we show the price before we start the job"
+    },
+    {
+      "step": "Enter again on selected Idea card (toggle off)",
+      "idea1": "false",
+      "panelShowsContext": true
+    },
+    {
+      "step": "Back to context",
+      "rd1": "false",
+      "focusReturnedToCard": true,
+      "panelShowsContext": true
+    }
+  ],
+  "longContent": [
+    {
+      "screen": "Today NEED stress @1440",
+      "horizontalScroll": false,
+      "clipped": 0,
+      "overflow": []
+    },
+    {
+      "screen": "Studio READY stress @1440",
+      "horizontalScroll": false,
+      "clipped": 0,
+      "overflow": []
+    },
+    {
+      "screen": "Today NEED stress @1216",
+      "horizontalScroll": false,
+      "clipped": 0,
+      "overflow": []
+    },
+    {
+      "screen": "Studio READY stress @1216",
+      "horizontalScroll": false,
+      "clipped": 0,
+      "overflow": []
+    },
+    {
+      "screen": "Today NEED stress @390",
+      "horizontalScroll": false,
+      "clipped": 0,
+      "overflow": []
+    },
+    {
+      "screen": "Studio READY stress @390",
+      "horizontalScroll": false,
+      "clipped": 0,
+      "overflow": []
+    }
+  ],
+  "textScale200": [
+    {
+      "url": "/today.html",
+      "viewport": "1440×900",
+      "title": {
+        "before": 32,
+        "after": 64
+      },
+      "horizontalScroll": false,
+      "clipped": [],
+      "overflow": []
+    },
+    {
+      "url": "/today.html",
+      "viewport": "1216×1050",
+      "title": {
+        "before": 32,
+        "after": 64
+      },
+      "horizontalScroll": false,
+      "clipped": [],
+      "overflow": []
+    },
+    {
+      "url": "/studio.html?select=rd1",
+      "viewport": "1440×900",
+      "title": {
+        "before": 32,
+        "after": 64
+      },
+      "horizontalScroll": false,
+      "clipped": [],
+      "overflow": []
+    },
+    {
+      "url": "/studio.html?select=rd1",
+      "viewport": "1216×1050",
+      "title": {
+        "before": 32,
+        "after": 64
+      },
+      "horizontalScroll": false,
+      "clipped": [],
+      "overflow": []
+    }
+  ],
+  "zoom200": [
+    {
+      "url": "/today.html",
+      "horizontalScroll": false,
+      "overflow": []
+    },
+    {
+      "url": "/studio.html?select=rd1",
+      "horizontalScroll": false,
+      "overflow": []
+    }
+  ],
+  "reflow320": [
+    {
+      "url": "/today.html?study=narrow",
+      "horizontalScroll": false,
+      "overflow": []
+    },
+    {
+      "url": "/studio.html?select=rd1&study=narrow",
+      "horizontalScroll": false,
+      "overflow": []
+    }
+  ],
+  "targets": [
+    {
+      "url": "/today.html",
+      "coarse": false,
+      "min": 24,
+      "failures": []
+    },
+    {
+      "url": "/studio.html?select=rd1",
+      "coarse": false,
+      "min": 24,
+      "failures": []
+    },
+    {
+      "url": "/today.html?study=narrow",
+      "coarse": true,
+      "min": 44,
+      "failures": []
+    },
+    {
+      "url": "/studio.html?select=rd1&study=narrow",
+      "coarse": true,
+      "min": 44,
+      "failures": []
+    }
+  ],
+  "reducedMotion": {
+    "card": "0s",
+    "button": "0s, 0s",
+    "nav": "0s, 0s",
+    "pass": true
+  },
+  "lockup": {
+    "svgTextElements": {
+      "videogo-lockup-inverse-outlined.svg": 0,
+      "videogo-lockup-outlined.svg": 0
+    },
+    "liveFontLoadedForComparison": true,
+    "comparisonRender": "renders/G_lockup_fallback-vs-live-vs-outlined.png",
+    "note": "Row 2 renders the source <text> in Chrome with the licensed face; row 3 is the outline. Chrome distributes textLength over n characters, SVG 2 over n−1 gaps: see 05_VALIDATION.md."
+  }
+}
